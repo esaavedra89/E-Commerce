@@ -136,6 +136,27 @@ body
     height: 500px;
 }
 
+.barraLateralCategoria, .barraLateralMarca
+{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+
+#lblCategoria
+{
+    margin: 5px;
+    font-weight: bold;
+}
+
+#cbox
+{
+    margin: 2px 0px;
+    padding: 0px;
+    background-color: white;
+}
+
+
 /************************************/
 
 
