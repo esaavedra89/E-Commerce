@@ -79,6 +79,7 @@ body
 {
     background-color: tomato;
     height: 40%;
+    justify-content: center;
 }
 
 #headerInferiorIzquierdo
@@ -87,41 +88,29 @@ body
     align-items: center; 
     background-color: lightgreen;
     height: 100%;
+    display: flex;
 }
 
-
-#iconoConfFiltros
-{
-    margin: 5px 5px 5px 20px;
-    height: 35px;
-    vertical-align: middle;
-    align-items: center;
-    background-color: lightgray;
-    color: grey;
-    border-radius: 5px;
-    border: 2px solid transparent;
-}
 
 #headerInferiorDerecho
 {
-    float: right;
     align-items: center;
-    height: 100%;
-    display: flex;
     background-color: lightgreen;
+    display: flex;
+    float: right;
+    height: 100%;
 }
 
 .labelsHeader
 {
-    margin: 0px 5px ;
+    margin: 0 8px ;
+    vertical-align: bottom;
+    color: black;
 }
 
-#opcionesOrdenar
+.labelEnlazable
 {
-    vertical-align: middle;
     margin: 0 8px;
-    border: 1px solid rgb(31, 70, 141);
-    border-radius: 5px;
 }
 
 /************************************/
