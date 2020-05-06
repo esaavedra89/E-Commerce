@@ -271,6 +271,7 @@ body
     height: 25%;
     background-color: lightskyblue;
     display: flex;
+    margin: 0px 2px;
 }
 
 .detArtInferiorDerecho
@@ -280,12 +281,23 @@ body
     display: inline-flex;
 }
 
-#btnAdicionar, #btnRestar, #cantidadProducto
+#btnAdicionar, #btnRestar
 {
     background-color: white;
     height: 100%;
     width: 40px;
     margin: 0 auto;
+    text-align: center;
+    color: lightblue;
+}
+
+#cantidadProducto
+{
+    background-color: white;
+    height: 100%;
+    width: 40px;
+    margin: 0 auto;
+    text-align: center;
 }
 
 #btnAgregar
@@ -294,6 +306,8 @@ body
     height: 100%;
     width: 45%;
     vertical-align: middle;
+    color: white;
+    font-weight: bold;
 }
 
 #imgBoton

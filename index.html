@@ -5,6 +5,8 @@
         <meta charset="UTF-8">
         <title>Articulos</title>
         <link href="Estilos/EstilosIndex.css" rel="stylesheet" type="text/css">
+        <!-- <link href="Recursos/font/fontellosecond.ttf" rel="stylesheet" type="text/css"> -->
+        <link href="Recursos/css/fontellosecond.css" rel="stylesheet" type="text/css">
 
     </head>
 
@@ -152,11 +154,12 @@
                             </div>
                             <div class="detallesArticuloInferior">
                                 <div class="detArtInferiorDerecho">
-                                    <button id="btnAdicionar" title="Agregar"><img id="imgBoton" src="Imagenes/ic_add.png" alt="Adicionar"></button>
-                                    <input id="cantidadProducto" type="number"> 
-                                    <button id="btnRestar" title="Agregar"><img id="imgBoton" src="Imagenes/ic_remove.png" alt="Restar"></button>
+                                    <!-- <button id="btnAdicionar" title="Agregar"><img id="imgBoton" src="Imagenes/ic_add.png" alt="Adicionar"></button> -->
+                                    <button id="btnAdicionar" title="Sumar" class="icon-plus"></button>
+                                    <input id="cantidadProducto" value="1" type="number"> 
+                                    <button id="btnRestar" title="Restar" class="icon-minus"></button></button>
                                 </div>
-                                <button id="btnAgregar" title="Agregar">Agregar<img id="imgBoton" src="Imagenes/ic_shopping_cart.png" alt="Icono carrito de compra"></button>
+                                <button id="btnAgregar" title="Agregar">Agregar <span class="icon-basket"></span></button>
                             </div>
                         </div>
                     </div>
