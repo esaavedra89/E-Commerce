@@ -136,7 +136,7 @@ body
     
 }
 
-.barraLateralCategoria, .barraLateralMarca, .barraLateralPrecio, .barraLateralPuntuacion
+.barraLateralSecciones
 {
     display: flex;
     flex-direction: column;
@@ -155,15 +155,6 @@ body
     padding: 0px;
     background-color: white;
 }
-
-
-  #form p {
-    text-align: center;
-  }
-  
-  #form label {
-    font-size: 20px;
-  }
 
   #estellaNaranja
   {
@@ -186,6 +177,7 @@ body
   {
       margin: 0px;
       padding: 0px;
+      
   }
 
 
@@ -208,11 +200,107 @@ body
 
 .articulo
 {
-    height: 350px;
+    height: 400px;
     width: 240px;
     background-color: white;
     margin: 5px 5px 5px 5px;
     
 }
+
+.imgArticulo
+{
+    height: 60%;
+    background-color: yellow;
+}
+
+.detallesArticulo
+{
+    height: 40%;
+    background-color: lightcoral;
+}
+
+#imgArticulo
+{
+    height: 100%;
+}
+
+.detallesArticuloSuperior
+{
+    height: 75%;
+    background-color: lightgreen;
+}
+
+#txtDetallesArticulo, #precioArticulo
+{
+    padding: 0px;
+    margin: 0px;
+    font-size: larger;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.divV
+{
+    background-color: rosybrown;
+    display: inline-table;
+    width: 100%;
+}
+
+#txtEstrellasArticulo
+{
+    background-color: rebeccapurple;
+    display: inline;
+}
+
+#lblExistencias
+{
+    float: right;
+    margin: 3px 0 0 0; /*Corregir esto*/
+}
+
+span
+{
+    font-size: small;
+    font-weight: normal;
+}
+
+.detallesArticuloInferior
+{
+    height: 25%;
+    background-color: lightskyblue;
+    display: flex;
+}
+
+.detArtInferiorDerecho
+{
+    background-color: brown;
+    width: 55%;
+    display: inline-flex;
+}
+
+#btnAdicionar, #btnRestar, #cantidadProducto
+{
+    background-color: white;
+    height: 100%;
+    width: 40px;
+    margin: 0 auto;
+}
+
+#btnAgregar
+{
+    background-color: blue;
+    height: 100%;
+    width: 45%;
+    vertical-align: middle;
+}
+
+#imgBoton
+{
+    height: 100%;
+    float: right;
+}
+
+
+
 
 /************************************/
