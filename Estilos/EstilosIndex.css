@@ -35,7 +35,7 @@ body
     background-color: yellow;
 }
 
-.headerSuperiorDerecho
+#headerSuperiorDerecho
 {
     background-color: whitesmoke;
     display: inline-flex;
@@ -80,11 +80,12 @@ body
     height: 40%;
 }
 
-.headerInferiorIzquierdo
+#headerInferiorIzquierdo
 {
     float: left;
     align-items: center; 
     background-color: lightgreen;
+    height: 100%;
 }
 
 
@@ -96,7 +97,7 @@ body
     align-items: center;
 }
 
-.headerInferiorDerecho
+#headerInferiorDerecho
 {
     float: right;
     align-items: center;
@@ -138,20 +139,20 @@ body
     margin: 10px;
 }
 
-#lblBarraLateral
+.lblBarraLateral
 {
     margin: 5px;
     font-weight: bold;
 }
 
-#cbox
+.cbox
 {
     margin: 2px 0px;
     padding: 0px;
     background-color: white;
 }
 
-  #estellaNaranja
+  .estellaNaranja
   {
       color: yellow;
       margin: 0px;
@@ -160,7 +161,7 @@ body
       font: outline;
   }
 
-  #estellaVacia
+  .estellaVacia
   {
     margin: 0px;
     padding: 0px;
@@ -205,13 +206,11 @@ body
 .imgArticulo
 {
     height: 60%;
-    background-color: yellow;
 }
 
 .detallesArticulo
 {
     height: 40%;
-    background-color: lightcoral;
 }
 
 #imgArticulo
@@ -222,39 +221,48 @@ body
 .detallesArticuloSuperior
 {
     height: 75%;
-    background-color: lightgreen;
 }
 
-#txtDetallesArticulo, #precioArticulo
+.txtDetallesArticulo
 {
     padding: 0px;
-    margin: 0px;
+    margin: 0px 5px;
     font-size: 20px;
     text-transform: uppercase;
 }
 
-.divV
+#detallesArticuloValoracion
 {
-    background-color: rosybrown;
     display: inline-table;
     width: 100%;
 }
 
 #txtEstrellasArticulo
 {
-    background-color: rebeccapurple;
     display: inline;
+    padding: 0px;
+    margin: 0px 5px;
 }
 
 #lblExistencias
 {
     float: right;
-    margin: 3px 0 0 0; /*Corregir esto*/
+    margin: 3px 5px 0 5px; /*Corregir esto*/
+    color: maroon;
 }
 
-span
+#precioArticulo
 {
-    font-size: small;
+    padding: 0px;
+    margin: 0px 5px;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.letrasPequenas
+{
+    font-size: 10px;
     font-weight: normal;
 }
 

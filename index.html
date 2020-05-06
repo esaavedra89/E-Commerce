@@ -15,19 +15,19 @@
             <div id="headerSuperior">
                 <img id="logo" src="Imagenes/americaFerretera.png" alt="Logo empresa">
                 <input id="barraBuscar" placeholder="Buscar">
-                <div class="headerSuperiorDerecho">
+                <div id="headerSuperiorDerecho">
                     <img id="iconoCarritoCompras" src="Imagenes/CarritoCompras.png" alt="Carrito de compras">
                     <label id="lblIniciarSesion">Iniciar Sesión</label>
                 </div>
             </div>
             <!-- Header inferior -->
             <div id="headerInferior">
-                <div class="headerInferiorIzquierdo">
+                <div id="headerInferiorIzquierdo">
                     <img id="iconoConfFiltros" src="Imagenes/filtros.png" alt="Filtros">
-                    <label class="labelsHeader"><label id="cantidadResultados">1,000</label> resultados</label>
+                    <label class="labelsHeader"><span id="cantidadResultados">1,000</span> resultados</label>
                 </div>
                 
-                <div class="headerInferiorDerecho">
+                <div id="headerInferiorDerecho">
                     <label class="labelsHeader">Ordenar por:</label>
                     <select id="opcionesOrdenar">
                         <option value="volvo">Destacados</option>
@@ -45,81 +45,81 @@
             <!-- Sección barra lateral -->
             <div class="barraLateral">
                 <div class="barraLateralSecciones">
-                    <label id="lblBarraLateral">Categoría</label>
-                    <label id="lblCkechbox"><input type="checkbox" id="cbox" value="first_checkbox"> Adhesivos</label>
-                    <label id="lblCkechbox"><input type="checkbox" id="cbox" value="second_checkbox"> Grifería</label>
-                    <label id="lblCkechbox"><input type="checkbox" id="cbox" value="second_checkbox"> Hogar</label>
-                    <label id="lblCkechbox"><input type="checkbox" id="cbox" value="second_checkbox"> Jardinería</label>
-                    <label id="lblCkechbox"><input type="checkbox" id="cbox" value="second_checkbox"> Pintura</label>
+                    <label class="lblBarraLateral">Categoría</label>
+                    <label class="lblCkechbox"><input type="checkbox" class="cbox"> Adhesivos</label>
+                    <label class="lblCkechbox"><input type="checkbox" class="cbox"> Grifería</label>
+                    <label class="lblCkechbox"><input type="checkbox" class="cbox"> Hogar</label>
+                    <label class="lblCkechbox"><input type="checkbox" class="cbox"> Jardinería</label>
+                    <label class="lblCkechbox"><input type="checkbox" class="cbox"> Pintura</label>
                 </div>
                 <div class="barraLateralSecciones">
-                    <label id="lblBarraLateral">Marca</label>
-                    <label id="lblCkechbox"><input type="checkbox" id="cbox" value="first_checkbox"> 3M</label>
-                    <label id="lblCkechbox"><input type="checkbox" id="cbox" value="second_checkbox"> AMANCO</label>
-                    <label id="lblCkechbox"><input type="checkbox" id="cbox" value="second_checkbox"> Dewalt</label>
-                    <label id="lblCkechbox"><input type="checkbox" id="cbox" value="second_checkbox"> Durman</label>
-                    <label id="lblCkechbox"><input type="checkbox" id="cbox" value="second_checkbox"> Masterlock</label>
-                    <label id="lblCkechbox"><input type="checkbox" id="cbox" value="second_checkbox"> Panasonic</label>
+                    <label class="lblBarraLateral">Marca</label>
+                    <label class="lblCkechbox"><input type="checkbox" class="cbox"> 3M</label>
+                    <label class="lblCkechbox"><input type="checkbox" class="cbox"> AMANCO</label>
+                    <label class="lblCkechbox"><input type="checkbox" class="cbox"> Dewalt</label>
+                    <label class="lblCkechbox"><input type="checkbox" class="cbox"> Durman</label>
+                    <label class="lblCkechbox"><input type="checkbox" class="cbox"> Masterlock</label>
+                    <label class="lblCkechbox"><input type="checkbox" class="cbox"> Panasonic</label>
                 </div>
                 <div class="barraLateralSecciones">
-                    <label id="lblBarraLateral">Precio</label>
+                    <label class="lblBarraLateral">Precio</label>
                     <label id="lblCantidad">Menos de 15,00 CRC</label>
-                    <input type="range">
+                    <input id="rangoPrecios" type="range">
 
                 </div>
                 <div class="barraLateralSecciones">
-                    <label id="lblBarraLateral">Puntuación</label>
+                    <label class="lblBarraLateral">Puntuación</label>
                     <div>
                         <p class="clasificacion">
-                            <input type="checkbox" id="cboxpuntuacion" value="first_checkbox">
-                            <label id="estellaNaranja">★</label>
-                            <label id="estellaNaranja">★</label>
-                            <label id="estellaNaranja">★</label>
-                            <label id="estellaNaranja">★</label>
-                            <label id="estellaNaranja">★</label>
+                            <input type="checkbox" class="cboxPuntuacion" value="first_checkbox">
+                            <label class="estellaNaranja">★</label>
+                            <label class="estellaNaranja">★</label>
+                            <label class="estellaNaranja">★</label>
+                            <label class="estellaNaranja">★</label>
+                            <label class="estellaNaranja">★</label>
                         </p>
                     </div>
                     <div>
                         <p class="clasificacion">
-                            <input type="checkbox" id="cboxpuntuacion" value="first_checkbox">
-                          <label id="estellaNaranja">★</label>
-                          <label id="estellaNaranja">★</label>
-                          <label id="estellaNaranja">★</label>
-                          <label id="estellaNaranja">★</label>
-                          <label id="estellaVacia">★</label>
-                        </p>
-                    </div>
-
-                    <div>
-                        <p class="clasificacion">
-                            <input type="checkbox" id="cboxpuntuacion" value="first_checkbox">
-                          <label id="estellaNaranja">★</label>
-                          <label id="estellaNaranja">★</label>
-                          <label id="estellaNaranja">★</label>
-                          <label id="estellaVacia">★</label>
-                          <label id="estellaVacia">★</label>
+                            <input type="checkbox" class="cboxPuntuacion" value="first_checkbox">
+                          <label class="estellaNaranja">★</label>
+                          <label class="estellaNaranja">★</label>
+                          <label class="estellaNaranja">★</label>
+                          <label class="estellaNaranja">★</label>
+                          <label class="estellaVacia">★</label>
                         </p>
                     </div>
 
                     <div>
                         <p class="clasificacion">
-                            <input type="checkbox" id="cboxpuntuacion" value="first_checkbox">
-                            <label id="estellaNaranja">★</label>
-                            <label id="estellaNaranja">★</label>
-                            <label id="estellaVacia">★</label>
-                            <label id="estellaVacia">★</label>
-                            <label id="estellaVacia">★</label>
+                            <input type="checkbox" class="cboxPuntuacion" value="first_checkbox">
+                          <label class="estellaNaranja">★</label>
+                          <label class="estellaNaranja">★</label>
+                          <label class="estellaNaranja">★</label>
+                          <label class="estellaVacia">★</label>
+                          <label class="estellaVacia">★</label>
                         </p>
                     </div>
 
                     <div>
                         <p class="clasificacion">
-                            <input type="checkbox" id="cboxpuntuacion" value="first_checkbox">
-                            <label id="estellaNaranja">★</label>
-                            <label id="estellaVacia">★</label>
-                            <label id="estellaVacia">★</label>
-                            <label id="estellaVacia">★</label>
-                            <label id="estellaVacia">★</label>
+                            <input type="checkbox" class="cboxPuntuacion" value="first_checkbox">
+                            <label class="estellaNaranja">★</label>
+                            <label class="estellaNaranja">★</label>
+                            <label class="estellaVacia">★</label>
+                            <label class="estellaVacia">★</label>
+                            <label class="estellaVacia">★</label>
+                        </p>
+                    </div>
+
+                    <div>
+                        <p class="clasificacion">
+                            <input type="checkbox" class="cboxPuntuacion" value="first_checkbox">
+                            <label class="estellaNaranja">★</label>
+                            <label class="estellaVacia">★</label>
+                            <label class="estellaVacia">★</label>
+                            <label class="estellaVacia">★</label>
+                            <label class="estellaVacia">★</label>
                         </p>
                     </div>
                 </div>
@@ -135,20 +135,20 @@
                         <div class="detallesArticulo">
                             <div class="detallesArticuloSuperior">
                                 <div>
-                                    <p id="txtDetallesArticulo">Martillo 40370 /018 Tramontina 40300/018 caja 12 uds</p>
+                                    <p class="txtDetallesArticulo">Martillo 40370 /018 Tramontina 40300/018 caja 12 uds</p>
                                 </div>
-                                    <div class="divV">
+                                    <div id="detallesArticuloValoracion">
                                         <p id="txtEstrellasArticulo">
-                                            <label id="estellaNaranja">★</label>
-                                            <label id="estellaNaranja">★</label>
-                                            <label id="estellaNaranja">★</label>
-                                            <label id="estellaNaranja">★</label>
-                                            <label id="estellaNaranja">★</label>
+                                            <label class="estellaNaranja">★</label>
+                                            <label class="estellaNaranja">★</label>
+                                            <label class="estellaNaranja">★</label>
+                                            <label class="estellaNaranja">★</label>
+                                            <label class="estellaNaranja">★</label>
                                         </p>
 
-                                        <label id="lblExistencias">Existencias: 700 </label>
+                                        <label id="lblExistencias">Existencias: <span id="existenciaArticulo">700</span> </label>
                                     </div>
-                                <div><p id="precioArticulo">15,000.00 CRC <span>IVA</span></p></div>
+                                <div><p id="precioArticulo">15,000.00 CRC <span class="letrasPequenas" >IVA</span></p></div>
                             </div>
                             <div class="detallesArticuloInferior">
                                 <div class="detArtInferiorDerecho">
