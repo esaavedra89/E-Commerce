@@ -91,7 +91,6 @@ body
     display: flex;
 }
 
-
 #headerInferiorDerecho
 {
     align-items: center;
@@ -103,14 +102,15 @@ body
 
 .labelsHeader
 {
-    margin: 0 8px ;
-    vertical-align: bottom;
-    color: black;
+    margin: 0 10px ;
+    font-size: medium;
 }
 
 .labelEnlazable
 {
-    margin: 0 8px;
+    
+    color: blue;
+    text-decoration: underline;
 }
 
 /************************************/
@@ -121,55 +121,71 @@ body
 {
     /* border: 3px solid green; */
     background-color: lightseagreen;
-    float: left;
-    width: 15%;
-    
+    float: right;
+    width: 30%;
+    height: 500px;
 }
 
-.barraLateralSecciones
+#formularioPago
 {
-    display: flex;
-    flex-direction: column;
+    background-color: white;
     margin: 10px;
 }
 
-.lblBarraLateral
+#tituloFormulario
 {
-    margin: 5px;
+    font-size: 26px;
     font-weight: bold;
+    margin: 10px 0px;
 }
 
-.cbox
+#formularioSuperior
 {
-    margin: 2px 0px;
-    padding: 0px;
-    background-color: white;
+    background-color: yellowgreen;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
 }
 
-  .estellaNaranja
-  {
-      color: yellow;
-      margin: 0px;
-      padding: 0px;
-      font-size: large;
-      font: outline;
-  }
+.formularioSubtitulos
+{
+    font-size: medium;
+    margin: 5px 0;
+}
 
-  .estellaVacia
-  {
-    margin: 0px;
-    padding: 0px;
-    color: white;
-    font-size: large;
-    }
-  
-  .clasificacion
-  {
-      margin: 0px;
-      padding: 0px;
-      
-  }
+#modoEntrega
+{
+    background-color: white;
+    height: 25px;
+}
 
+.entradaTexto
+{
+    background-color: white;
+    height: 30px;
+}
+
+#formularioInferior
+{
+    background-color: violet;
+}
+
+#tabla
+{
+    width: 100%;
+}
+
+.filasFormulario
+{
+    height: 35px;
+    background-color: lightcoral;
+}
+
+.columnaDos
+{
+    background-color: lightgreen;
+    text-align: right; /* Alinea los elementos adentro hacia la derecha. */
+}
 
 /************************************/
 
@@ -179,138 +195,14 @@ body
 {
     /* border: 3px solid red; */
     background-color:lightslategray;
-    float: right;
-    width: 85%;
+    float: left;
+    width: 70%;
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     padding: 5px;
+    height: 500px;
 }
-
-.articulo
-{
-    height: 400px;
-    width: 240px;
-    background-color: white;
-    margin: 5px 5px 5px 5px;
-    
-}
-
-.imgArticulo
-{
-    height: 60%;
-}
-
-.detallesArticulo
-{
-    height: 40%;
-}
-
-#imgArticulo
-{
-    height: 100%;
-}
-
-.detallesArticuloSuperior
-{
-    height: 75%;
-}
-
-.txtDetallesArticulo
-{
-    padding: 0px;
-    margin: 0px 5px;
-    font-size: 20px;
-    text-transform: uppercase;
-}
-
-#detallesArticuloValoracion
-{
-    display: inline-table;
-    width: 100%;
-}
-
-#txtEstrellasArticulo
-{
-    display: inline;
-    padding: 0px;
-    margin: 0px 5px;
-}
-
-#lblExistencias
-{
-    float: right;
-    margin: 3px 5px 0 5px; /*Corregir esto*/
-    color: maroon;
-}
-
-#precioArticulo
-{
-    padding: 0px;
-    margin: 0px 5px;
-    font-size: 20px;
-    font-weight: bold;
-    text-transform: uppercase;
-}
-
-.letrasPequenas
-{
-    font-size: 10px;
-    font-weight: normal;
-}
-
-.detallesArticuloInferior
-{
-    height: 25%;
-    background-color: lightskyblue;
-    display: flex;
-    margin: 0px 2px;
-}
-
-.detArtInferiorDerecho
-{
-    background-color: brown;
-    width: 55%;
-    display: inline-flex;
-}
-
-#btnAdicionar, #btnRestar
-{
-    background-color: white;
-    height: 100%;
-    width: 40px;
-    margin: 0 auto;
-    text-align: center;
-    color: lightblue;
-}
-
-#cantidadProducto
-{
-    background-color: white;
-    height: 100%;
-    width: 40px;
-    margin: 0 auto;
-    text-align: center;
-}
-
-#btnAgregar
-{
-    background-color: blue;
-    height: 100%;
-    width: 45%;
-    vertical-align: middle;
-    color: white;
-    font-weight: bold;
-}
-
-#imgBoton
-{
-    height: 100%;
-    float: right;
-}
-
-
-
 
 /************************************/

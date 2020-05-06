@@ -31,7 +31,7 @@
                 </div>
                 
                 <div id="headerInferiorDerecho">
-                    <label class="labelEnlazable">Regresar a la tienda</label>
+                    <label class="labelsHeader" ><a class="labelEnlazable" href="#">Regresar a la tienda</a></label>
                     
                 </div>
                 
@@ -40,14 +40,50 @@
 
         <div class="general">
             <!-- Sección barra lateral -->
-            <div class="barraLateral">
+            <div class="main">
                 
             </div>
 
             <!-- Sección principal -->
-            <div class="main">
-                
+            <div class="barraLateral">
+                <form id="formularioPago">
+                    <label id="tituloFormulario">Resumen</label>
+                    <div id="formularioSuperior">
+                        <label class="formularioSubtitulos">Modo de entrega</label>
+                        <select id="modoEntrega">
+                            <option value="volvo">Express</option>
+                            <option value="saab">Encomienda</option>
+                        </select>
+                        <label class="formularioSubtitulos">Dirección</label>
+                        <input class="entradaTexto" type="text" id="direccion">
+                        <label class="formularioSubtitulos">Observaciones</label>
+                        <input class="entradaTexto" type="text" id="observaciones">
+                    </div>
 
+                    <div id="formularioInferior">
+                        <table id="tabla">
+                            <tbody>
+                                <tr class="filasFormulario">
+                                    <td class="columnaUno"> <label>Costo del envío</label> </td>
+                                    <td class="columnaDos"> <label class="labelColumnaDos">0.00 CRC</label></td>
+                                </tr>
+                                <tr class="filasFormulario">
+                                    <td class="columnaUno"> <label>Subtotal</label></td>
+                                    <td class="columnaDos"> <label>39,823.01 CRC</label></td>
+                                </tr>
+                                <tr class="filasFormulario">
+                                    <td class="columnaUno"> <label>Impuesto</label></td>
+                                    <td class="columnaDos"><label> 5,176.99 CRC</label></td>
+                                </tr>
+                                <tr class="filasFormulario">
+                                    <td class="columnaUno"> <label>Total</label> </td>
+                                    <td class="columnaDos"> <label>45,000.00 CRC IVA</label></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    
+                </form>
             </div>
         </div>
         
