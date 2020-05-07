@@ -258,12 +258,6 @@ body
     width: 25%;
 }
 
-
-#cantidadProducto
-{
-    width: 40px;
-}
-
 #colArtTresContenedor
 {
     background-color: lightsalmon;
@@ -271,11 +265,52 @@ body
     justify-content: center;
     margin: 0 auto;
     justify-content: space-around;
+    height: 40px;
 }
 
 .colArtTresizquierdo
 {
+    align-content: center;
+    display: flex;
+}
+
+.botonesCantidad
+{
+    background-color: white;
     height: 100%;
+    width: 40px;
+    color: lightblue;
+    margin: 0px;
+    padding: 0px;
+    border: 1px solid lightgray;
+}
+
+#cantidadProducto
+{
+    width: 50px;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+    background-color: white;
+    border: 1px solid lightgray;
+}
+
+#btnEliminar
+{
+    background-color: transparent;
+    border: transparent;
+    font-size: 18px;
+}
+
+.txtDetallesArticulo
+{
+    background-color: lightsalmon;
+}
+
+#precioArticulo
+{
+    background-color: lightsalmon;
 }
 
 /************************************/

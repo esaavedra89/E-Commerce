@@ -204,7 +204,7 @@ body
     height: 400px;
     width: 240px;
     background-color: white;
-    margin: 5px 5px 5px 5px;
+    margin: 5px;
     
 }
 
@@ -215,7 +215,8 @@ body
 
 .detallesArticulo
 {
-    height: 40%;
+    height: 39%;
+    margin-bottom: 5px;
 }
 
 #imgArticulo
@@ -226,12 +227,13 @@ body
 .detallesArticuloSuperior
 {
     height: 75%;
+    margin: 0px 5px;
 }
 
 .txtDetallesArticulo
 {
     padding: 0px;
-    margin: 0px 5px;
+    margin: 0px;
     font-size: 20px;
     text-transform: uppercase;
 }
@@ -246,20 +248,20 @@ body
 {
     display: inline;
     padding: 0px;
-    margin: 0px 5px;
+    margin: 0px;
 }
 
 #lblExistencias
 {
     float: right;
-    margin: 3px 5px 0 5px; /*Corregir esto*/
+    margin: 4px 5px 0 5px; /*Corregir esto*/
     color: maroon;
 }
 
 #precioArticulo
 {
     padding: 0px;
-    margin: 0px 5px;
+    margin: 0px;
     font-size: 20px;
     font-weight: bold;
     text-transform: uppercase;
@@ -276,33 +278,39 @@ body
     height: 25%;
     background-color: lightskyblue;
     display: flex;
-    margin: 0px 2px;
+    margin: 0px 5px;
 }
 
 .detArtInferiorDerecho
 {
     background-color: brown;
     width: 55%;
-    display: inline-flex;
+    display: flex;
+    align-content: center;
+    
 }
 
-#btnAdicionar, #btnRestar
+.botonesCantidad
 {
     background-color: white;
     height: 100%;
     width: 40px;
-    margin: 0 auto;
     text-align: center;
     color: lightblue;
+    margin: 0px;
+    padding: 0px;
+    border: 1px solid lightgray;
 }
 
 #cantidadProducto
 {
     background-color: white;
     height: 100%;
-    width: 40px;
-    margin: 0 auto;
+    width: 50px;
+    margin: 0px;
+    padding: 0px;
     text-align: center;
+    border: 1px solid lightgray;
 }
 
 #btnAgregar
