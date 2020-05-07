@@ -3,7 +3,7 @@
     <head>
 
         <meta charset="UTF-8">
-        <title>Articulos</title>
+        <title>Carrito de compras</title>
         <link href="../Estilos/CarritoDeCompras.css" rel="stylesheet" type="text/css">
         <!-- <link href="Recursos/font/fontellosecond.ttf" rel="stylesheet" type="text/css"> -->
         <link href="../Recursos/Fuentes/css/fontellofull.css" rel="stylesheet" type="text/css">
@@ -45,9 +45,23 @@
                     <table id="tablaArticulos">
                         <tbody>
                             <tr class="filasArticulos">
-                                <td id="columnaArticulosUno">Hola </td>
-                                <td id="columnaArticulosDos">gola </td>
-                                <td id="columnaArticulosTres">zola </td>
+                                <td id="columnaArticulosUno"><img id="imagenArticulo" src="../Imagenes/martillo.jpg" alt="Imagen artículo"> </td>
+                                <td id="columnaArticulosDos">
+                                    <div>
+                                        <p class="txtDetallesArticulo">Martillo 40370 /018 Tramontina 40300/018 caja 12 uds</p>
+                                        <p id="precioArticulo">15,000.00 CRC <span class="letrasPequenas" >IVA</span></p>
+                                    </div> 
+                                </td>
+                                <td id="columnaArticulosTres">
+                                    <div id="colArtTresContenedor">
+                                        <div class="colArtTresizquierdo">
+                                            <button id="btnAdicionar" title="Sumar" class="icon-plus"></button>
+                                            <input id="cantidadProducto" value="1" type="number"> 
+                                            <button id="btnRestar" title="Restar" class="icon-minus"></button></button>
+                                        </div>
+                                        <button id="btnEliminar" title="Eliminar"><span class="icon-trash-7"></span></button>
+                                    </div>
+                                </td>
                             </tr>
                         </tbody>
                     </table>

@@ -239,16 +239,43 @@ body
     width: 15%;
 }
 
+#imagenArticulo
+{
+    width: 90%;
+    display: block;
+    margin: 0 auto;
+}
+
 #columnaArticulosDos
 {
     background-color: lightskyblue;
-    width: 50%;
+    width: 55%;
 }
 
 #columnaArticulosTres
 {
     background-color: lightsteelblue;
-    width: 30%;
+    width: 25%;
+}
+
+
+#cantidadProducto
+{
+    width: 40px;
+}
+
+#colArtTresContenedor
+{
+    background-color: lightsalmon;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    justify-content: space-around;
+}
+
+.colArtTresizquierdo
+{
+    height: 100%;
 }
 
 /************************************/
