@@ -11,196 +11,197 @@
     </head>
 
     <body>
-        <!-- Sección Header -->
-        <header id="headerPrincipal">
-            <!-- Header superior -->
-            <div id="headerSuperior">
-                <img id="logo" src="Imagenes/americaFerretera.png" alt="Logo empresa">
-                <input id="barraBuscar" placeholder="Buscar">
-                <div id="headerSuperiorDerecho">
+        <div id="contenedorPrincipal">
+            <!-- Sección Header -->
+            <div id="headerPrincipal">
+                <!-- Header superior -->
+                <div id="headerSuperior">
+                    <img id="logo" src="Imagenes/americaFerretera.png" alt="Logo empresa">
+                    <input id="barraBuscar" placeholder="Buscar">
+                    <div id="headerSuperiorDerecho">
+                        
+                        <label id="iconoCarritoCompras" class=" icon-basket" ></label>
+                        <button id="botonIniciarSesion" title="Iniciar sesión"><span class="icon-user-1"></span> Iniciar Sesión</button>
+                    </div>
+                </div>
+                <!-- Header inferior -->
+                <div id="headerInferior">
+                    <div id="headerInferiorIzquierdo">
+                        <!-- icon-sliders -->
+                        <button id="iconoConfFiltros" title="Filtros" class="icon-sliders"></button>
+                        <label class="labelsHeader"><span id="cantidadResultados">1,000</span> resultados</label>
+                    </div>
                     
-                    <label id="iconoCarritoCompras" class=" icon-basket" ></label>
-                    <label id="lblIniciarSesion">Iniciar Sesión</label>
-                </div>
-            </div>
-            <!-- Header inferior -->
-            <div id="headerInferior">
-                <div id="headerInferiorIzquierdo">
-                    <!-- icon-sliders -->
-                    <button id="iconoConfFiltros" title="Filtros" class="icon-sliders"></button></button>
-                    <label class="labelsHeader"><span id="cantidadResultados">1,000</span> resultados</label>
-                </div>
-                
-                <div id="headerInferiorDerecho">
-                    <label class="labelsHeader">Ordenar por:</label>
-                    <select id="opcionesOrdenar">
-                        <option value="volvo">Destacados</option>
-                        <option value="saab">Precio mas alto</option>
-                        <option value="mercedes">Precio mas bajo</option>
-                        <option value="audi">Opinión de los clientes</option>
-                        <option value="audi">Lo mas nuevo</option>
-                    </select>
-                </div>
-                
-            </div>
-        </header>
-
-        <div class="general">
-            <!-- Sección barra lateral -->
-            <div class="barraLateral">
-                <div class="barraLateralSecciones">
-                    <label class="lblBarraLateral">Categoría</label>
-                    <label class="lblCkechbox"><input type="checkbox" class="cbox"> Adhesivos</label>
-                    <label class="lblCkechbox"><input type="checkbox" class="cbox"> Grifería</label>
-                    <label class="lblCkechbox"><input type="checkbox" class="cbox"> Hogar</label>
-                    <label class="lblCkechbox"><input type="checkbox" class="cbox"> Jardinería</label>
-                    <label class="lblCkechbox"><input type="checkbox" class="cbox"> Pintura</label>
-                </div>
-                <div class="barraLateralSecciones">
-                    <label class="lblBarraLateral">Marca</label>
-                    <label class="lblCkechbox"><input type="checkbox" class="cbox"> 3M</label>
-                    <label class="lblCkechbox"><input type="checkbox" class="cbox"> AMANCO</label>
-                    <label class="lblCkechbox"><input type="checkbox" class="cbox"> Dewalt</label>
-                    <label class="lblCkechbox"><input type="checkbox" class="cbox"> Durman</label>
-                    <label class="lblCkechbox"><input type="checkbox" class="cbox"> Masterlock</label>
-                    <label class="lblCkechbox"><input type="checkbox" class="cbox"> Panasonic</label>
-                </div>
-                <div class="barraLateralSecciones">
-                    <label class="lblBarraLateral">Precio</label>
-                    <label id="lblCantidad">Menos de 15,00 CRC</label>
-                    <input id="rangoPrecios" type="range">
-
-                </div>
-                <div class="barraLateralSecciones">
-                    <label class="lblBarraLateral">Puntuación</label>
-                    <div>
-                        <p class="clasificacion">
-                            <input type="checkbox" class="cboxPuntuacion" value="first_checkbox">
-                            <label class="estellaNaranja icon-star"></label>
-                            <label class="estellaNaranja icon-star"></label>
-                            <label class="estellaNaranja icon-star"></label>
-                            <label class="estellaNaranja icon-star"></label>
-                            <label class="estellaNaranja icon-star"></label>
-                        </p>
+                    <div id="headerInferiorDerecho">
+                        <label class="labelsHeader">Ordenar por:</label>
+                        <select id="opcionesOrdenar">
+                            <option value="volvo">Destacados</option>
+                            <option value="saab">Precio mas alto</option>
+                            <option value="mercedes">Precio mas bajo</option>
+                            <option value="audi">Opinión de los clientes</option>
+                            <option value="audi">Lo mas nuevo</option>
+                        </select>
                     </div>
-                    <div>
-                        <p class="clasificacion">
-                            <input type="checkbox" class="cboxPuntuacion" value="first_checkbox">
-                          <label class="estellaNaranja icon-star"></label>
-                          <label class="estellaNaranja icon-star"></label>
-                          <label class="estellaNaranja icon-star"></label>
-                          <label class="estellaNaranja icon-star"></label>
-                          <label class="estellaVacia icon-star-empty"></label>
-                        </p>
-                    </div>
-
-                    <div>
-                        <p class="clasificacion">
-                            <input type="checkbox" class="cboxPuntuacion" value="first_checkbox">
-                          <label class="estellaNaranja icon-star"></label>
-                          <label class="estellaNaranja icon-star"></label>
-                          <label class="estellaNaranja icon-star"></label>
-                          <label class="estellaVacia icon-star-empty"></label>
-                          <label class="estellaVacia icon-star-empty"></label>
-                        </p>
-                    </div>
-
-                    <div>
-                        <p class="clasificacion">
-                            <input type="checkbox" class="cboxPuntuacion" value="first_checkbox">
-                            <label class="estellaNaranja icon-star"></label>
-                            <label class="estellaNaranja icon-star"></label>
-                            <label class="estellaVacia icon-star-empty"></label>
-                            <label class="estellaVacia icon-star-empty"></label>
-                            <label class="estellaVacia icon-star-empty"></label>
-                        </p>
-                    </div>
-
-                    <div>
-                        <p class="clasificacion">
-                            <input type="checkbox" class="cboxPuntuacion" value="first_checkbox">
-                            <label class="estellaNaranja icon-star"></label>
-                            <label class="estellaVacia icon-star-empty"></label>
-                            <label class="estellaVacia icon-star-empty"></label>
-                            <label class="estellaVacia icon-star-empty"></label>
-                            <label class="estellaVacia icon-star-empty"></label>
-                        </p>
-                    </div>
+                    
                 </div>
             </div>
 
-            <!-- Sección principal -->
-            <div class="main">
-                <div>
-                    <div class="articulo">
-                        <div class="imgArticulo">
-                            <img id="imgArticulo" src="Imagenes/martillo.jpg" alt="Imagen del artículo">
+            <div class="general" style="background-color: yellow;">
+                <!-- Sección barra lateral -->
+                <div class="barraLateral">
+                    <div class="barraLateralSecciones">
+                        <label class="lblBarraLateral">Categoría</label>
+                        <label class="lblCkechbox"><input type="checkbox" class="cbox"> Adhesivos</label>
+                        <label class="lblCkechbox"><input type="checkbox" class="cbox"> Grifería</label>
+                        <label class="lblCkechbox"><input type="checkbox" class="cbox"> Hogar</label>
+                        <label class="lblCkechbox"><input type="checkbox" class="cbox"> Jardinería</label>
+                        <label class="lblCkechbox"><input type="checkbox" class="cbox"> Pintura</label>
+                    </div>
+                    <div class="barraLateralSecciones">
+                        <label class="lblBarraLateral">Marca</label>
+                        <label class="lblCkechbox"><input type="checkbox" class="cbox"> 3M</label>
+                        <label class="lblCkechbox"><input type="checkbox" class="cbox"> AMANCO</label>
+                        <label class="lblCkechbox"><input type="checkbox" class="cbox"> Dewalt</label>
+                        <label class="lblCkechbox"><input type="checkbox" class="cbox"> Durman</label>
+                        <label class="lblCkechbox"><input type="checkbox" class="cbox"> Masterlock</label>
+                        <label class="lblCkechbox"><input type="checkbox" class="cbox"> Panasonic</label>
+                    </div>
+                    <div class="barraLateralSecciones">
+                        <label class="lblBarraLateral">Precio</label>
+                        <label id="lblCantidad">Menos de 15,00 CRC</label>
+                        <input id="rangoPrecios" type="range">
+
+                    </div>
+                    <div class="barraLateralSecciones">
+                        <label class="lblBarraLateral">Puntuación</label>
+                        <div>
+                            <p class="clasificacion">
+                                <input type="checkbox" class="cboxPuntuacion" value="first_checkbox">
+                                <label class="estellaNaranja icon-star"></label>
+                                <label class="estellaNaranja icon-star"></label>
+                                <label class="estellaNaranja icon-star"></label>
+                                <label class="estellaNaranja icon-star"></label>
+                                <label class="estellaNaranja icon-star"></label>
+                            </p>
                         </div>
-                        <div class="detallesArticulo">
-                            <div class="detallesArticuloSuperior">
-                                <div>
-                                    <p class="txtDetallesArticulo">Martillo 40370 /018 Tramontina 40300/018 caja 12 uds</p>
-                                </div>
-                                    <div id="detallesArticuloValoracion">
-                                        <p id="txtEstrellasArticulo">
-                                            <label class="estellaNaranja icon-star"></label>
-                                            <label class="estellaNaranja icon-star"></label>
-                                            <label class="estellaNaranja icon-star"></label>
-                                            <label class="estellaNaranja icon-star"></label>
-                                            <label class="estellaNaranja icon-star"></label>
-                                        </p>
+                        <div>
+                            <p class="clasificacion">
+                                <input type="checkbox" class="cboxPuntuacion" value="first_checkbox">
+                            <label class="estellaNaranja icon-star"></label>
+                            <label class="estellaNaranja icon-star"></label>
+                            <label class="estellaNaranja icon-star"></label>
+                            <label class="estellaNaranja icon-star"></label>
+                            <label class="estellaVacia icon-star-empty"></label>
+                            </p>
+                        </div>
 
-                                        <label id="lblExistencias">Existencias: <span id="existenciaArticulo">700</span> </label>
+                        <div>
+                            <p class="clasificacion">
+                                <input type="checkbox" class="cboxPuntuacion" value="first_checkbox">
+                            <label class="estellaNaranja icon-star"></label>
+                            <label class="estellaNaranja icon-star"></label>
+                            <label class="estellaNaranja icon-star"></label>
+                            <label class="estellaVacia icon-star-empty"></label>
+                            <label class="estellaVacia icon-star-empty"></label>
+                            </p>
+                        </div>
+
+                        <div>
+                            <p class="clasificacion">
+                                <input type="checkbox" class="cboxPuntuacion" value="first_checkbox">
+                                <label class="estellaNaranja icon-star"></label>
+                                <label class="estellaNaranja icon-star"></label>
+                                <label class="estellaVacia icon-star-empty"></label>
+                                <label class="estellaVacia icon-star-empty"></label>
+                                <label class="estellaVacia icon-star-empty"></label>
+                            </p>
+                        </div>
+
+                        <div>
+                            <p class="clasificacion">
+                                <input type="checkbox" class="cboxPuntuacion" value="first_checkbox">
+                                <label class="estellaNaranja icon-star"></label>
+                                <label class="estellaVacia icon-star-empty"></label>
+                                <label class="estellaVacia icon-star-empty"></label>
+                                <label class="estellaVacia icon-star-empty"></label>
+                                <label class="estellaVacia icon-star-empty"></label>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sección principal -->
+                <div class="main">
+                    <div>
+                        <div class="articulo">
+                            <div class="imgArticulo">
+                                <img id="imgArticulo" src="Imagenes/martillo.jpg" alt="Imagen del artículo">
+                            </div>
+                            <div class="detallesArticulo">
+                                <div class="detallesArticuloSuperior">
+                                    <div>
+                                        <p class="txtDetallesArticulo">Martillo 40370 /018 Tramontina 40300/018 caja 12 uds</p>
                                     </div>
-                                <div>
-                                    <p id="precioArticulo">15,000.00 CRC <span class="letrasPequenas" >IVA</span></p>
+                                        <div id="detallesArticuloValoracion">
+                                            <p id="txtEstrellasArticulo">
+                                                <label class="estellaNaranja icon-star"></label>
+                                                <label class="estellaNaranja icon-star"></label>
+                                                <label class="estellaNaranja icon-star"></label>
+                                                <label class="estellaNaranja icon-star"></label>
+                                                <label class="estellaNaranja icon-star"></label>
+                                            </p>
+
+                                            <label id="lblExistencias">Existencias: <span id="existenciaArticulo">700</span> </label>
+                                        </div>
+                                    <div>
+                                        <p id="precioArticulo">15,000.00 CRC <span class="letrasPequenas" >IVA</span></p>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="detallesArticuloInferior">
-                                <div class="detArtInferiorDerecho">
-                                    <button class="botonesCantidad icon-plus" id="btnAdicionar" title="Sumar" ></button>
-                                    <input id="cantidadProducto" value="1" type="tel"> 
-                                    <button class="botonesCantidad icon-minus" id="btnRestar" title="Restar"></button>
+                                <div class="detallesArticuloInferior">
+                                    <div class="detArtInferiorDerecho">
+                                        <button class="botonesCantidad icon-plus" id="btnAdicionar" title="Sumar" ></button>
+                                        <input id="cantidadProducto" value="1" type="tel"> 
+                                        <button class="botonesCantidad icon-minus" id="btnRestar" title="Restar"></button>
+                                    </div>
+                                    <button id="btnAgregar" title="Agregar">Agregar <span class="icon-basket"></span></button>
                                 </div>
-                                <button id="btnAgregar" title="Agregar">Agregar <span class="icon-basket"></span></button>
                             </div>
                         </div>
                     </div>
-                </div>
 
-                <div>
-                    <div class="articulo"></div>
-                </div>  
-                <div>
-                    <div class="articulo"></div>
-                </div>
-                <div>
-                    <div class="articulo"></div>
-                </div>
+                    <div>
+                        <div class="articulo"></div>
+                    </div>  
+                    <div>
+                        <div class="articulo"></div>
+                    </div>
+                    <div>
+                        <div class="articulo"></div>
+                    </div>
 
-                <div>
-                    <div class="articulo"></div>
-                </div>
+                    <div>
+                        <div class="articulo"></div>
+                    </div>
 
-                <div>
-                    <div class="articulo"></div>
-                </div>
+                    <div>
+                        <div class="articulo"></div>
+                    </div>
 
-                <div>
-                    <div class="articulo"></div>
-                </div>
+                    <div>
+                        <div class="articulo"></div>
+                    </div>
 
-                <div>
-                    <div class="articulo"></div>
-                </div>
+                    <div>
+                        <div class="articulo"></div>
+                    </div>
 
-                <div>
-                    <div class="articulo"></div>
-                </div>
+                    <div>
+                        <div class="articulo"></div>
+                    </div>
 
+                </div>
             </div>
         </div>
-        
     </body>
 
 </html>

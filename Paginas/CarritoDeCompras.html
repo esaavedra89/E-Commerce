@@ -11,119 +11,120 @@
     </head>
 
     <body>
-        <!-- Sección Header -->
-        <header id="headerPrincipal">
-            <!-- Header superior -->
-            <div id="headerSuperior">
-                <img id="logo" src="../Imagenes/americaFerretera.png" alt="Logo empresa">
-                <input id="barraBuscar" placeholder="Buscar">
-                <div id="headerSuperiorDerecho">
-                    
-                    <label id="iconoCarritoCompras" class=" icon-basket" ></label>
-                    <label id="lblIniciarSesion">Iniciar Sesión</label>
-                </div>
-            </div>
-            <!-- Header inferior -->
-            <div id="headerInferior">
-                <div id="headerInferiorIzquierdo">
-                    <!-- icon-sliders -->
-                    <label class="labelsHeader">Carrito de compras</label>
-                </div>
-                
-                <div id="headerInferiorDerecho">
-                    <label class="labelsHeader" ><a class="labelEnlazable" href="#">Regresar a la tienda</a></label>
-                    
-                </div>
-                
-            </div>
-        </header>
-
-        <div class="general">
-            <!-- Sección principal -->
-            <div class="main">
-                <div id="listaArticulos">
-                    <table id="tablaArticulos">
-                        <tbody>
-                            <tr class="filasArticulos">
-                                <!-- Columna #1 -->
-                                <td id="columnaArticulosUno">
-                                    <img id="imagenArticulo" src="../Imagenes/martillo.jpg" alt="Imagen artículo"> 
-                                </td>
-                                <!-- Columna #2 -->
-                                <td id="columnaArticulosDos">
-                                    <div>
-                                        <p class="txtDetallesArticulo">Martillo 40370 /018 Tramontina 40300/018 caja 12 uds</p>
-                                        <p id="precioArticulo">15,000.00 CRC <span class="letrasPequenas" >IVA</span></p>
-                                    </div> 
-                                </td>
-                                <!-- Columna #3 -->
-                                <td id="columnaArticulosTres">
-                                    <div id="colArtTresContenedor">
-                                        <div class="colArtTresizquierdo">
-                                            <button class="botonesCantidad icon-plus" id="btnAdicionar" title="Sumar"></button>
-                                            <input id="cantidadProducto" value="1" type="tel"> 
-                                            <button class="botonesCantidad icon-minus" id="btnRestar" title="Restar"></button>
-                                        </div>
-                                        <button id="btnEliminar" title="Eliminar"><span class="icon-trash-7"></span></button>
-                                    </div>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-
-            <!-- Sección lateral -->
-            <div class="barraLateral">
-                <form id="formularioPago">
-                    <label id="tituloFormulario">Resumen</label>
-                    <div id="formularioSuperior">
-                        <label class="formularioSubtitulos">Modo de entrega</label>
-                        <select id="modoEntrega">
-                            <option value="volvo">Express</option>
-                            <option value="saab">Encomienda</option>
-                        </select>
-                        <label class="formularioSubtitulos">Dirección</label>
-                        <input class="entradaTexto" type="text" id="direccion">
-                        <label class="formularioSubtitulos">Observaciones</label>
-                        <input class="entradaTexto" type="text" id="observaciones">
+        <div id="contenedorPrincipal">
+            <!-- Sección Header -->
+            <header id="headerPrincipal">
+                <!-- Header superior -->
+                <div id="headerSuperior">
+                    <img id="logo" src="../Imagenes/americaFerretera.png" alt="Logo empresa">
+                    <input id="barraBuscar" placeholder="Buscar">
+                    <div id="headerSuperiorDerecho">
+                        
+                        <label id="iconoCarritoCompras" class=" icon-basket" ></label>
+                        <button id="botonIniciarSesion" title="Iniciar sesión"><span class="icon-user-1"></span> Iniciar Sesión</button>
                     </div>
+                </div>
+                <!-- Header inferior -->
+                <div id="headerInferior">
+                    <div id="headerInferiorIzquierdo">
+                        <!-- icon-sliders -->
+                        <label class="labelsHeader">Carrito de compras</label>
+                    </div>
+                    
+                    <div id="headerInferiorDerecho">
+                        <label class="labelsHeader" ><a class="labelEnlazable" href="#">Regresar a la tienda</a></label>
+                        
+                    </div>
+                    
+                </div>
+            </header>
 
-                    <div id="formularioInferior">
-                        <table id="tabla">
+            <div class="general">
+                <!-- Sección principal -->
+                <div class="main">
+                    <div id="listaArticulos">
+                        <table id="tablaArticulos">
                             <tbody>
-                                <tr class="filasFormulario">
-                                    <td class="columnaUno"> <label>Costo del envío</label> </td>
-                                    <td class="columnaDos"> <label class="labelColumnaDos">0.00 CRC</label></td>
-                                </tr>
-                                <tr class="filasFormulario">
-                                    <td class="columnaUno"> <label>Subtotal</label></td>
-                                    <td class="columnaDos"> <label>39,823.01 CRC</label></td>
-                                </tr>
-                                <tr class="filasFormulario">
-                                    <td class="columnaUno"> <label>Impuesto</label></td>
-                                    <td class="columnaDos"><label> 5,176.99 CRC</label></td>
-                                </tr>
-                                <tr class="filasFormulario">
-                                    <td class="columnaUno"> <label class="labelsTotal">Total</label> </td>
-                                    <td class="columnaDos"> 
-                                        <label class="labelsTotal">
-                                            <span id="montoTotal"> 45,000.00</span> 
-                                            <span id="moneda">CRC</span> 
-                                            <span class="letrasPequenas">IVA</span>
-                                        </label>
+                                <tr class="filasArticulos">
+                                    <!-- Columna #1 -->
+                                    <td id="columnaArticulosUno">
+                                        <img id="imagenArticulo" src="../Imagenes/martillo.jpg" alt="Imagen artículo"> 
+                                    </td>
+                                    <!-- Columna #2 -->
+                                    <td id="columnaArticulosDos">
+                                        <div>
+                                            <p class="txtDetallesArticulo">Martillo 40370 /018 Tramontina 40300/018 caja 12 uds</p>
+                                            <p id="precioArticulo">15,000.00 CRC <span class="letrasPequenas" >IVA</span></p>
+                                        </div> 
+                                    </td>
+                                    <!-- Columna #3 -->
+                                    <td id="columnaArticulosTres">
+                                        <div id="colArtTresContenedor">
+                                            <div class="colArtTresizquierdo">
+                                                <button class="botonesCantidad icon-plus" id="btnAdicionar" title="Sumar"></button>
+                                                <input id="cantidadProducto" value="1" type="tel"> 
+                                                <button class="botonesCantidad icon-minus" id="btnRestar" title="Restar"></button>
+                                            </div>
+                                            <button id="btnEliminar" title="Eliminar"><span class="icon-trash-7"></span></button>
+                                        </div>
                                     </td>
                                 </tr>
                             </tbody>
                         </table>
-
-                        <button id="botonPagar">Pagar</button>
                     </div>
-                    
-                </form>
+                </div>
+
+                <!-- Sección lateral -->
+                <div class="barraLateral">
+                    <form id="formularioPago">
+                        <label id="tituloFormulario">Resumen</label>
+                        <div id="formularioSuperior">
+                            <label class="formularioSubtitulos">Modo de entrega</label>
+                            <select id="modoEntrega">
+                                <option value="volvo">Express</option>
+                                <option value="saab">Encomienda</option>
+                            </select>
+                            <label class="formularioSubtitulos">Dirección</label>
+                            <input class="entradaTexto" type="text" id="direccion">
+                            <label class="formularioSubtitulos">Observaciones</label>
+                            <input class="entradaTexto" type="text" id="observaciones">
+                        </div>
+
+                        <div id="formularioInferior">
+                            <table id="tabla">
+                                <tbody>
+                                    <tr class="filasFormulario">
+                                        <td class="columnaUno"> <label>Costo del envío</label> </td>
+                                        <td class="columnaDos"> <label class="labelColumnaDos">0.00 CRC</label></td>
+                                    </tr>
+                                    <tr class="filasFormulario">
+                                        <td class="columnaUno"> <label>Subtotal</label></td>
+                                        <td class="columnaDos"> <label>39,823.01 CRC</label></td>
+                                    </tr>
+                                    <tr class="filasFormulario">
+                                        <td class="columnaUno"> <label>Impuesto</label></td>
+                                        <td class="columnaDos"><label> 5,176.99 CRC</label></td>
+                                    </tr>
+                                    <tr class="filasFormulario">
+                                        <td class="columnaUno"> <label class="labelsTotal">Total</label> </td>
+                                        <td class="columnaDos"> 
+                                            <label class="labelsTotal">
+                                                <span id="montoTotal"> 45,000.00</span> 
+                                                <span id="moneda">CRC</span> 
+                                                <span class="letrasPequenas">IVA</span>
+                                            </label>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                            <button id="botonPagar">Pagar</button>
+                        </div>
+                        
+                    </form>
+                </div>
             </div>
         </div>
-        
     </body>
 
 </html>

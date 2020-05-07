@@ -6,21 +6,30 @@
 
 body
 {
+    
     margin: 0px;
     padding: 0px;
-    background-color: blueviolet;
+    max-width: 1200px;
+    margin: 0 auto;
+    
+}
+
+#contenedorPrincipal
+{
+    margin: 0 auto;
+    margin: 0px;
+    padding: 0px;
+    display: inline-block;
+    border: 1px solid lightgray;
 }
 
 .general
 {
-    margin: 0 auto;
-    max-width: 1200px;
+    width: 100%;
 }
 
 #headerPrincipal
 {
-    /* border: 3px solid blue; */
-    background-color: lightblue;
     height: 120px;
     width: 100%;
     max-width: 1200px;
@@ -32,12 +41,11 @@ body
 #headerSuperior
 {
     height: 60%;
-    background-color: yellow;
 }
 
 #headerSuperiorDerecho
 {
-    background-color: whitesmoke;
+    
     display: inline-flex;
     vertical-align: middle;
     /* Centra los elementos dentro */
@@ -66,9 +74,12 @@ body
     font-size: 22px;
 }
 
-#lblIniciarSesion
+#botonIniciarSesion
 {
     font-weight: bold;
+    background-color: transparent;
+    border: transparent;
+    padding: 5px;
 }
 
 /************************************/
@@ -77,15 +88,15 @@ body
 /***************** Header inferior *******************/
 #headerInferior
 {
-    background-color: tomato;
     height: 40%;
+    border-top: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
 }
 
 #headerInferiorIzquierdo
 {
     float: left;
     align-items: center; 
-    background-color: lightgreen;
     height: 100%;
 }
 
@@ -108,7 +119,6 @@ body
     align-items: center;
     height: 100%;
     display: flex;
-    background-color: lightgreen;
 }
 
 .labelsHeader
@@ -130,11 +140,8 @@ body
 /***************** Barra lateral *******************/
 .barraLateral
 {
-    /* border: 3px solid green; */
-    background-color: lightseagreen;
     float: left;
     width: 15%;
-    
 }
 
 .barraLateralSecciones
@@ -164,6 +171,7 @@ body
       padding: 0px;
       font-size: small;
       font: outline;
+      font-weight: bolder;
   }
 
   .estellaVacia
@@ -172,6 +180,7 @@ body
     padding: 0px;
     color: yellow;
     font-size: small;
+    font-weight: bolder;
     }
   
   .clasificacion
@@ -188,8 +197,6 @@ body
 /***************** Main *******************/
 .main
 {
-    /* border: 3px solid red; */
-    background-color:lightslategray;
     float: right;
     width: 85%;
     margin: 0 auto;
@@ -197,14 +204,16 @@ body
     flex-wrap: wrap;
     justify-content: space-around;
     padding: 5px;
+    border-left: 1px solid lightgrey;
 }
 
 .articulo
 {
     height: 400px;
     width: 240px;
-    background-color: white;
+    background-color: whitesmoke;
     margin: 5px;
+    border-bottom: 1px solid lightgrey;
     
 }
 
