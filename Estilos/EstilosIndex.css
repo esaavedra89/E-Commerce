@@ -128,7 +128,6 @@ body
 
 #opcionesOrdenar
 {
-    vertical-align: middle;
     margin: 0 8px;
     border: 1px solid rgb(31, 70, 141);
     border-radius: 5px;
@@ -149,6 +148,7 @@ body
     display: flex;
     flex-direction: column;
     margin: 10px;
+    align-content: center;
 }
 
 .lblBarraLateral
@@ -157,38 +157,46 @@ body
     font-weight: bold;
 }
 
-.cbox
+.lblCkechbox
 {
-    margin: 2px 0px;
-    padding: 0px;
-    background-color: white;
+    vertical-align: middle;
 }
 
+.cbox
+{
+    
+    padding: 0px;
+    background-color: white;
+    vertical-align: top;
+}
+
+.clasificacion
+  {
+      margin: 0px;
+      padding: 0px;
+      align-items: center;
+      display: flex;
+  }
   .estellaNaranja
   {
-      color: yellow;
+      color: orange;
       margin: 0px;
       padding: 0px;
       font-size: small;
-      font: outline;
       font-weight: bolder;
+      vertical-align: middle;
   }
 
   .estellaVacia
   {
     margin: 0px;
     padding: 0px;
-    color: yellow;
+    color: orange;
     font-size: small;
     font-weight: bolder;
-    }
+   }
   
-  .clasificacion
-  {
-      margin: 0px;
-      padding: 0px;
-      
-  }
+  
 
 
 /************************************/
@@ -249,21 +257,27 @@ body
 
 #detallesArticuloValoracion
 {
-    display: inline-table;
+    display: flex;
     width: 100%;
+    justify-content: space-between;
+    
 }
 
 #txtEstrellasArticulo
 {
-    display: inline;
     padding: 0px;
     margin: 0px;
+    align-items: center;
+    display: flex;
+}
+
+#detallesArticuloValoracion #txtEstrellasArticulo .estellaNaranja
+{
+    align-items: center;
 }
 
 #lblExistencias
 {
-    float: right;
-    margin: 4px 5px 0 5px; /*Corregir esto*/
     color: maroon;
 }
 
