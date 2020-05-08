@@ -16,12 +16,11 @@
             <header id="headerPrincipal">
                 <!-- Header superior -->
                 <div id="headerSuperior">
-                    <img id="logo" src="../Imagenes/americaFerretera.png" alt="Logo empresa">
-                    <input id="barraBuscar" placeholder=" &#xf50d;" type="search">
+                    <img id="logo" src="../Imagenes/americaFerretera.png" alt="Logo empresa" title="Logo">
+                    <input id="barraBuscar" placeholder=" &#xf50d;" type="search" title="Buscar artículos">
                     <div id="headerSuperiorDerecho">
-                        
                         <label id="iconoCarritoCompras" class=" icon-basket" ></label>
-                        <button id="botonIniciarSesion" title="Iniciar sesión"><span class="icon-user-1" id="iconoUsuario"></span> Iniciar Sesión</button>
+                        <button id="btnIniciarSesion" title="Iniciar sesión"><span class="icon-user-1" id="iconoUsuario"></span> Iniciar Sesión</button>
                     </div>
                 </div>
                 <!-- Header inferior -->
@@ -48,7 +47,7 @@
                                 <tr class="filasArticulos">
                                     <!-- Columna #1 -->
                                     <td id="columnaArticulosUno">
-                                        <img id="imagenArticulo" src="../Imagenes/martillo.jpg" alt="Imagen artículo"> 
+                                        <img id="imagenArticulo" src="../Imagenes/martillo.jpg" alt="Imagen artículo" > 
                                     </td>
                                     <!-- Columna #2 -->
                                     <td id="columnaArticulosDos">
@@ -85,9 +84,9 @@
                                 <option value="saab">Encomienda</option>
                             </select>
                             <label class="formularioSubtitulos">Dirección</label>
-                            <input class="entradaTexto" type="text" id="direccion">
+                            <input class="entradaTexto" type="text" id="direccion" title="Dirreción de entrega">
                             <label class="formularioSubtitulos">Observaciones</label>
-                            <input class="entradaTexto" type="text" id="observaciones">
+                            <input class="entradaTexto" type="text" id="observaciones" title="Observaciones">
                         </div>
 
                         <div id="formularioInferior">
@@ -95,21 +94,21 @@
                                 <tbody>
                                     <tr class="filasFormulario">
                                         <td class="columnaUno"> <label>Costo del envío</label> </td>
-                                        <td class="columnaDos"> <label class="labelColumnaDos">0.00 CRC</label></td>
+                                        <td class="columnaDos"> <label class="labelColumnaDos" title="Costo del envío">0.00 CRC</label></td>
                                     </tr>
                                     <tr class="filasFormulario">
                                         <td class="columnaUno"> <label>Subtotal</label></td>
-                                        <td class="columnaDos"> <label>39,823.01 CRC</label></td>
+                                        <td class="columnaDos"> <label title="Subtotal de la compra">39,823.01 CRC</label></td>
                                     </tr>
                                     <tr class="filasFormulario">
                                         <td class="columnaUno"> <label>Impuesto</label></td>
-                                        <td class="columnaDos"><label> 5,176.99 CRC</label></td>
+                                        <td class="columnaDos"><label title="Impuesto de la compra"> 5,176.99 CRC</label></td>
                                     </tr>
                                     <tr class="filasFormulario">
                                         <td class="columnaUno"> <label class="labelsTotal">Total</label> </td>
                                         <td class="columnaDos"> 
                                             <label class="labelsTotal">
-                                                <span id="montoTotal"> 45,000.00</span> 
+                                                <span id="montoTotal" title="Monto total de la compra"> 45,000.00</span> 
                                                 <span id="moneda">CRC</span> 
                                                 <span class="letrasPequenas">IVA</span>
                                             </label>

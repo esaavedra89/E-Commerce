@@ -47,14 +47,6 @@ body
     height: 60%;
 }
 
-#headerSuperiorDerecho
-{
-    display: inline-flex;
-    vertical-align: middle;
-    /* Centra los elementos dentro */
-    align-items: center; 
-}
-
 #logo
 {
     margin: 5px 20px;
@@ -72,23 +64,36 @@ body
     font-size: large;
 }
 
+#headerSuperiorDerecho
+{
+    display: inline-flex;
+    vertical-align: middle;
+    /* Centra los elementos dentro */
+    align-items: center; 
+}
+
 #iconoCarritoCompras
 {
     margin: 5px;
     vertical-align: middle;
     font-size: 22px;
+    color: #3f3f3f;
 }
 
-#botonIniciarSesion
+#btnIniciarSesion
 {
     font-weight: bold;
     background-color: transparent;
     border: transparent;
     padding: 5px;
+    cursor: pointer;
+    color: #3f3f3f;
+    font-size: 15px;
 }
 
 #iconoUsuario
 {
+    color: #3f3f3f;
     font-size: large;
 }
 
@@ -134,6 +139,7 @@ body
 .labelsHeader
 {
     margin: 0px 5px ;
+    font-size: medium;
 }
 
 #opcionesOrdenar
@@ -141,6 +147,7 @@ body
     margin: 0 8px;
     border: 1px solid rgb(31, 70, 141);
     border-radius: 5px;
+    font-size: medium;
 }
 
 /************************************/
@@ -236,6 +243,7 @@ body
 .imgArticulo
 {
     height: 60%;
+    cursor: pointer;
 }
 
 .detallesArticulo
@@ -321,7 +329,7 @@ body
     
 }
 
-.botonesCantidad
+.btnCantidad
 {
     background-color: white;
     height: 100%;
@@ -331,6 +339,7 @@ body
     margin: 0px;
     padding: 0px;
     border: 1px solid lightgray;
+    cursor: pointer;
 }
 
 #cantidadProducto
@@ -349,11 +358,15 @@ body
     background-color: #1f468e;
     height: 100%;
     width: 45%;
-    vertical-align: middle;
     color: white;
     font-weight: bold;
     text-align: left;
     padding: 5px;
+    border-radius: 2px;
+    border: 1px solid #1f468a;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: normal;
 }
 
 #imgBoton

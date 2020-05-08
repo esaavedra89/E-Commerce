@@ -49,14 +49,6 @@ body
     height: 60%;
 }
 
-#headerSuperiorDerecho
-{
-    display: inline-flex;
-    vertical-align: middle;
-    /* Centra los elementos dentro */
-    align-items: center; 
-}
-
 #logo
 {
     margin: 5px 20px;
@@ -68,29 +60,43 @@ body
 #barraBuscar
 {
     height: 40px;
-    width: 70%;
+    width: 75%;
     border-radius: 5px;
     font-family: "fontellofull";
     font-size: large;
 }
 
-#iconoCarritoCompras
+#headerSuperiorDerecho
 {
-    margin: 5px;
+    display: inline-flex;
     vertical-align: middle;
-    font-size: 22px;
+    /* Centra los elementos dentro */
+    align-items: center; 
+    
 }
 
-#botonIniciarSesion
+#iconoCarritoCompras
+{
+    
+    vertical-align: middle;
+    font-size: 22px;
+    color: #3f3f3f;
+}
+
+#btnIniciarSesion
 {
     font-weight: bold;
     background-color: transparent;
     border: transparent;
     padding: 5px;
+    cursor: pointer;
+    color: #3f3f3f;
+    font-size: 15px;
 }
 
 #iconoUsuario
 {
+    color: #3f3f3f;
     font-size: large;
 }
 /************************************/
@@ -176,12 +182,14 @@ body
 {
     background-color: white;
     height: 25px;
+    font-size: 15px;
 }
 
 .entradaTexto
 {
     background-color: white;
     height: 30px;
+    font-size: 15px;
 }
 
 #tabla
@@ -212,7 +220,9 @@ body
     color: white;
     width: 100%;
     height: 40px;
-    margin: 20px 0px
+    margin: 20px 0px;
+    border: 1px solid #1f468a;
+    cursor: pointer;
 }
 
 /************************************/
@@ -262,6 +272,7 @@ body
     width: 90%;
     display: block;
     margin: 0 auto;
+    cursor: pointer;
 }
 
 #columnaArticulosDos
@@ -298,6 +309,7 @@ body
     margin: 0px;
     padding: 0px;
     border: 1px solid lightgray;
+    cursor: pointer;
 }
 
 #cantidadProducto
@@ -316,6 +328,7 @@ body
     background-color: transparent;
     border: transparent;
     font-size: 18px;
+    cursor: pointer;
 }
 
 .txtDetallesArticulo
@@ -324,6 +337,7 @@ body
     margin: 0px;
     font-size: 16px;
     text-transform: uppercase;
+    cursor: pointer;
 }
 
 #precioArticulo
@@ -333,12 +347,14 @@ body
     font-size: 18px;
     font-weight: bold;
     text-transform: uppercase;
+    cursor: pointer;
 }
 
 .letrasPequenas
 {
     font-size: 10px;
     font-weight: normal;
+    cursor: pointer;
 }
 
 /************************************/
