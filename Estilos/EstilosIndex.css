@@ -222,13 +222,21 @@ body
 /***************** Main *******************/
 .main
 {
-    float: right;
     width: 85%;
-    margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
     padding: 5px;
     border-left: 1px solid lightgrey;
+}
+
+.seccionArticulos
+{
+    float: right;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5px;
 }
 
 .articulo
@@ -375,7 +383,15 @@ body
     float: right;
 }
 
-
-
-
 /************************************/
+
+/*********************Paginación*********************/
+
+.paginacion
+{
+    width: 100%;
+    height: 50px;
+    display: block;
+}
+
+/*****************************************************/
