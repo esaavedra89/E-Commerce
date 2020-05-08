@@ -1,7 +1,13 @@
 
+@font-face {
+    font-family: 'Myriadpro';
+    src: url("../Recursos/Fuentes/Myriadpro/myriadpro.ttf");
+  }
+
 *
 {
     box-sizing: border-box;
+    font-family: 'Myriadpro';
 }
 
 body
