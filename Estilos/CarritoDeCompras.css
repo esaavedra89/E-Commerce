@@ -64,6 +64,8 @@ body
     height: 40px;
     width: 70%;
     border-radius: 5px;
+    font-family: "fontellofull";
+    font-size: large;
 }
 
 #iconoCarritoCompras

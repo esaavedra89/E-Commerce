@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+
+        <meta charset="UTF-8">
+        <title>Prueba</title>
+        <link href="../Estilos/CarritoDeCompras.css" rel="stylesheet" type="text/css">
+        <!-- <link href="Recursos/font/fontellosecond.ttf" rel="stylesheet" type="text/css"> -->
+        <link href="../Recursos/Fuentes/css/fontellofull.css" rel="stylesheet" type="text/css">
+        <script>
+            var div = document.getElementById("divTabla");
+
+            function crearTabla() {
+            var nombre = document.getElementById("nombre").value,
+                edad = document.getElementById("edad").value,
+                sexo = document.getElementById("sexo".value);
+
+            var columna = document.createElement("tr"),
+                celdaNombre = document.createElement("td"),
+                celdaEdad = document.createElement("td"),
+                celdaSexo = document.createElement("td"),
+                celda = document.createElement("td");
+
+            celdaNombre.innerHTML = nombre;
+            celdaEdad.innerHTML = edad;
+            celdaSexo.innerHTML = sexo;
+            celda.innerHTML = "Temporal";
+
+            columna.appendChild(celdaNombre);
+            columna.appendChild(celdaEdad);
+            columna.appendChild(celdaSexo);
+            columna.appendChild(celda);
+
+
+            tabla = document.getElementById("tabla").appendChild(columna);
+
+}
+        </script>
+
+        <script>
+            var div = document.getElementById("listaArticulos");
+
+            function agregarArticulo() {
+                var imagen = document.getElementById("imagen").value,
+                    detalles = document.getElementById("detalles").value,
+                    precio = document.getElementById("precio").value;
+
+                var fila = document.createElement("tr"),
+                    celdaImagen = document.createElement("td"),
+                    celdaDetalles = document.createElement("td"),
+                    celdaPrecio = document.createElement("td");
+
+                    celdaImagen.innerHTML = imagen;
+                    celdaDetalles.innerHTML = detalles;
+                    celdaPrecio.innerHTML = precio;
+
+                fila.appendChild(celdaImagen);
+                fila.appendChild(celdaDetalles);
+                fila.appendChild(celdaPrecio);
+
+
+                tabla = document.getElementById("tablaArticulos").appendChild(fila);
+            }
+        </script>
+    </head>
+
+    <body>
+        <div id="contenedorPrincipal">
+            <!-- Sección Header -->
+
+            <div class="general">
+                <div>
+                    <form>
+                        <input type="text" name="nombre" id="nombre" placeholder="Ingrese nombre">
+                        <input type="text" name="edad" id="edad" placeholder="ingrese Edad">
+                        <select name="sexo" id="sexo">
+                            <option value="Hombre">Hombre</option>
+                            <option value="Mujer">Mujer</option>
+                        </select>
+                        <button onclick="crearTabla()" type="button">Agregar</button>
+                    </form>
+                    <br><br>
+                    <div id="divTabla" class="egt">
+                        <table id="tabla">
+                            <tr>
+                            <th>Nombre</th>
+                            <th>Edad</th>
+                            <th>Sexo</th>
+                            </tr>
+                            <tr>
+
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+
+                <div>
+                    <form>
+                        <input type="text" name="imagen" id="imagen" placeholder="Ingrese imagen">
+                        <input type="text" name="detalles" id="detalles" placeholder="ingrese detalles del articulo">
+                        <input type="text" name="precio" id="precio" placeholder="ingrese precio del articulo">
+                        <button onclick="agregarArticulo()" type="button">Agregar</button>
+                    </form>
+                </div>
+
+
+                <div class="main">
+                    <div id="listaArticulos">
+                        <table id="tablaArticulos">
+                                <tr class="filasArticulos">
+                                    <!-- Columna #1 -->
+                                    <td id="columnaArticulosUno">
+                                        <img id="imagenArticulo" src="../Imagenes/martillo.jpg" alt="Imagen artículo"> 
+                                    </td>
+                                    <!-- Columna #2 -->
+                                    <td id="columnaArticulosDos">
+                                        <div>
+                                            <p class="txtDetallesArticulo">Martillo 40370 /018 Tramontina 40300/018 caja 12 uds</p>
+                                            <p id="precioArticulo">15,000.00 CRC <span class="letrasPequenas" >IVA</span></p>
+                                        </div> 
+                                    </td>
+                                    <!-- Columna #3 -->
+                                    <td id="columnaArticulosTres">
+                                        <div id="colArtTresContenedor">
+                                            <div class="colArtTresizquierdo">
+                                                <button class="botonesCantidad icon-plus" id="btnAdicionar" title="Sumar"></button>
+                                                <input id="cantidadProducto" value="1" type="tel"> 
+                                                <button class="botonesCantidad icon-minus" id="btnRestar" title="Restar"></button>
+                                            </div>
+                                            <button id="btnEliminar" title="Eliminar"><span class="icon-trash-7"></span></button>
+                                        </div>
+                                    </td>
+                                </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>
