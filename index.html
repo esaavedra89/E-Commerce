@@ -3,6 +3,7 @@
     <head>
 
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
         <title>Articulos</title>
         <link href="Estilos/EstilosIndex.css" rel="stylesheet" type="text/css">
         <!-- <link href="Recursos/font/fontellosecond.ttf" rel="stylesheet" type="text/css"> -->
@@ -15,8 +16,12 @@
             <div id="headerPrincipal">
                 <!-- Header superior -->
                 <div id="headerSuperior">
-                    <img id="logo" src="Imagenes/americaFerretera.png" alt="Logo empresa" title="Logo">
-                    <input id="barraBuscar" placeholder=" &#xf50d;" type="search" title="Buscar artículos">
+                    <div class="contenedorLogo">
+                        <img id="logo" src="Imagenes/americaFerretera.png" alt="Logo empresa" title="Logo">
+                    </div>
+                    <div class="contenedorBarraBuscar">
+                        <input id="barraBuscar" placeholder=" &#xf50d;" type="search" title="Buscar artículos">
+                    </div>
                     <div id="headerSuperiorDerecho">
                         <label id="iconoCarritoCompras" class=" icon-basket" ></label>
                         <button id="btnIniciarSesion" title="Iniciar sesión"><span class="icon-user-1" id="iconoUsuario"></span> Iniciar Sesión</button>

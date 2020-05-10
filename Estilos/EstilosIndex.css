@@ -12,7 +12,6 @@
 
 body
 {
-    
     margin: 0px;
     padding: 0px;
     margin: 0 auto;
@@ -33,7 +32,6 @@ body
 .general
 {
     width: 100%;
-
 }
 
 #headerPrincipal
@@ -43,25 +41,47 @@ body
     margin: 0 auto;
 }
 
-
 /***************** Header superior *******************/
 #headerSuperior
 {
     height: 60%;
+    box-sizing: border-box;
+}
+
+.contenedorLogo
+{
+    
+    /* Centra los elementos dentro */
+    align-items: center;
+    width: 8%;
+    height: 100%;
+    display: inline-flex;
+    vertical-align: middle;
 }
 
 #logo
 {
-    margin: 5px 20px;
-    height: 80%;
+    height: auto;
+    width: 90%;
+    margin: 0 auto;
     vertical-align: middle;
     align-items: center;
 }
 
-#barraBuscar
+.contenedorBarraBuscar
 {
     height: 40px;
     width: 75%;
+    display: inline-flex;
+    vertical-align: middle;
+    /* Centra los elementos dentro */
+    align-items: center; 
+}
+
+#barraBuscar
+{
+    height: 100%;
+    width: 100%;
     border-radius: 5px;
     font-family: "fontellofull";
     font-size: large;
@@ -72,7 +92,8 @@ body
     display: inline-flex;
     vertical-align: middle;
     /* Centra los elementos dentro */
-    align-items: center; 
+    align-items: center;
+    background-color: darkgray;
 }
 
 #iconoCarritoCompras
@@ -214,9 +235,6 @@ body
     font-size: small;
     font-weight: bolder;
    }
-  
-  
-
 
 /************************************/
 
@@ -251,41 +269,6 @@ body
     position: relative;
 }
 
-.imgArticulo
-{
-    /* height: 60%;
-    width: 100%;
-    cursor: pointer;
-    padding: 10px;
-    background-color: blue; */
-
-    position:relative;
-    margin:auto;
-    height: 60%;
-    width: 100%;
-    cursor: pointer;
-    padding: 10px;
-    /* background-color: blue; */
-    text-align: center;
-
-}
-
-#imgArticulo
-{
-    width: 100%;
-    /* object-fit: contain; */
-    /* display: block;
-    margin: 0 auto;
-    text-align: center; */
-
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
-}
-
 .slide-container{
     position:relative;
     margin:auto;
@@ -303,7 +286,45 @@ body
         width: 100%;
         height: 100%;
         align-content: center;
+        padding: 10px;
     }
+
+
+.imgArticulo
+{
+    /* height: 60%;
+    width: 100%;
+    cursor: pointer;
+    padding: 10px;
+    background-color: blue; */
+
+    /* position:relative;
+    margin:auto;
+    height: 60%;
+    width: 100%;
+    cursor: pointer;
+    padding: 10px;
+    text-align: center; */
+
+}
+
+#imgArticulo
+{
+    width: 90%;
+    /* object-fit: contain; */
+    /* display: block;
+    margin: 0 auto;
+    text-align: center; */
+
+    height: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
 
     #primeroSlider
     {
