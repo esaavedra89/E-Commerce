@@ -53,7 +53,7 @@ body
     
     /* Centra los elementos dentro */
     align-items: center;
-    width: 8%;
+    width: 10%;
     height: 100%;
     display: inline-flex;
     vertical-align: middle;
@@ -93,7 +93,7 @@ body
     vertical-align: middle;
     /* Centra los elementos dentro */
     align-items: center;
-    background-color: darkgray;
+    width: 14%;
 }
 
 #iconoCarritoCompras
@@ -113,6 +113,8 @@ body
     cursor: pointer;
     color: #3f3f3f;
     font-size: 15px;
+    width: 100%;
+    text-align: left;
 }
 
 #iconoUsuario
@@ -181,6 +183,8 @@ body
 {
     float: left;
     width: 15%;
+    min-width: 130px;
+    border-right: 1px solid lightgrey;
 }
 
 .barraLateralSecciones
@@ -204,7 +208,6 @@ body
 
 .cbox
 {
-    
     padding: 0px;
     background-color: white;
     vertical-align: top;
@@ -246,7 +249,7 @@ body
     display: flex;
     flex-wrap: wrap;
     padding: 5px;
-    border-left: 1px solid lightgrey;
+    /* background-color: yellow; */
 }
 
 .seccionArticulos
@@ -258,6 +261,7 @@ body
     flex-wrap: wrap;
     padding: 5px;
     overflow: visible;
+    /* background-color: white; */
 }
 
 .articulo
@@ -561,3 +565,121 @@ ul.a-paginacion li a {
 }
 
 /*****************************************************/
+
+
+
+/******************************Media query**************************************/
+
+@media (max-width: 480px)
+{
+    #contenedorPrincipal {
+        /* background:#F2d */
+    }
+    
+
+}
+
+/* @media (min-width: 480px) and  (max-width: 767px) */
+@media (max-width: 767px)
+{
+    #contenedorPrincipal {
+        /* background:#F00 */
+    }
+
+    #headerSuperior
+    {
+        height: 60px;
+    }
+
+    .contenedorLogo
+      {
+          display: none;
+      }
+
+    .contenedorBarraBuscar
+    {
+        width: 85%;
+        height: 100%;
+        padding: 0 10px;
+    }
+
+    #barraBuscar
+    {
+        height: 70%;
+    }
+
+    #headerSuperiorDerecho
+    {
+        height: 100%;
+        width: 14%;
+    }
+
+    #btnIniciarSesionText {
+        display: none;
+      }
+
+      .barraLateral
+      {
+          display: none;
+      }
+
+      .main
+        {
+            width: 100%;
+        }
+      
+}
+
+@media (min-width: 768px) and (max-width: 991px) 
+{
+    #contenedorPrincipal {
+        /* background:#03F */
+    }
+
+    .contenedorBarraBuscar
+    {
+        width: 65%;
+    }
+
+    #headerSuperiorDerecho
+    {
+        width: 23%;
+    }
+
+    .main
+    {
+        width: 82%;
+    }
+
+    
+}
+
+@media (min-width: 992px) and (max-width: 1200px) 
+{
+    #contenedorPrincipal {
+        /* background:#FF0 */
+    }
+
+    .contenedorBarraBuscar
+    {
+        width: 72%;
+    }
+
+    #headerSuperiorDerecho
+    {
+        width: 17%;
+        
+    }
+    #btnIniciarSesion
+    {
+        width: 100%;
+    }
+}
+    
+/* @media (min-width: 1200px) and (max-width: 1400px) 
+{
+    #contenedorPrincipal {
+        background-color: lightseagreen;
+    }
+    
+} */
