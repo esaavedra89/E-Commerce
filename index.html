@@ -7,7 +7,6 @@
         <link href="Estilos/EstilosIndex.css" rel="stylesheet" type="text/css">
         <!-- <link href="Recursos/font/fontellosecond.ttf" rel="stylesheet" type="text/css"> -->
         <link href="Recursos/Fuentes/Fontello/css/fontellofull.css" rel="stylesheet" type="text/css">
-
     </head>
 
     <body>
@@ -134,8 +133,22 @@
                     <div class="seccionArticulos">
                         <div>
                             <div class="articulo">
-                                <div class="imgArticulo">
-                                    <img id="imgArticulo" src="Imagenes/martillo.jpg" alt="Imagen del artículo">
+                                <!-- Slider -->
+                                <div class="slide-container">
+                                    <div class="Slides fade slideActivo" id="primeroSlider">
+                                        <img id="imgArticulo" src="Imagenes/martillo.jpg" alt="Imagen del artículo">
+                                    </div>
+                                 
+                                    <div class="Slides fade slideActivo">
+                                        <img id="imgArticulo" src="Imagenes/1.jpg" alt="Imagen del artículo">
+                                    </div>
+                                 
+                                    <div class="Slides fade slideActivo">
+                                        <img id="imgArticulo" src="Imagenes/2.jpg" alt="Imagen del artículo">
+                                    </div>
+
+                                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
                                 </div>
                                 <div class="detallesArticulo">
                                     <div class="detallesArticuloSuperior">
@@ -171,9 +184,24 @@
 
                         <div>
                             <div class="articulo">
-                                <div class="imgArticulo">
-                                    <img id="imgArticulo" src="Imagenes/martillo.jpg" alt="Imagen del artículo">
+                                <!-- Slider -->
+                                <div class="slide-container">
+                                    <div class="Slides fade" id="primeroSlider">
+                                        <img id="imgArticulo" src="Imagenes/6.jpg" alt="Imagen del artículo">
+                                    </div>
+                                 
+                                    <div class="Slides fade">
+                                        <img id="imgArticulo" src="Imagenes/5.png" alt="Imagen del artículo">
+                                    </div>
+                                 
+                                    <div class="Slides fade">
+                                        <img id="imgArticulo" src="Imagenes/2.jpg" alt="Imagen del artículo">
+                                    </div>
+
+                                    <a class="prev">&#10094;</a>
+                                    <a class="next">&#10095;</a>
                                 </div>
+                               
                                 <div class="detallesArticulo">
                                     <div class="detallesArticuloSuperior">
                                         <div>
@@ -207,8 +235,22 @@
                         </div>  
                         <div>
                             <div class="articulo">
-                                <div class="imgArticulo">
-                                    <img id="imgArticulo" src="Imagenes/martillo.jpg" alt="Imagen del artículo">
+                                <!-- Slider -->
+                                <div class="slide-container">
+                                    <div class="Slides fade" id="primeroSlider">
+                                        <img id="imgArticulo" src="Imagenes/5.png" alt="Imagen del artículo">
+                                    </div>
+                                 
+                                    <div class="Slides fade">
+                                        <img id="imgArticulo" src="Imagenes/martillo.jpg" alt="Imagen del artículo">
+                                    </div>
+                                 
+                                    <div class="Slides fade">
+                                        <img id="imgArticulo" src="Imagenes/6.jpg" alt="Imagen del artículo">
+                                    </div>
+
+                                    <a class="prev">&#10094;</a>
+                                    <a class="next">&#10095;</a>
                                 </div>
                                 <div class="detallesArticulo">
                                     <div class="detallesArticuloSuperior">
@@ -243,82 +285,22 @@
                         </div>
                         <div>
                             <div class="articulo">
-                                <div class="imgArticulo">
-                                    <img id="imgArticulo" src="Imagenes/martillo.jpg" alt="Imagen del artículo">
-                                </div>
-                                <div class="detallesArticulo">
-                                    <div class="detallesArticuloSuperior">
-                                        <div>
-                                            <p class="txtDetallesArticulo">Martillo 40370 /018 Tramontina 40300/018 caja 12 uds</p>
-                                        </div>
-                                        <div id="detallesArticuloValoracion">
-                                            <p id="txtEstrellasArticulo">
-                                                <label class="estellaNaranja icon-star"></label>
-                                                <label class="estellaNaranja icon-star"></label>
-                                                <label class="estellaNaranja icon-star"></label>
-                                                <label class="estellaNaranja icon-star"></label>
-                                                <label class="estellaNaranja icon-star"></label>
-                                            </p>
-
-                                            <label id="lblExistencias">Existencias: <span id="existenciaArticulo">700</span> </label>
-                                        </div>
-                                        <div>
-                                            <p id="precioArticulo">15,000.00 CRC <span class="letrasPequenas" >IVA</span></p>
-                                        </div>
+                                <!-- Slider -->
+                                <div class="slide-container">
+                                    <div class="Slides fade" id="primeroSlider">
+                                        <img id="imgArticulo" src="Imagenes/3.jpg" alt="Imagen del artículo">
                                     </div>
-                                    <div class="detallesArticuloInferior">
-                                        <div class="detArtInferiorDerecho">
-                                            <button class="btnCantidad icon-plus" id="btnAdicionar" title="Aumentar cantidad de productos al carrito de compras" ></button>
-                                            <input id="cantidadProducto" value="1" type="text" maxlength="20" title="Digite la cantidad de artículos que desea comprar"> 
-                                            <button class="btnCantidad icon-minus" id="btnRestar" title="Disminuir cantidad de productos al carrito de compras"></button>
-                                        </div>
-                                        <button id="btnAgregar" title="Agregar al carrito de compras"><span class="icon-basket"></span>Agregar</button>
+                                 
+                                    <div class="Slides fade">
+                                        <img id="imgArticulo" src="Imagenes/2.jpg" alt="Imagen del artículo">
                                     </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div>
-                            <div class="articulo">
-                                <div class="imgArticulo">
-                                    <img id="imgArticulo" src="Imagenes/martillo.jpg" alt="Imagen del artículo">
-                                </div>
-                                <div class="detallesArticulo">
-                                    <div class="detallesArticuloSuperior">
-                                        <div>
-                                            <p class="txtDetallesArticulo">Martillo 40370 /018 Tramontina 40300/018 caja 12 uds</p>
-                                        </div>
-                                        <div id="detallesArticuloValoracion">
-                                            <p id="txtEstrellasArticulo">
-                                                <label class="estellaNaranja icon-star"></label>
-                                                <label class="estellaNaranja icon-star"></label>
-                                                <label class="estellaNaranja icon-star"></label>
-                                                <label class="estellaNaranja icon-star"></label>
-                                                <label class="estellaNaranja icon-star"></label>
-                                            </p>
-
-                                            <label id="lblExistencias">Existencias: <span id="existenciaArticulo">700</span> </label>
-                                        </div>
-                                        <div>
-                                            <p id="precioArticulo">15,000.00 CRC <span class="letrasPequenas" >IVA</span></p>
-                                        </div>
+                                 
+                                    <div class="Slides fade">
+                                        <img id="imgArticulo" src="Imagenes/1.jpg" alt="Imagen del artículo">
                                     </div>
-                                    <div class="detallesArticuloInferior">
-                                        <div class="detArtInferiorDerecho">
-                                            <button class="btnCantidad icon-plus" id="btnAdicionar" title="Aumentar cantidad de productos al carrito de compras" ></button>
-                                            <input id="cantidadProducto" value="1" type="text" maxlength="20" title="Digite la cantidad de artículos que desea comprar"> 
-                                            <button class="btnCantidad icon-minus" id="btnRestar" title="Disminuir cantidad de productos al carrito de compras"></button>
-                                        </div>
-                                        <button id="btnAgregar" title="Agregar al carrito de compras"><span class="icon-basket"></span>Agregar</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
 
-                        <div>
-                            <div class="articulo">
-                                <div class="imgArticulo">
-                                    <img id="imgArticulo" src="Imagenes/martillo.jpg" alt="Imagen del artículo">
+                                    <a class="prev">&#10094;</a>
+                                    <a class="next">&#10095;</a>
                                 </div>
                                 <div class="detallesArticulo">
                                     <div class="detallesArticuloSuperior">
@@ -354,8 +336,22 @@
 
                         <div>
                             <div class="articulo">
-                                <div class="imgArticulo">
-                                    <img id="imgArticulo" src="Imagenes/martillo.jpg" alt="Imagen del artículo">
+                                <!-- Slider -->
+                                <div class="slide-container">
+                                    <div class="Slides fade" id="primeroSlider">
+                                        <img id="imgArticulo" src="Imagenes/5.png" alt="Imagen del artículo">
+                                    </div>
+                                 
+                                    <div class="Slides fade">
+                                        <img id="imgArticulo" src="Imagenes/martillo.jpg" alt="Imagen del artículo">
+                                    </div>
+                                 
+                                    <div class="Slides fade">
+                                        <img id="imgArticulo" src="Imagenes/2.jpg" alt="Imagen del artículo">
+                                    </div>
+
+                                    <a class="prev">&#10094;</a>
+                                    <a class="next">&#10095;</a>
                                 </div>
                                 <div class="detallesArticulo">
                                     <div class="detallesArticuloSuperior">
@@ -391,8 +387,124 @@
 
                         <div>
                             <div class="articulo">
-                                <div class="imgArticulo">
-                                    <img id="imgArticulo" src="Imagenes/martillo.jpg" alt="Imagen del artículo">
+                                <!-- Slider -->
+                                <div class="slide-container">
+                                    <div class="Slides fade" id="primeroSlider">
+                                        <img id="imgArticulo" src="Imagenes/3.jpg" alt="Imagen del artículo">
+                                    </div>
+                                 
+                                    <div class="Slides fade">
+                                        <img id="imgArticulo" src="Imagenes/4.jpg" alt="Imagen del artículo">
+                                    </div>
+                                 
+                                    <div class="Slides fade">
+                                        <img id="imgArticulo" src="Imagenes/5.jpg" alt="Imagen del artículo">
+                                    </div>
+
+                                    <a class="prev">&#10094;</a>
+                                    <a class="next">&#10095;</a>
+                                </div>
+                                <div class="detallesArticulo">
+                                    <div class="detallesArticuloSuperior">
+                                        <div>
+                                            <p class="txtDetallesArticulo">Martillo 40370 /018 Tramontina 40300/018 caja 12 uds</p>
+                                        </div>
+                                        <div id="detallesArticuloValoracion">
+                                            <p id="txtEstrellasArticulo">
+                                                <label class="estellaNaranja icon-star"></label>
+                                                <label class="estellaNaranja icon-star"></label>
+                                                <label class="estellaNaranja icon-star"></label>
+                                                <label class="estellaNaranja icon-star"></label>
+                                                <label class="estellaNaranja icon-star"></label>
+                                            </p>
+
+                                            <label id="lblExistencias">Existencias: <span id="existenciaArticulo">700</span> </label>
+                                        </div>
+                                        <div>
+                                            <p id="precioArticulo">15,000.00 CRC <span class="letrasPequenas" >IVA</span></p>
+                                        </div>
+                                    </div>
+                                    <div class="detallesArticuloInferior">
+                                        <div class="detArtInferiorDerecho">
+                                            <button class="btnCantidad icon-plus" id="btnAdicionar" title="Aumentar cantidad de productos al carrito de compras" ></button>
+                                            <input id="cantidadProducto" value="1" type="text" maxlength="20" title="Digite la cantidad de artículos que desea comprar"> 
+                                            <button class="btnCantidad icon-minus" id="btnRestar" title="Disminuir cantidad de productos al carrito de compras"></button>
+                                        </div>
+                                        <button id="btnAgregar" title="Agregar al carrito de compras"><span class="icon-basket"></span>Agregar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="articulo">
+                                <!-- Slider -->
+                                <div class="slide-container">
+                                    <div class="Slides fade" id="primeroSlider">
+                                        <img id="imgArticulo" src="Imagenes/6.jpg" alt="Imagen del artículo">
+                                    </div>
+                                 
+                                    <div class="Slides fade">
+                                        <img id="imgArticulo" src="Imagenes/martillo.jpg" alt="Imagen del artículo">
+                                    </div>
+                                 
+                                    <div class="Slides fade">
+                                        <img id="imgArticulo" src="Imagenes/5.png" alt="Imagen del artículo">
+                                    </div>
+
+                                    <a class="prev">&#10094;</a>
+                                    <a class="next">&#10095;</a>
+                                </div>
+                                <div class="detallesArticulo">
+                                    <div class="detallesArticuloSuperior">
+                                        <div>
+                                            <p class="txtDetallesArticulo">Martillo 40370 /018 Tramontina 40300/018 caja 12 uds</p>
+                                        </div>
+                                        <div id="detallesArticuloValoracion">
+                                            <p id="txtEstrellasArticulo">
+                                                <label class="estellaNaranja icon-star"></label>
+                                                <label class="estellaNaranja icon-star"></label>
+                                                <label class="estellaNaranja icon-star"></label>
+                                                <label class="estellaNaranja icon-star"></label>
+                                                <label class="estellaNaranja icon-star"></label>
+                                            </p>
+
+                                            <label id="lblExistencias">Existencias: <span id="existenciaArticulo">700</span> </label>
+                                        </div>
+                                        <div>
+                                            <p id="precioArticulo">15,000.00 CRC <span class="letrasPequenas" >IVA</span></p>
+                                        </div>
+                                    </div>
+                                    <div class="detallesArticuloInferior">
+                                        <div class="detArtInferiorDerecho">
+                                            <button class="btnCantidad icon-plus" id="btnAdicionar" title="Aumentar cantidad de productos al carrito de compras" ></button>
+                                            <input id="cantidadProducto" value="1" type="text" maxlength="20" title="Digite la cantidad de artículos que desea comprar"> 
+                                            <button class="btnCantidad icon-minus" id="btnRestar" title="Disminuir cantidad de productos al carrito de compras"></button>
+                                        </div>
+                                        <button id="btnAgregar" title="Agregar al carrito de compras"><span class="icon-basket"></span>Agregar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="articulo">
+                                <!-- Slider -->
+                                <div class="slide-container">
+                                    <div class="Slides fade" id="primeroSlider">
+                                        <img id="imgArticulo" src="Imagenes/martillo.jpg" alt="Imagen del artículo">
+                                    </div>
+                                 
+                                    <div class="Slides fade">
+                                        <img id="imgArticulo" src="Imagenes/1.jpg" alt="Imagen del artículo">
+                                    </div>
+                                 
+                                    <div class="Slides fade">
+                                        <img id="imgArticulo" src="Imagenes/2.jpg" alt="Imagen del artículo">
+                                    </div>
+
+                                    <a class="prev">&#10094;</a>
+                                    <a class="next">&#10095;</a>
                                 </div>
                                 <div class="detallesArticulo">
                                     <div class="detallesArticuloSuperior">
@@ -447,5 +559,7 @@
                 </div>
             </div>
         </div>
+
+        <script src="Js/index.js"></script>
     </body>
 </html>
