@@ -44,7 +44,8 @@ body {
 .contenedorLogo {
   /* Centra los elementos dentro */
   align-items: center;
-  width: 10%;
+  /* width: 10%; */
+  width: 120px;
   height: 100%;
   display: inline-flex;
   vertical-align: middle;
@@ -52,6 +53,7 @@ body {
 
 #logo {
   height: auto;
+  min-width: 90px;
   width: 90%;
   margin: 0 auto;
   vertical-align: middle;
@@ -425,7 +427,7 @@ body {
   cursor: pointer;
 }
 
-#cantidadProducto {
+.cantidadProducto {
   background-color: white;
   height: 100%;
   width: 50px;
@@ -520,7 +522,62 @@ ul.a-paginacion li a {
 
 /******************************Media query**************************************/
 
-@media (max-width: 479px){
+@media (max-width: 320px){
+    #contenedorPrincipal {
+      background:rgb(104, 255, 34)
+    }
+  
+    #headerSuperior {
+      height: 60px;
+    }
+  
+    .contenedorLogo {
+      display: none;
+    }
+  
+    .contenedorBarraBuscar {
+      width: 72%;
+      height: 100%;
+      padding: 0 10px;
+    }
+  
+    #barraBuscar {
+      height: 70%;
+    }
+  
+    #headerSuperiorDerecho {
+      height: 100%;
+      width: 20%;
+    }
+  
+    #btnIniciarSesionText {
+      display: none;
+    }
+  
+    .labelsHeader, #opcionesOrdenar {
+        font-size: small;
+      }
+
+    .resultados
+    {
+        display: none;
+    }
+  
+    .barraLateral {
+      display: none;
+    }
+  
+    .main {
+      width: 100%;
+      border-left: none;
+    }
+  
+    .seccionArticulos {
+      justify-content: center;
+    }
+  }
+
+@media (min-width: 321px) and (max-width: 479px){
   #contenedorPrincipal {
     background:#F2d
   }
@@ -555,6 +612,10 @@ ul.a-paginacion li a {
   .resultados
   {
       display: none;
+  }
+
+  .labelsHeader, #opcionesOrdenar {
+    font-size: medium;
   }
 
   .barraLateral {
@@ -623,11 +684,15 @@ ul.a-paginacion li a {
   }
 
   .contenedorBarraBuscar {
-    width: 65%;
+    width: 62%;
   }
 
   #headerSuperiorDerecho {
-    width: 23%;
+    width: 21%;
+  }
+
+  #btnIniciarSesionText {
+    font-size: small;
   }
 
   .main {
@@ -643,38 +708,10 @@ ul.a-paginacion li a {
   }
 
   .articulo {
-    /* height: 460px;
-        width: 290px; */
     height: 430px;
     width: 260px;
   }
 }
-
-/* @media (min-width: 992px) and (max-width: 999px) {
-  #contenedorPrincipal {
-    background: #ff0;
-  }
-
-  .contenedorBarraBuscar {
-    width: 72%;
-  }
-
-  #headerSuperiorDerecho {
-    width: 17%;
-  }
-  #btnIniciarSesion {
-    width: 100%;
-  }
-
-  .seccionArticulos {
-    justify-content: center;
-  }
-
-  .articulo {
-    height: 430px;
-    width: 260px;
-  }
-} */
 
 @media (min-width: 1000px) and (max-width: 1099px) {
     #contenedorPrincipal {
@@ -682,7 +719,7 @@ ul.a-paginacion li a {
     }
   
     .contenedorBarraBuscar {
-      width: 72%;
+      width: 70%;
     }
   
     #headerSuperiorDerecho {
@@ -710,11 +747,12 @@ ul.a-paginacion li a {
       }
     
       .contenedorBarraBuscar {
-        width: 72%;
+        width: 70%;
       }
     
       #headerSuperiorDerecho {
         width: 17%;
+        background-color: lightgreen;
       }
       #btnIniciarSesion {
         width: 100%;
@@ -753,12 +791,3 @@ ul.a-paginacion li a {
     background-color: lightseagreen;
   }
 }
-
-/* .articulo
-{
-    height: 430px;
-    width: 260px;
-    margin: 5px;
-    border-bottom: 1px solid lightgrey;
-    background-color: lawngreen;
-} */
