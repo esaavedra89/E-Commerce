@@ -32,7 +32,7 @@
                     <div id="headerInferiorIzquierdo">
                         <!-- icon-sliders -->
                         <button id="iconoConfFiltros" title="Filtros" class="icon-sliders"></button>
-                        <label class="labelsHeader"><span id="cantidadResultados">1,000</span> resultados</label>
+                        <label class="labelsHeader resultados"><span id="cantidadResultados">1,000</span> resultados</label>
                     </div>
                     
                     <div id="headerInferiorDerecho">
@@ -54,11 +54,15 @@
                 <div class="barraLateral">
                     <div class="barraLateralSecciones">
                         <label class="lblBarraLateral">Categoría</label>
-                        <label class="lblCkechbox"><input type="checkbox" class="cbox" title="Filtrar por categoría"> Adhesivos</label>
-                        <label class="lblCkechbox"><input type="checkbox" class="cbox" title="Filtrar por categoría"> Grifería</label>
+                        <label class="lblCkechbox"><input type="checkbox" class="cbox" title="Filtrar por categoría">
+                            Adhesivos</label>
+                        <label class="lblCkechbox"><input type="checkbox" class="cbox" title="Filtrar por categoría">
+                            Grifería</label>
                         <label class="lblCkechbox"><input type="checkbox" class="cbox" title="Filtrar por categoría"> Hogar</label>
-                        <label class="lblCkechbox"><input type="checkbox" class="cbox" title="Filtrar por categoría"> Jardinería</label>
-                        <label class="lblCkechbox"><input type="checkbox" class="cbox" title="Filtrar por categoría"> Pintura</label>
+                        <label class="lblCkechbox"><input type="checkbox" class="cbox" title="Filtrar por categoría">
+                            Jardinería</label>
+                        <label class="lblCkechbox"><input type="checkbox" class="cbox" title="Filtrar por categoría">
+                            Pintura</label>
                     </div>
                     <div class="barraLateralSecciones">
                         <label class="lblBarraLateral">Marca</label>
@@ -73,7 +77,7 @@
                         <label class="lblBarraLateral">Precio</label>
                         <label id="lblCantidad">Menos de 15,00 CRC</label>
                         <input id="rangoPrecios" type="range" title="Filtrar por rango de precios">
-
+            
                     </div>
                     <div class="barraLateralSecciones">
                         <label class="lblBarraLateral">Puntuación</label>
@@ -97,7 +101,7 @@
                                 <label class="estellaVacia icon-star-empty"></label>
                             </p>
                         </div>
-
+            
                         <div>
                             <p class="clasificacion">
                                 <input type="checkbox" class="cboxPuntuacion" title="Filtrar por puntuación">
@@ -108,7 +112,7 @@
                                 <label class="estellaVacia icon-star-empty"></label>
                             </p>
                         </div>
-
+            
                         <div>
                             <p class="clasificacion">
                                 <input type="checkbox" class="cboxPuntuacion" title="Filtrar por puntuación">
@@ -119,7 +123,7 @@
                                 <label class="estellaVacia icon-star-empty"></label>
                             </p>
                         </div>
-
+            
                         <div>
                             <p class="clasificacion">
                                 <input type="checkbox" class="cboxPuntuacion" title="Filtrar por puntuación">
@@ -132,9 +136,10 @@
                         </div>
                     </div>
                 </div>
-
+            
                 <!-- Sección principal -->
                 <div class="main">
+                    <!-- <div class="contenedorSeccionArticulos"> -->
                     <div class="seccionArticulos">
                         <div>
                             <div class="articulo">
@@ -143,15 +148,15 @@
                                     <div class="Slides fade slideActivo" id="primeroSlider">
                                         <img id="imgArticulo" src="Imagenes/martillo.jpg" alt="Imagen del artículo">
                                     </div>
-                                 
+            
                                     <div class="Slides fade slideActivo">
                                         <img id="imgArticulo" src="Imagenes/1.jpg" alt="Imagen del artículo">
                                     </div>
-                                 
+            
                                     <div class="Slides fade slideActivo">
                                         <img id="imgArticulo" src="Imagenes/2.jpg" alt="Imagen del artículo">
                                     </div>
-
+            
                                     <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
                                     <a class="next" onclick="plusSlides(1)">&#10095;</a>
                                 </div>
@@ -168,25 +173,31 @@
                                                 <label class="estellaNaranja icon-star"></label>
                                                 <label class="estellaNaranja icon-star"></label>
                                             </p>
-
-                                            <label id="lblExistencias">Existencias: <span id="existenciaArticulo">700</span> </label>
+            
+                                            <label id="lblExistencias">Existencias: <span id="existenciaArticulo">700</span>
+                                            </label>
                                         </div>
                                         <div>
-                                            <p id="precioArticulo">15,000.00 CRC <span class="letrasPequenas" >IVA</span></p>
+                                            <p id="precioArticulo">15,000.00 CRC <span class="letrasPequenas">IVA</span></p>
                                         </div>
                                     </div>
                                     <div class="detallesArticuloInferior">
                                         <div class="detArtInferiorDerecho">
-                                            <button class="btnCantidad icon-plus" id="btnAdicionar" title="Aumentar cantidad de productos al carrito de compras" ></button>
-                                            <input id="cantidadProducto" value="1" type="text" maxlength="20" title="Digite la cantidad de artículos que desea comprar"> 
-                                            <button class="btnCantidad icon-minus" id="btnRestar" title="Disminuir cantidad de productos al carrito de compras"></button>
+                                            <button class="btnCantidad icon-plus" id="btnAdicionar"
+                                                title="Aumentar cantidad de productos al carrito de compras"></button>
+                                            <input id="cantidadProducto" value="1" type="text" maxlength="20"
+                                                title="Digite la cantidad de artículos que desea comprar">
+                                            <button class="btnCantidad icon-minus" id="btnRestar"
+                                                title="Disminuir cantidad de productos al carrito de compras"></button>
                                         </div>
-                                        <button id="btnAgregar" title="Agregar al carrito de compras"><span class="icon-basket"></span>Agregar</button>
+                                        <button id="btnAgregar" title="Agregar al carrito de compras"><span
+                                                class="icon-basket"></span>Agregar</button>
                                     </div>
                                 </div>
                             </div>
                         </div>
-
+                        <!-- </div> -->
+            
                         <div>
                             <div class="articulo">
                                 <!-- Slider -->
@@ -194,19 +205,19 @@
                                     <div class="Slides fade" id="primeroSlider">
                                         <img id="imgArticulo" src="Imagenes/6.jpg" alt="Imagen del artículo">
                                     </div>
-                                 
+            
                                     <div class="Slides fade">
                                         <img id="imgArticulo" src="Imagenes/5.png" alt="Imagen del artículo">
                                     </div>
-                                 
+            
                                     <div class="Slides fade">
                                         <img id="imgArticulo" src="Imagenes/2.jpg" alt="Imagen del artículo">
                                     </div>
-
+            
                                     <a class="prev">&#10094;</a>
                                     <a class="next">&#10095;</a>
                                 </div>
-                               
+            
                                 <div class="detallesArticulo">
                                     <div class="detallesArticuloSuperior">
                                         <div>
@@ -220,24 +231,29 @@
                                                 <label class="estellaNaranja icon-star"></label>
                                                 <label class="estellaNaranja icon-star"></label>
                                             </p>
-
-                                            <label id="lblExistencias">Existencias: <span id="existenciaArticulo">700</span> </label>
+            
+                                            <label id="lblExistencias">Existencias: <span id="existenciaArticulo">700</span>
+                                            </label>
                                         </div>
                                         <div>
-                                            <p id="precioArticulo">15,000.00 CRC <span class="letrasPequenas" >IVA</span></p>
+                                            <p id="precioArticulo">15,000.00 CRC <span class="letrasPequenas">IVA</span></p>
                                         </div>
                                     </div>
                                     <div class="detallesArticuloInferior">
                                         <div class="detArtInferiorDerecho">
-                                            <button class="btnCantidad icon-plus" id="btnAdicionar" title="Aumentar cantidad de productos al carrito de compras" ></button>
-                                            <input id="cantidadProducto" value="1" type="text" maxlength="20" title="Digite la cantidad de artículos que desea comprar"> 
-                                            <button class="btnCantidad icon-minus" id="btnRestar" title="Disminuir cantidad de productos al carrito de compras"></button>
+                                            <button class="btnCantidad icon-plus" id="btnAdicionar"
+                                                title="Aumentar cantidad de productos al carrito de compras"></button>
+                                            <input id="cantidadProducto" value="1" type="text" maxlength="20"
+                                                title="Digite la cantidad de artículos que desea comprar">
+                                            <button class="btnCantidad icon-minus" id="btnRestar"
+                                                title="Disminuir cantidad de productos al carrito de compras"></button>
                                         </div>
-                                        <button id="btnAgregar" title="Agregar al carrito de compras"><span class="icon-basket"></span>Agregar</button>
+                                        <button id="btnAgregar" title="Agregar al carrito de compras"><span
+                                                class="icon-basket"></span>Agregar</button>
                                     </div>
                                 </div>
                             </div>
-                        </div>  
+                        </div>
                         <div>
                             <div class="articulo">
                                 <!-- Slider -->
@@ -245,15 +261,15 @@
                                     <div class="Slides fade" id="primeroSlider">
                                         <img id="imgArticulo" src="Imagenes/5.png" alt="Imagen del artículo">
                                     </div>
-                                 
+            
                                     <div class="Slides fade">
                                         <img id="imgArticulo" src="Imagenes/martillo.jpg" alt="Imagen del artículo">
                                     </div>
-                                 
+            
                                     <div class="Slides fade">
                                         <img id="imgArticulo" src="Imagenes/6.jpg" alt="Imagen del artículo">
                                     </div>
-
+            
                                     <a class="prev">&#10094;</a>
                                     <a class="next">&#10095;</a>
                                 </div>
@@ -270,20 +286,25 @@
                                                 <label class="estellaNaranja icon-star"></label>
                                                 <label class="estellaNaranja icon-star"></label>
                                             </p>
-
-                                            <label id="lblExistencias">Existencias: <span id="existenciaArticulo">700</span> </label>
+            
+                                            <label id="lblExistencias">Existencias: <span id="existenciaArticulo">700</span>
+                                            </label>
                                         </div>
                                         <div>
-                                            <p id="precioArticulo">15,000.00 CRC <span class="letrasPequenas" >IVA</span></p>
+                                            <p id="precioArticulo">15,000.00 CRC <span class="letrasPequenas">IVA</span></p>
                                         </div>
                                     </div>
                                     <div class="detallesArticuloInferior">
                                         <div class="detArtInferiorDerecho">
-                                            <button class="btnCantidad icon-plus" id="btnAdicionar" title="Aumentar cantidad de productos al carrito de compras" ></button>
-                                            <input id="cantidadProducto" value="1" type="text" maxlength="20" title="Digite la cantidad de artículos que desea comprar"> 
-                                            <button class="btnCantidad icon-minus" id="btnRestar" title="Disminuir cantidad de productos al carrito de compras"></button>
+                                            <button class="btnCantidad icon-plus" id="btnAdicionar"
+                                                title="Aumentar cantidad de productos al carrito de compras"></button>
+                                            <input id="cantidadProducto" value="1" type="text" maxlength="20"
+                                                title="Digite la cantidad de artículos que desea comprar">
+                                            <button class="btnCantidad icon-minus" id="btnRestar"
+                                                title="Disminuir cantidad de productos al carrito de compras"></button>
                                         </div>
-                                        <button id="btnAgregar" title="Agregar al carrito de compras"><span class="icon-basket"></span>Agregar</button>
+                                        <button id="btnAgregar" title="Agregar al carrito de compras"><span
+                                                class="icon-basket"></span>Agregar</button>
                                     </div>
                                 </div>
                             </div>
@@ -295,15 +316,15 @@
                                     <div class="Slides fade" id="primeroSlider">
                                         <img id="imgArticulo" src="Imagenes/3.jpg" alt="Imagen del artículo">
                                     </div>
-                                 
+            
                                     <div class="Slides fade">
                                         <img id="imgArticulo" src="Imagenes/2.jpg" alt="Imagen del artículo">
                                     </div>
-                                 
+            
                                     <div class="Slides fade">
                                         <img id="imgArticulo" src="Imagenes/1.jpg" alt="Imagen del artículo">
                                     </div>
-
+            
                                     <a class="prev">&#10094;</a>
                                     <a class="next">&#10095;</a>
                                 </div>
@@ -320,25 +341,30 @@
                                                 <label class="estellaNaranja icon-star"></label>
                                                 <label class="estellaNaranja icon-star"></label>
                                             </p>
-
-                                            <label id="lblExistencias">Existencias: <span id="existenciaArticulo">700</span> </label>
+            
+                                            <label id="lblExistencias">Existencias: <span id="existenciaArticulo">700</span>
+                                            </label>
                                         </div>
                                         <div>
-                                            <p id="precioArticulo">15,000.00 CRC <span class="letrasPequenas" >IVA</span></p>
+                                            <p id="precioArticulo">15,000.00 CRC <span class="letrasPequenas">IVA</span></p>
                                         </div>
                                     </div>
                                     <div class="detallesArticuloInferior">
                                         <div class="detArtInferiorDerecho">
-                                            <button class="btnCantidad icon-plus" id="btnAdicionar" title="Aumentar cantidad de productos al carrito de compras" ></button>
-                                            <input id="cantidadProducto" value="1" type="text" maxlength="20" title="Digite la cantidad de artículos que desea comprar"> 
-                                            <button class="btnCantidad icon-minus" id="btnRestar" title="Disminuir cantidad de productos al carrito de compras"></button>
+                                            <button class="btnCantidad icon-plus" id="btnAdicionar"
+                                                title="Aumentar cantidad de productos al carrito de compras"></button>
+                                            <input id="cantidadProducto" value="1" type="text" maxlength="20"
+                                                title="Digite la cantidad de artículos que desea comprar">
+                                            <button class="btnCantidad icon-minus" id="btnRestar"
+                                                title="Disminuir cantidad de productos al carrito de compras"></button>
                                         </div>
-                                        <button id="btnAgregar" title="Agregar al carrito de compras"><span class="icon-basket"></span>Agregar</button>
+                                        <button id="btnAgregar" title="Agregar al carrito de compras"><span
+                                                class="icon-basket"></span>Agregar</button>
                                     </div>
                                 </div>
                             </div>
                         </div>
-
+            
                         <div>
                             <div class="articulo">
                                 <!-- Slider -->
@@ -346,15 +372,15 @@
                                     <div class="Slides fade" id="primeroSlider">
                                         <img id="imgArticulo" src="Imagenes/5.png" alt="Imagen del artículo">
                                     </div>
-                                 
+            
                                     <div class="Slides fade">
                                         <img id="imgArticulo" src="Imagenes/martillo.jpg" alt="Imagen del artículo">
                                     </div>
-                                 
+            
                                     <div class="Slides fade">
                                         <img id="imgArticulo" src="Imagenes/2.jpg" alt="Imagen del artículo">
                                     </div>
-
+            
                                     <a class="prev">&#10094;</a>
                                     <a class="next">&#10095;</a>
                                 </div>
@@ -371,25 +397,30 @@
                                                 <label class="estellaNaranja icon-star"></label>
                                                 <label class="estellaNaranja icon-star"></label>
                                             </p>
-
-                                            <label id="lblExistencias">Existencias: <span id="existenciaArticulo">700</span> </label>
+            
+                                            <label id="lblExistencias">Existencias: <span id="existenciaArticulo">700</span>
+                                            </label>
                                         </div>
                                         <div>
-                                            <p id="precioArticulo">15,000.00 CRC <span class="letrasPequenas" >IVA</span></p>
+                                            <p id="precioArticulo">15,000.00 CRC <span class="letrasPequenas">IVA</span></p>
                                         </div>
                                     </div>
                                     <div class="detallesArticuloInferior">
                                         <div class="detArtInferiorDerecho">
-                                            <button class="btnCantidad icon-plus" id="btnAdicionar" title="Aumentar cantidad de productos al carrito de compras" ></button>
-                                            <input id="cantidadProducto" value="1" type="text" maxlength="20" title="Digite la cantidad de artículos que desea comprar"> 
-                                            <button class="btnCantidad icon-minus" id="btnRestar" title="Disminuir cantidad de productos al carrito de compras"></button>
+                                            <button class="btnCantidad icon-plus" id="btnAdicionar"
+                                                title="Aumentar cantidad de productos al carrito de compras"></button>
+                                            <input id="cantidadProducto" value="1" type="text" maxlength="20"
+                                                title="Digite la cantidad de artículos que desea comprar">
+                                            <button class="btnCantidad icon-minus" id="btnRestar"
+                                                title="Disminuir cantidad de productos al carrito de compras"></button>
                                         </div>
-                                        <button id="btnAgregar" title="Agregar al carrito de compras"><span class="icon-basket"></span>Agregar</button>
+                                        <button id="btnAgregar" title="Agregar al carrito de compras"><span
+                                                class="icon-basket"></span>Agregar</button>
                                     </div>
                                 </div>
                             </div>
                         </div>
-
+            
                         <div>
                             <div class="articulo">
                                 <!-- Slider -->
@@ -397,15 +428,15 @@
                                     <div class="Slides fade" id="primeroSlider">
                                         <img id="imgArticulo" src="Imagenes/3.jpg" alt="Imagen del artículo">
                                     </div>
-                                 
+            
                                     <div class="Slides fade">
                                         <img id="imgArticulo" src="Imagenes/4.jpg" alt="Imagen del artículo">
                                     </div>
-                                 
+            
                                     <div class="Slides fade">
                                         <img id="imgArticulo" src="Imagenes/5.jpg" alt="Imagen del artículo">
                                     </div>
-
+            
                                     <a class="prev">&#10094;</a>
                                     <a class="next">&#10095;</a>
                                 </div>
@@ -422,25 +453,30 @@
                                                 <label class="estellaNaranja icon-star"></label>
                                                 <label class="estellaNaranja icon-star"></label>
                                             </p>
-
-                                            <label id="lblExistencias">Existencias: <span id="existenciaArticulo">700</span> </label>
+            
+                                            <label id="lblExistencias">Existencias: <span id="existenciaArticulo">700</span>
+                                            </label>
                                         </div>
                                         <div>
-                                            <p id="precioArticulo">15,000.00 CRC <span class="letrasPequenas" >IVA</span></p>
+                                            <p id="precioArticulo">15,000.00 CRC <span class="letrasPequenas">IVA</span></p>
                                         </div>
                                     </div>
                                     <div class="detallesArticuloInferior">
                                         <div class="detArtInferiorDerecho">
-                                            <button class="btnCantidad icon-plus" id="btnAdicionar" title="Aumentar cantidad de productos al carrito de compras" ></button>
-                                            <input id="cantidadProducto" value="1" type="text" maxlength="20" title="Digite la cantidad de artículos que desea comprar"> 
-                                            <button class="btnCantidad icon-minus" id="btnRestar" title="Disminuir cantidad de productos al carrito de compras"></button>
+                                            <button class="btnCantidad icon-plus" id="btnAdicionar"
+                                                title="Aumentar cantidad de productos al carrito de compras"></button>
+                                            <input id="cantidadProducto" value="1" type="text" maxlength="20"
+                                                title="Digite la cantidad de artículos que desea comprar">
+                                            <button class="btnCantidad icon-minus" id="btnRestar"
+                                                title="Disminuir cantidad de productos al carrito de compras"></button>
                                         </div>
-                                        <button id="btnAgregar" title="Agregar al carrito de compras"><span class="icon-basket"></span>Agregar</button>
+                                        <button id="btnAgregar" title="Agregar al carrito de compras"><span
+                                                class="icon-basket"></span>Agregar</button>
                                     </div>
                                 </div>
                             </div>
                         </div>
-
+            
                         <div>
                             <div class="articulo">
                                 <!-- Slider -->
@@ -448,15 +484,15 @@
                                     <div class="Slides fade" id="primeroSlider">
                                         <img id="imgArticulo" src="Imagenes/6.jpg" alt="Imagen del artículo">
                                     </div>
-                                 
+            
                                     <div class="Slides fade">
                                         <img id="imgArticulo" src="Imagenes/martillo.jpg" alt="Imagen del artículo">
                                     </div>
-                                 
+            
                                     <div class="Slides fade">
                                         <img id="imgArticulo" src="Imagenes/5.png" alt="Imagen del artículo">
                                     </div>
-
+            
                                     <a class="prev">&#10094;</a>
                                     <a class="next">&#10095;</a>
                                 </div>
@@ -473,25 +509,30 @@
                                                 <label class="estellaNaranja icon-star"></label>
                                                 <label class="estellaNaranja icon-star"></label>
                                             </p>
-
-                                            <label id="lblExistencias">Existencias: <span id="existenciaArticulo">700</span> </label>
+            
+                                            <label id="lblExistencias">Existencias: <span id="existenciaArticulo">700</span>
+                                            </label>
                                         </div>
                                         <div>
-                                            <p id="precioArticulo">15,000.00 CRC <span class="letrasPequenas" >IVA</span></p>
+                                            <p id="precioArticulo">15,000.00 CRC <span class="letrasPequenas">IVA</span></p>
                                         </div>
                                     </div>
                                     <div class="detallesArticuloInferior">
                                         <div class="detArtInferiorDerecho">
-                                            <button class="btnCantidad icon-plus" id="btnAdicionar" title="Aumentar cantidad de productos al carrito de compras" ></button>
-                                            <input id="cantidadProducto" value="1" type="text" maxlength="20" title="Digite la cantidad de artículos que desea comprar"> 
-                                            <button class="btnCantidad icon-minus" id="btnRestar" title="Disminuir cantidad de productos al carrito de compras"></button>
+                                            <button class="btnCantidad icon-plus" id="btnAdicionar"
+                                                title="Aumentar cantidad de productos al carrito de compras"></button>
+                                            <input id="cantidadProducto" value="1" type="text" maxlength="20"
+                                                title="Digite la cantidad de artículos que desea comprar">
+                                            <button class="btnCantidad icon-minus" id="btnRestar"
+                                                title="Disminuir cantidad de productos al carrito de compras"></button>
                                         </div>
-                                        <button id="btnAgregar" title="Agregar al carrito de compras"><span class="icon-basket"></span>Agregar</button>
+                                        <button id="btnAgregar" title="Agregar al carrito de compras"><span
+                                                class="icon-basket"></span>Agregar</button>
                                     </div>
                                 </div>
                             </div>
                         </div>
-
+            
                         <div>
                             <div class="articulo">
                                 <!-- Slider -->
@@ -499,15 +540,15 @@
                                     <div class="Slides fade" id="primeroSlider">
                                         <img id="imgArticulo" src="Imagenes/martillo.jpg" alt="Imagen del artículo">
                                     </div>
-                                 
+            
                                     <div class="Slides fade">
                                         <img id="imgArticulo" src="Imagenes/1.jpg" alt="Imagen del artículo">
                                     </div>
-                                 
+            
                                     <div class="Slides fade">
                                         <img id="imgArticulo" src="Imagenes/2.jpg" alt="Imagen del artículo">
                                     </div>
-
+            
                                     <a class="prev">&#10094;</a>
                                     <a class="next">&#10095;</a>
                                 </div>
@@ -522,42 +563,47 @@
                                                 <label class="estellaNaranja icon-star"></label>
                                                 <label class="estellaNaranja icon-star"></label>
                                             </p>
-
-                                            <label id="lblExistencias">Existencias: <span id="existenciaArticulo">700</span> </label>
+            
+                                            <label id="lblExistencias">Existencias: <span id="existenciaArticulo">700</span>
+                                            </label>
                                         </div>
                                         <div>
-                                            <p id="precioArticulo">15,000.00 CRC <span class="letrasPequenas" >IVA</span></p>
+                                            <p id="precioArticulo">15,000.00 CRC <span class="letrasPequenas">IVA</span></p>
                                         </div>
                                     </div>
                                     <div class="detallesArticuloInferior">
                                         <div class="detArtInferiorDerecho">
-                                            <button class="btnCantidad icon-plus" id="btnAdicionar" title="Aumentar cantidad de productos al carrito de compras" ></button>
-                                            <input id="cantidadProducto" value="1" type="text" maxlength="20" title="Digite la cantidad de artículos que desea comprar"> 
-                                            <button class="btnCantidad icon-minus" id="btnRestar" title="Disminuir cantidad de productos al carrito de compras"></button>
+                                            <button class="btnCantidad icon-plus" id="btnAdicionar"
+                                                title="Aumentar cantidad de productos al carrito de compras"></button>
+                                            <input id="cantidadProducto" value="1" type="text" maxlength="20"
+                                                title="Digite la cantidad de artículos que desea comprar">
+                                            <button class="btnCantidad icon-minus" id="btnRestar"
+                                                title="Disminuir cantidad de productos al carrito de compras"></button>
                                         </div>
-                                        <button id="btnAgregar" title="Agregar al carrito de compras"><span class="icon-basket"></span>Agregar</button>
+                                        <button id="btnAgregar" title="Agregar al carrito de compras"><span
+                                                class="icon-basket"></span>Agregar</button>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-
+            
                     <div class="paginacion">
                         <div class="a-texto-centrado">
                             <ul class="a-paginacion">
-                                <li class="a-disabled">←  Anterior</li>
-                                        
+                                <li class="a-disabled">← Anterior</li>
+            
                                 <li class="a-selected"><a href="#">1</a></li>
-                                        
+            
                                 <li class="a-normal"><a href="#">2</a></li>
-                                        
+            
                                 <li class="a-normal"><a href="#">3</a></li>
-                                        
+            
                                 <li class="a-disabled">...</li>
-                                        
+            
                                 <li class="a-disabled">11</li>
-                                        
-                                <li class="li-siguiente"><a href="#">Siguiente  →</a></li>
+            
+                                <li class="li-siguiente"><a href="#">Siguiente →</a></li>
                             </ul>
                         </div>
                     </div>
