@@ -55,7 +55,6 @@ body
   .contenedorLogo {
     /* Centra los elementos dentro */
     align-items: center;
-    /* width: 10%; */
     width: 120px;
     height: 100%;
     display: inline-flex;
