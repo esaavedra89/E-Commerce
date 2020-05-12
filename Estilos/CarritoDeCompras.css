@@ -46,47 +46,64 @@ body
 
 
 /***************** Header superior *******************/
-#headerSuperior
-{
+#headerSuperior {
     height: 60%;
-}
-
-#logo
-{
-    margin: 5px 20px;
-    height: 80%;
+    box-sizing: border-box;
+    background-color: lightgray;
+  }
+  
+  .contenedorLogo {
+    /* Centra los elementos dentro */
+    align-items: center;
+    /* width: 10%; */
+    width: 120px;
+    height: 100%;
+    display: inline-flex;
+    vertical-align: middle;
+  }
+  
+  #logo {
+    height: auto;
+    min-width: 90px;
+    width: 90%;
+    margin: 0 auto;
     vertical-align: middle;
     align-items: center;
-}
-
-#barraBuscar
-{
+  }
+  
+  .contenedorBarraBuscar {
     height: 40px;
     width: 75%;
-    border-radius: 5px;
-    font-family: "fontellofull";
-    font-size: large;
-}
-
-#headerSuperiorDerecho
-{
     display: inline-flex;
     vertical-align: middle;
     /* Centra los elementos dentro */
-    align-items: center; 
-    
-}
-
-#iconoCarritoCompras
-{
-    
+    align-items: center;
+  }
+  
+  #barraBuscar {
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+    font-family: "fontellofull";
+    font-size: large;
+  }
+  
+  #headerSuperiorDerecho {
+    display: inline-flex;
+    vertical-align: middle;
+    /* Centra los elementos dentro */
+    align-items: center;
+    width: 14%;
+  }
+  
+  #iconoCarritoCompras {
+    margin: 5px;
     vertical-align: middle;
     font-size: 22px;
     color: #3f3f3f;
-}
-
-#btnIniciarSesion
-{
+  }
+  
+  #btnIniciarSesion {
     font-weight: bold;
     background-color: transparent;
     border: transparent;
@@ -94,13 +111,14 @@ body
     cursor: pointer;
     color: #3f3f3f;
     font-size: 15px;
-}
-
-#iconoUsuario
-{
+    width: 100%;
+    text-align: left;
+  }
+  
+  #iconoUsuario {
     color: #3f3f3f;
     font-size: large;
-}
+  }
 /************************************/
 
 
