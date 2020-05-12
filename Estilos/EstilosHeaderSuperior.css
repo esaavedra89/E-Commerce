@@ -32,7 +32,7 @@
     height: 100%;
     display: inline-flex;
     vertical-align: middle;
-  }
+    }
   
   #logo {
     height: auto;
@@ -66,11 +66,11 @@
   #headerSuperiorDerecho {
     height: 100%;
     display: flex;
-    align-self: center;
     /* Centra los elementos dentro */
     align-items: center;
     width: 170px;
     float: right;
+
   }
   
   #iconoCarritoCompras {
@@ -88,7 +88,7 @@
     cursor: pointer;
     color: #3f3f3f;
     font-size: 15px;
-    text-align: left;
+
   }
   
   #iconoUsuario {
