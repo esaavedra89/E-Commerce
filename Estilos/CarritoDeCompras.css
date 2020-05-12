@@ -69,6 +69,7 @@ body
     margin: 0 auto;
     vertical-align: middle;
     align-items: center;
+    border-radius: 2px;
   }
   
   .contenedorBarraBuscar {

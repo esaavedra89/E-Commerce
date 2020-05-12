@@ -50,6 +50,7 @@ body {
   height: 100%;
   display: inline-flex;
   vertical-align: middle;
+  
 }
 
 #logo {
@@ -59,6 +60,7 @@ body {
   margin: 0 auto;
   vertical-align: middle;
   align-items: center;
+  border-radius: 2px;
 }
 
 .contenedorBarraBuscar {
