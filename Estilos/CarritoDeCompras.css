@@ -1,378 +1,345 @@
-
 @font-face {
-    font-family: 'Myriadpro';
-    src: url("../Recursos/Fuentes/Myriadpro/myriadpro.ttf");
-  }
-
-*
-{
-    box-sizing: border-box;
-    font-family: 'Myriadpro';
+  font-family: "Myriadpro";
+  src: url("../Recursos/Fuentes/Myriadpro/myriadpro.ttf");
 }
 
-body
-{
-    margin: 0px;
-    padding: 0px;
-    /* max-width: 1200px; */
-    margin: 0 auto;
-    font-size: 15px;
-    line-height: 19px;
+* {
+  box-sizing: border-box;
+  font-family: "Myriadpro";
 }
 
-#contenedorPrincipal
-{
-    margin: 0 auto;
-    margin: 0px;
-    padding: 0px;
-    display: inline-block;
-    border: 1px solid lightgray;
+body {
+  margin: 0px;
+  padding: 0px;
+  /* max-width: 1200px; */
+  margin: 0 auto;
+  font-size: 15px;
+  line-height: 19px;
 }
 
-.general
-{
-    margin: 0 auto;
-    /* max-width: 1200px; */
+#contenedorPrincipal {
+  margin: 0 auto;
+  margin: 0px;
+  padding: 0px;
+  display: inline-block;
+  border: 1px solid lightgray;
 }
 
-#headerPrincipal
-{
-    height: 120px;
-    width: 100%;
-    /* max-width: 1200px; */
-    margin: 0 auto;
-    
+.general {
+  margin: 0 auto;
+  /* max-width: 1200px; */
 }
 
-
-/***************** Header superior *******************/
-#headerSuperior {
-    height: 60%;
-    box-sizing: border-box;
-    background-color: lightgray;
-  }
-  
-  .contenedorLogo {
-    /* Centra los elementos dentro */
-    align-items: center;
-    width: 120px;
-    height: 100%;
-    display: inline-flex;
-    vertical-align: middle;
-  }
-  
-  #logo {
-    height: auto;
-    min-width: 90px;
-    width: 90%;
-    margin: 0 auto;
-    vertical-align: middle;
-    align-items: center;
-    border-radius: 2px;
-  }
-  
-  .contenedorBarraBuscar {
-    height: 40px;
-    width: 75%;
-    display: inline-flex;
-    vertical-align: middle;
-    /* Centra los elementos dentro */
-    align-items: center;
-  }
-  
-  #barraBuscar {
-    height: 100%;
-    width: 100%;
-    border-radius: 5px;
-    font-family: "fontellofull";
-    font-size: large;
-  }
-  
-  #headerSuperiorDerecho {
-    display: inline-flex;
-    vertical-align: middle;
-    /* Centra los elementos dentro */
-    align-items: center;
-    width: 14%;
-  }
-  
-  #iconoCarritoCompras {
-    margin: 5px;
-    vertical-align: middle;
-    font-size: 22px;
-    color: #3f3f3f;
-  }
-  
-  #btnIniciarSesion {
-    font-weight: bold;
-    background-color: transparent;
-    border: transparent;
-    padding: 5px;
-    cursor: pointer;
-    color: #3f3f3f;
-    font-size: 15px;
-    width: 100%;
-    text-align: left;
-  }
-  
-  #iconoUsuario {
-    color: #3f3f3f;
-    font-size: large;
-  }
-/************************************/
-
+#headerPrincipal {
+  height: 120px;
+  width: 100%;
+  /* max-width: 1200px; */
+  margin: 0 auto;
+}
 
 /***************** Header inferior *******************/
-#headerInferior
-{
-    height: 40%;
-    border-top: 1px solid lightgray;
-    border-bottom: 1px solid lightgray;
+#headerInferior {
+  height: 40%;
+  border-top: 1px solid lightgray;
+  border-bottom: 1px solid lightgray;
 }
 
-#headerInferiorIzquierdo
-{
-    float: left;
-    align-items: center; 
-    height: 100%;
-    display: flex;
+#headerInferiorIzquierdo {
+  float: left;
+  align-items: center;
+  height: 100%;
+  display: flex;
 }
 
-#headerInferiorDerecho
-{
-    align-items: center;
-    display: flex;
-    float: right;
-    height: 100%;
+#headerInferiorDerecho {
+  align-items: center;
+  display: flex;
+  float: right;
+  height: 100%;
 }
 
-.labelsHeader
-{
-    margin: 0 10px ;
-    font-size: medium;
+.labelsHeader {
+  margin: 0 10px;
+  font-size: medium;
 }
 
-.labelEnlazable
-{
-    
-    color: blue;
-    text-decoration: underline;
+.labelEnlazable {
+  color: blue;
+  text-decoration: underline;
 }
 
 /************************************/
-
 
 /***************** Barra lateral derecha *******************/
-.barraLateral
-{
-    /* border: 3px solid green; */
-    float: right;
-    width: 30%;
-    height: 500px;
+.barraLateral {
+  /* border: 3px solid green; */
+  float: right;
+  width: 30%;
+  height: 500px;
 }
 
-#formularioPago
-{
-    background-color: white;
-    margin: 10px;
-    padding: 5px;
+#formularioPago {
+  background-color: white;
+  margin: 10px;
+  padding: 5px;
 }
 
-#tituloFormulario
-{
-    font-size: 26px;
-    font-weight: bold;
-    margin: 10px 0px;
+#tituloFormulario {
+  font-size: 26px;
+  font-weight: bold;
+  margin: 10px 0px;
 }
 
-#formularioSuperior
-{
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 10px;
+#formularioSuperior {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
 }
 
-.formularioSubtitulos
-{
-    font-size: medium;
-    margin: 5px 0;
+.formularioSubtitulos {
+  font-size: medium;
+  margin: 5px 0;
 }
 
-#modoEntrega
-{
-    background-color: white;
-    height: 25px;
-    font-size: 15px;
+#modoEntrega {
+  background-color: white;
+  height: 25px;
+  font-size: 15px;
 }
 
-.entradaTexto
-{
-    background-color: white;
-    height: 30px;
-    font-size: 15px;
+.entradaTexto {
+  background-color: white;
+  height: 30px;
+  font-size: 15px;
 }
 
-#tabla
-{
-    width: 100%;
+#tabla {
+  width: 100%;
 }
 
-.filasFormulario
-{
-    height: 35px;
+.filasFormulario {
+  height: 35px;
 }
 
-.columnaDos
-{
-    text-align: right; /* Alinea los elementos adentro hacia la derecha. */
+.columnaDos {
+  text-align: right; /* Alinea los elementos adentro hacia la derecha. */
 }
 
-.labelsTotal
-{
-    font-size: large;
-    font-weight: bold;
-    color: #1f468e;
+.labelsTotal {
+  font-size: large;
+  font-weight: bold;
+  color: #1f468e;
 }
 
-#botonPagar
-{
-    background-color: #1f468e;
-    color: white;
-    width: 100%;
-    height: 40px;
-    margin: 20px 0px;
-    border: 1px solid #1f468a;
-    cursor: pointer;
+#botonPagar {
+  background-color: #1f468e;
+  color: white;
+  width: 100%;
+  height: 40px;
+  margin: 20px 0px;
+  border: 1px solid #1f468a;
+  cursor: pointer;
 }
 
 /************************************/
-
 
 /***************** Main *******************/
-.main
-{
-    /* border: 3px solid red; */
-    float: left;
-    width: 70%;
-    margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    padding: 15px;
-    height: 500px;
-    border-right: 1px solid lightgrey;
+.main {
+  /* border: 3px solid red; */
+  float: left;
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 15px;
+  height: 500px;
+  border-right: 1px solid lightgrey;
 }
 
-#listaArticulos
-{
-    height: 100%;
-    width: 100%;
+#listaArticulos {
+  height: 100%;
+  width: 100%;
 }
 
-#tablaArticulos
-{
-    width: 100%;
-    border-bottom: 1px solid lightgrey;
+#tablaArticulos {
+  width: 100%;
+  border-bottom: 1px solid lightgrey;
 }
 
-.filasArticulos
-{
-    width: 100%;
+.filasArticulos {
+  width: 100%;
 }
 
-#columnaArticulosUno
-{
-    width: 15%;
+#columnaArticulosUno {
+  width: 15%;
 }
 
-#imagenArticulo
-{
-    width: 90%;
-    display: block;
-    margin: 0 auto;
-    cursor: pointer;
+#imagenArticulo {
+  width: 90%;
+  display: block;
+  margin: 0 auto;
+  cursor: pointer;
 }
 
-#columnaArticulosDos
-{
-    width: 55%;
+#columnaArticulosDos {
+  width: 55%;
 }
 
-#columnaArticulosTres
-{
-    width: 25%;
+#columnaArticulosTres {
+  width: 25%;
 }
 
-#colArtTresContenedor
-{
-    display: flex;
-    justify-content: center;
-    margin: 0 auto;
-    justify-content: space-around;
-    height: 40px;
+#colArtTresContenedor {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  justify-content: space-around;
+  height: 40px;
 }
 
-.colArtTresizquierdo
-{
-    align-content: center;
-    display: flex;
+.colArtTresizquierdo {
+  align-content: center;
+  display: flex;
 }
 
-.botonesCantidad
-{
-    background-color: white;
-    height: 100%;
-    width: 40px;
-    color: lightblue;
-    margin: 0px;
-    padding: 0px;
-    border: 1px solid lightgray;
-    cursor: pointer;
+.botonesCantidad {
+  background-color: white;
+  height: 100%;
+  width: 40px;
+  color: lightblue;
+  margin: 0px;
+  padding: 0px;
+  border: 1px solid lightgray;
+  cursor: pointer;
 }
 
-#cantidadProducto
-{
-    width: 50px;
-    height: 100%;
-    margin: 0px;
-    padding: 0px;
-    text-align: center;
-    background-color: white;
-    border: 1px solid lightgray;
+#cantidadProducto {
+  width: 50px;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  text-align: center;
+  background-color: white;
+  border: 1px solid lightgray;
 }
 
-#btnEliminar
-{
-    background-color: transparent;
-    border: transparent;
-    font-size: 18px;
-    cursor: pointer;
+#btnEliminar {
+  background-color: transparent;
+  border: transparent;
+  font-size: 18px;
+  cursor: pointer;
 }
 
-.txtDetallesArticulo
-{
-    padding: 0px;
-    margin: 0px;
-    font-size: 16px;
-    text-transform: uppercase;
-    cursor: pointer;
+.txtDetallesArticulo {
+  padding: 0px;
+  margin: 0px;
+  font-size: 16px;
+  text-transform: uppercase;
+  cursor: pointer;
 }
 
-#precioArticulo
-{
-    padding: 0px;
-    margin: 0px;
-    font-size: 18px;
-    font-weight: bold;
-    text-transform: uppercase;
-    cursor: pointer;
+#precioArticulo {
+  padding: 0px;
+  margin: 0px;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
 }
 
-.letrasPequenas
-{
-    font-size: 10px;
-    font-weight: normal;
-    cursor: pointer;
+.letrasPequenas {
+  font-size: 10px;
+  font-weight: normal;
+  cursor: pointer;
 }
 
 /************************************/
+
+/******************************Media query**************************************/
+
+@media (max-width: 320px) {
+  /* #contenedorPrincipal {
+      background: #f00;
+    } */
+
+  #columnaHeaderSupTres {
+    width: 50px;
+  }
+  #headerSuperiorDerecho {
+    /* Centra los elementos dentro */
+    width: 100%;
+  }
+
+  #btnIniciarSesionText {
+    display: none;
+  }
+
+  .labelsHeader,
+  #opcionesOrdenar {
+    font-size: small;
+  }
+}
+
+@media (min-width: 321px) and (max-width: 479px) {
+  #columnaHeaderSupTres {
+    width: 50px;
+  }
+  #headerSuperiorDerecho {
+    /* Centra los elementos dentro */
+    width: 100%;
+  }
+
+  #btnIniciarSesionText {
+    display: none;
+  }
+}
+
+@media (min-width: 480px) and (max-width: 767px) {
+  /* #contenedorPrincipal {
+      background: #f00;
+    } */
+
+  #columnaHeaderSupTres {
+    width: 50px;
+  }
+  #headerSuperiorDerecho {
+    /* Centra los elementos dentro */
+    width: 100%;
+  }
+
+  #btnIniciarSesionText {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 999px) {
+  /* #contenedorPrincipal {
+      background: #03f;
+    } */
+}
+
+@media (min-width: 1000px) and (max-width: 1099px) {
+  /* #contenedorPrincipal {
+        background: #ff0;
+      } */
+}
+
+@media (min-width: 1100px) and (max-width: 1199px) {
+  /* #contenedorPrincipal {
+          background: rgb(255, 0, 76);
+        } */
+}
+
+@media (min-width: 1200px) and (max-width: 1313px) {
+  /* #contenedorPrincipal {
+      background-color: lightcoral;
+    } */
+}
+
+/* En 1314px pasa a 3 columnas */
+@media (min-width: 1314px) and (max-width: 1400px) {
+  /* #contenedorPrincipal {
+      background-color: lightseagreen;
+    } */
+}

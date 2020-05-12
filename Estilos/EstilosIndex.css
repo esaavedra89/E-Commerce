@@ -35,97 +35,7 @@ body {
   margin: 0 auto;
 }
 
-/***************** Header superior *******************/
-#headerSuperior {
-  height: 60%;
-  box-sizing: border-box;
-}
 
-#tablaArticulos {
-  width: 100%;
-  height: 100%;
-}
-
-#columnaArticulosUno {
-  width: 120px;
-}
-
-#columnaArticulosTres {
-  width: 170px;
-}
-
-.contenedorLogo {
-  /* Centra los elementos dentro */
-  align-items: center;
-  width: 120px;
-  height: 100%;
-  display: inline-flex;
-  vertical-align: middle;
-}
-
-#logo {
-  height: auto;
-  min-width: 90px;
-  width: 90%;
-  margin: 0 auto;
-  vertical-align: middle;
-  align-items: center;
-  border-radius: 2px;
-}
-
-.contenedorBarraBuscar {
-  width: 100%;
-  display: inline-flex;
-  vertical-align: middle;
-  /* Centra los elementos dentro */
-  align-items: center;
-  float: inherit;
-  height: 100%;
-}
-
-#barraBuscar {
-  height: 40px;
-  width: 100%;
-  border-radius: 5px;
-  font-family: "fontellofull";
-  font-size: large;
-}
-
-/*Para centrar los elementos internos de un componente con float, es necesario ocupar el 100% de la altura*/
-#headerSuperiorDerecho {
-  height: 100%;
-  display: flex;
-  align-self: center;
-  /* Centra los elementos dentro */
-  align-items: center;
-  width: 170px;
-  float: right;
-}
-
-#iconoCarritoCompras {
-  margin: 5px;
-  vertical-align: middle;
-  font-size: 22px;
-  color: #3f3f3f;
-}
-
-#btnIniciarSesion {
-  font-weight: bold;
-  background-color: transparent;
-  border: transparent;
-  padding: 5px;
-  cursor: pointer;
-  color: #3f3f3f;
-  font-size: 15px;
-  text-align: left;
-}
-
-#iconoUsuario {
-  color: #3f3f3f;
-  font-size: 20px;
-}
-
-/************************************/
 
 /***************** Header inferior *******************/
 #headerInferior {
@@ -519,8 +429,7 @@ ul.a-paginacion li a {
 /******************************Media query**************************************/
 
 @media (max-width: 320px) {
-  #columnaArticulosTres {
-    background-color: lightgray;
+  #columnaHeaderSupTres {
     width: 50px;
   }
   #headerSuperiorDerecho {
@@ -563,8 +472,7 @@ ul.a-paginacion li a {
 }
 
 @media (min-width: 321px) and (max-width: 479px) {
-  #columnaArticulosTres {
-    background-color: lightgray;
+  #columnaHeaderSupTres {
     width: 50px;
   }
   #headerSuperiorDerecho {
@@ -616,7 +524,7 @@ ul.a-paginacion li a {
     background: #f00;
   } */
 
-  #columnaArticulosTres {
+  #columnaHeaderSupTres {
     width: 50px;
   }
   #headerSuperiorDerecho {
