@@ -40,12 +40,12 @@ body {
   height: 60%;
   box-sizing: border-box;
   background-color: lightgray;
+  
 }
 
 .contenedorLogo {
   /* Centra los elementos dentro */
   align-items: center;
-  /* width: 10%; */
   width: 120px;
   height: 100%;
   display: inline-flex;
@@ -80,12 +80,16 @@ body {
   font-size: large;
 }
 
+/*Para centrar los elementos internos de un componente con float, es necesario ocupar el 100% de la altura*/
 #headerSuperiorDerecho {
-  display: inline-flex;
-  vertical-align: middle;
+  height: 100%;
+  display: flex;
+  align-self: center;
   /* Centra los elementos dentro */
   align-items: center;
-  width: 14%;
+  /* width: 14%; */
+  width: 170px;
+  float: right;
 }
 
 #iconoCarritoCompras {
