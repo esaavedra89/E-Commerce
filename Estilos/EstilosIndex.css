@@ -39,6 +39,7 @@ body {
 #headerSuperior {
   height: 60%;
   box-sizing: border-box;
+  background-color: lightgray;
 }
 
 .contenedorLogo {
@@ -129,10 +130,10 @@ body {
   height: 35px;
   vertical-align: middle;
   align-items: center;
-  background-color: lightgray;
+  background-color: transparent;
   color: grey;
   border-radius: 5px;
-  border: 2px solid transparent;
+  border: 1px solid lightgrey;
 }
 
 #headerInferiorDerecho {
@@ -247,13 +248,9 @@ body {
 .articulo {
   height: 430px;
   width: 260px;
-  /* height: 460px;
-    width: 290px; */
-  /* width: auto; */
   margin: 5px;
   border-bottom: 1px solid lightgrey;
-  /* position: relative; */
-  background-color: lawngreen;
+  /* background-color: lawngreen; */
 }
 
 .slide-container {
@@ -388,7 +385,7 @@ body {
 }
 
 #lblExistencias {
-  color: maroon;
+  color: crimson;
 }
 
 #precioArticulo {
@@ -420,7 +417,7 @@ body {
   height: 100%;
   width: 40px;
   text-align: center;
-  color: lightblue;
+  color: #20468d;
   margin: 0px;
   padding: 0px;
   border: 1px solid lightgray;
@@ -438,7 +435,7 @@ body {
 }
 
 #btnAgregar {
-  background-color: #1f468e;
+  background-color: #20468d;
   height: 100%;
   width: 45%;
   color: white;
@@ -446,7 +443,7 @@ body {
   text-align: left;
   padding: 5px;
   border-radius: 2px;
-  border: 1px solid #1f468a;
+  border: 1px solid #20468d;
   cursor: pointer;
   font-size: 15px;
   font-weight: normal;
@@ -523,9 +520,9 @@ ul.a-paginacion li a {
 /******************************Media query**************************************/
 
 @media (max-width: 320px){
-    #contenedorPrincipal {
+    /* #contenedorPrincipal {
       background:rgb(104, 255, 34)
-    }
+    } */
   
     #headerSuperior {
       height: 60px;
@@ -575,12 +572,17 @@ ul.a-paginacion li a {
     .seccionArticulos {
       justify-content: center;
     }
+
+    .a-selected, .a-normal, .a-continuacion, .a-totalPaginas
+    {
+        display: none;
+    }
   }
 
 @media (min-width: 321px) and (max-width: 479px){
-  #contenedorPrincipal {
+  /* #contenedorPrincipal {
     background:#F2d
-  }
+  } */
 
   #headerSuperior {
     height: 60px;
@@ -630,12 +632,24 @@ ul.a-paginacion li a {
   .seccionArticulos {
     justify-content: center;
   }
+  
+  .li-anterior
+  {
+      margin-left: -35px;
+      width: 100px;
+  }
+  
+  .a-selected, .a-normal, .a-continuacion, .a-totalPaginas
+  {
+      display: none!important;
+  }
+  
 }
 
 @media (min-width: 480px) and  (max-width: 767px){ 
-  #contenedorPrincipal {
+  /* #contenedorPrincipal {
     background: #f00;
-  }
+  } */
 
   #headerSuperior {
     height: 60px;
@@ -676,12 +690,25 @@ ul.a-paginacion li a {
   .seccionArticulos {
     justify-content: center;
   }
+
+  .li-anterior
+  {
+      margin-left: -35px;
+      width: 100px;
+  }
+  
+  .a-selected, .a-normal, .a-continuacion, .a-totalPaginas
+  {
+      display: none!important;
+  }
+
+  
 }
 
 @media (min-width: 768px) and (max-width: 999px) {
-  #contenedorPrincipal {
+  /* #contenedorPrincipal {
     background: #03f;
-  }
+  } */
 
   .contenedorBarraBuscar {
     width: 62%;
@@ -714,9 +741,9 @@ ul.a-paginacion li a {
 }
 
 @media (min-width: 1000px) and (max-width: 1099px) {
-    #contenedorPrincipal {
+    /* #contenedorPrincipal {
       background: #ff0;
-    }
+    } */
   
     .contenedorBarraBuscar {
       width: 70%;
@@ -742,9 +769,9 @@ ul.a-paginacion li a {
   }
 
 @media (min-width: 1100px) and (max-width: 1199px) {
-    #contenedorPrincipal {
+    /* #contenedorPrincipal {
         background: rgb(255, 0, 76);
-      }
+      } */
     
       .contenedorBarraBuscar {
         width: 70%;
@@ -752,7 +779,6 @@ ul.a-paginacion li a {
     
       #headerSuperiorDerecho {
         width: 17%;
-        background-color: lightgreen;
       }
       #btnIniciarSesion {
         width: 100%;
@@ -771,9 +797,9 @@ ul.a-paginacion li a {
   }
 
 @media (min-width: 1200px) and (max-width: 1313px) {
-  #contenedorPrincipal {
+  /* #contenedorPrincipal {
     background-color: lightcoral;
-  }
+  } */
 
   .seccionArticulos {
     justify-content: center;
@@ -787,7 +813,7 @@ ul.a-paginacion li a {
 
 /* En 1314px pasa a 3 columnas */
 @media (min-width: 1314px) and (max-width: 1400px) {
-  #contenedorPrincipal {
+  /* #contenedorPrincipal {
     background-color: lightseagreen;
-  }
+  } */
 }
