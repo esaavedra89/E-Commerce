@@ -128,8 +128,13 @@ body {
   display: flex;
 }
 
+#cantidadResultados
+{
+  margin: 0px 5px 0px 0px;
+}
+
 #iconoConfFiltros {
-  margin: 5px 5px 5px 20px;
+  margin: 0 5px;
   height: 35px;
   vertical-align: middle;
   align-items: center;
@@ -147,12 +152,12 @@ body {
 }
 
 .labelsHeader {
-  margin: 0px 5px;
+  margin: 0px;
   font-size: medium;
 }
 
 #opcionesOrdenar {
-  margin: 0 8px;
+  margin: 0px 5px;
   border: 1px solid rgb(31, 70, 141);
   border-radius: 5px;
   font-size: medium;
