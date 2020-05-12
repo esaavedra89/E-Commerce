@@ -1,5 +1,9 @@
 /* Estilo creado para el header superior que es compartido en varias vistas */
 
+@font-face {
+    font-family: "Myriadpro";
+    src: url("../Recursos/Fuentes/Myriadpro/myriadpro.ttf");
+  }
 
 /***************** Header superior *******************/
 #headerSuperior {
@@ -34,9 +38,8 @@
     height: auto;
     min-width: 90px;
     width: 90%;
-    margin: 0 auto;
+    margin: 0 auto 0 7px;
     vertical-align: middle;
-    align-items: center;
     border-radius: 2px;
   }
   
@@ -48,6 +51,7 @@
     align-items: center;
     float: inherit;
     height: 100%;
+
   }
   
   #barraBuscar {

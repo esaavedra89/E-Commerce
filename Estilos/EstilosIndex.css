@@ -51,12 +51,8 @@ body {
   display: flex;
 }
 
-#cantidadResultados {
-  margin: 0px 5px 0px 0px;
-}
-
 #iconoConfFiltros {
-  margin: 0 5px;
+  margin: 0px 5px 0px 10px;
   height: 35px;
   vertical-align: middle;
   align-items: center;
@@ -64,6 +60,10 @@ body {
   color: grey;
   border-radius: 5px;
   border: 1px solid lightgrey;
+}
+
+#cantidadResultados {
+  margin: 0px 5px 0px 0px;
 }
 
 #headerInferiorDerecho {
@@ -99,10 +99,11 @@ body {
   flex-direction: column;
   margin: 10px;
   align-content: center;
+  
 }
 
 .lblBarraLateral {
-  margin: 5px;
+  margin: 5px 5px 5px 0px;
   font-weight: bold;
 }
 
@@ -114,6 +115,7 @@ body {
   padding: 0px;
   background-color: white;
   vertical-align: top;
+  margin-left: 0px;
 }
 
 .clasificacion {
@@ -122,6 +124,12 @@ body {
   align-items: center;
   display: flex;
 }
+
+.cboxPuntuacion
+{
+  margin-left: 0px;
+}
+
 .estellaNaranja {
   color: orange;
   margin: 0px;
