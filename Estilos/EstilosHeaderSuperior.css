@@ -18,7 +18,10 @@
   }
   
   #columnaHeaderSupUno {
-    width: 100px;
+    /* width: 100px; */
+    width: 90px;
+
+    /* background-color: lawngreen; */
   }
   
   #columnaHeaderSupTres {
@@ -28,7 +31,7 @@
   .contenedorLogo {
     /* Centra los elementos dentro */
     align-items: center;
-    width: 100px;
+    width: 90px;
     height: 100%;
     display: inline-flex;
     vertical-align: middle;

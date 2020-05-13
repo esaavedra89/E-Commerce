@@ -185,6 +185,7 @@ body {
   width: 260px;
   margin: 5px;
   border-bottom: 1px solid lightgrey;
+
 }
 
 .slide-container {
@@ -269,11 +270,13 @@ body {
   height: 39%;
   margin-bottom: 5px;
   margin: 0px 5px;
+
 }
 
 .detallesArticuloSuperior {
   height: 75%;
   padding: 10px 0px;
+
 }
 
 .txtDetallesArticulo {
@@ -281,13 +284,20 @@ body {
   margin: 0px;
   font-size: 18px;
   text-transform: uppercase;
+  height: 58px;
+
+
+  overflow:hidden;
+  
 }
+
 
 #detallesArticuloValoracion {
   display: flex;
   width: 100%;
   justify-content: space-between;
   margin: 5px 0px;
+
 }
 
 #txtEstrellasArticulo {
@@ -305,12 +315,19 @@ body {
   color: crimson;
 }
 
+#contenedorPrecioArticulo
+{
+  
+}
+
 #precioArticulo {
   padding: 0px;
   margin: 0px;
   font-size: 20px;
   font-weight: bold;
   text-transform: uppercase;
+  vertical-align: center;
+
 }
 
 .letrasPequenas {
@@ -321,6 +338,7 @@ body {
 .detallesArticuloInferior {
   height: 20%;
   display: flex;
+  
 }
 
 .detArtInferiorDerecho {
@@ -639,6 +657,21 @@ ul.a-paginacion li a {
   .articulo {
     height: 460px;
     width: 290px;
+  }
+
+  .txtDetallesArticulo {
+    height: 60px;
+    font-size: 20px;
+  }
+
+  #lblExistencias, #txtEstrellasArticulo
+  {
+    font-size: 16px;
+  }
+
+  #contenedorPrecioArticulo
+  {
+    margin-top: 8px;
   }
 }
 
