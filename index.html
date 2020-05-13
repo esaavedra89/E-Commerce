@@ -47,6 +47,7 @@
                 <div id="headerInferior">
                     <div id="headerInferiorIzquierdo">
                         <!-- icon-sliders -->
+                        <!-- <button id="iconoConfFiltros" title="Filtros" class="icon-sliders" onclick="main()"></button> -->
                         <button id="iconoConfFiltros" title="Filtros" class="icon-sliders"></button>
                         <label class="labelsHeader resultados"><span id="cantidadResultados">1,000</span>resultados</label>
                     </div>
@@ -67,19 +68,15 @@
             <div class="general">
                 <!-- Sección barra lateral -->
                 <div class="barraLateral">
-                    <div class="barraLateralSecciones">
+                    <div class="barraLateralSecciones seccionCategoria">
                         <label class="lblBarraLateral">Categoría</label>
-                        <label class="lblCkechbox"><input type="checkbox" class="cbox" title="Filtrar por categoría">
-                            Adhesivos</label>
-                        <label class="lblCkechbox"><input type="checkbox" class="cbox" title="Filtrar por categoría">
-                            Grifería</label>
+                        <label class="lblCkechbox"><input type="checkbox" class="cbox" title="Filtrar por categoría"> Adhesivos</label>
+                        <label class="lblCkechbox"><input type="checkbox" class="cbox" title="Filtrar por categoría"> Grifería</label>
                         <label class="lblCkechbox"><input type="checkbox" class="cbox" title="Filtrar por categoría"> Hogar</label>
-                        <label class="lblCkechbox"><input type="checkbox" class="cbox" title="Filtrar por categoría">
-                            Jardinería</label>
-                        <label class="lblCkechbox"><input type="checkbox" class="cbox" title="Filtrar por categoría">
-                            Pintura</label>
+                        <label class="lblCkechbox"><input type="checkbox" class="cbox" title="Filtrar por categoría"> Jardinería</label>
+                        <label class="lblCkechbox"><input type="checkbox" class="cbox" title="Filtrar por categoría"> Pintura</label>
                     </div>
-                    <div class="barraLateralSecciones">
+                    <div class="barraLateralSecciones seccionMarca">
                         <label class="lblBarraLateral">Marca</label>
                         <label class="lblCkechbox"><input type="checkbox" class="cbox" title="Filtrar por marca"> 3M</label>
                         <label class="lblCkechbox"><input type="checkbox" class="cbox" title="Filtrar por marca"> AMANCO</label>
@@ -88,13 +85,13 @@
                         <label class="lblCkechbox"><input type="checkbox" class="cbox" title="Filtrar por marca"> Masterlock</label>
                         <label class="lblCkechbox"><input type="checkbox" class="cbox" title="Filtrar por marca"> Panasonic</label>
                     </div>
-                    <div class="barraLateralSecciones">
+                    <div class="barraLateralSecciones seccionPrecio">
                         <label class="lblBarraLateral">Precio</label>
                         <label id="lblCantidad">Menos de 15,00 CRC</label>
                         <input id="rangoPrecios" type="range" title="Filtrar por rango de precios">
             
                     </div>
-                    <div class="barraLateralSecciones">
+                    <div class="barraLateralSecciones seccionPuntuacion">
                         <label class="lblBarraLateral">Puntuación</label>
                         <div>
                             <p class="clasificacion">
@@ -630,6 +627,7 @@
             </div>
         </div>
 
+        <script src="Js/jquery-3.2.1.min.js"></script>
         <script src="Js/index.js"></script>
     </body>
 </html>

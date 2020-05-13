@@ -1,4 +1,7 @@
-            //var slideIndex = 0;
+
+$(document).ready(main);
+
+//var slideIndex = 0;
             var slideIndex = 1;
             //showSlides();
 
@@ -66,4 +69,59 @@
                         slides[slideIndex-1].style.display = "block";
                     }
                 }
+            }
+
+            var contador = 1;
+
+            // function main(){
+                
+            //         //alert("Hello");
+            //         var barraLateral = document.getElementsByClassName("barraLateral");
+
+            //         if(contador == 1)
+            //         {
+            //             barraLateral[0].style.left = '0';
+                        
+            //             contador = 0;
+            //         }
+            //         else
+            //         {
+            //             barraLateral[0].style.left = '-100%';
+            //             contador = 1;
+            //         }
+            // };
+
+            function main()
+            {
+                
+                var contador = 1;
+                $('#iconoConfFiltros').click(function()
+                {
+                    //alert("Hello 2");    
+                    if(contador == 1)
+                    {
+                        $('.barraLateral').animate(
+                            {
+                                left: '0'
+                            });
+
+                        $('html, body').css({
+                            overflow: 'hidden',
+                            height: '100%'
+                        });
+                        contador = 0;
+                    }
+                    else
+                    {
+                        $('.barraLateral').animate(
+                            {
+                                left: '-100%'
+                            });
+                        $('html, body').css({
+                            overflow: 'auto',
+                            height: '100%'
+                        });
+                        contador = 1;
+                    }
+                });
             }

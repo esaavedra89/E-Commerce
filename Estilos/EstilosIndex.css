@@ -29,6 +29,7 @@ body {
 
 .general {
   width: 100%;
+  margin-top: -50px;
 }
 
 #headerPrincipal {
@@ -42,12 +43,11 @@ body {
 /***************** Header inferior *******************/
 #headerInferior {
   height: 50%;
-  /* margin-top: 48px;
-  height: 50px; */
   border-top: 1px solid lightgray;
   border-bottom: 1px solid lightgray;
-
   box-shadow: 0px 0px 10px rgba(0,0,0,0.05);
+
+  margin-top: 48px;
 }
 
 #headerInferiorIzquierdo {
@@ -499,6 +499,43 @@ ul.a-paginacion li a {
   .a-totalPaginas {
     display: none;
   }
+
+  .barraLateral
+  {
+    position: fixed;
+    width: 50%;
+    margin: 0;
+    height: 100%;
+    left: -100%;
+    z-index: 2030;
+    background-color: white;
+  }
+
+  .barraLateralSecciones {
+    margin: 5px;
+  }
+    .seccionCategoria, .seccionMarca
+    {
+      display: flex;
+      width: 48%;
+      float: left;
+      height: 28%;
+    }
+
+    .seccionPrecio
+    {
+      display: flex;
+      width: 48%;
+      height: 28%;
+    }
+
+    .seccionPuntuacion
+    {
+      display: flex;
+      width: 48%;
+      height: 28%;
+      margin-top: 10px;
+    }
 }
 
 @media (min-width: 321px) and (max-width: 479px) {
@@ -547,6 +584,44 @@ ul.a-paginacion li a {
   .a-totalPaginas {
     display: none !important;
   }
+
+  .barraLateral
+  {
+    position: fixed;
+    width: 50%;
+    margin: 0;
+    height: 100%;
+    left: -100%;
+    /* top: -100%; */
+    z-index: 2030;
+    background-color: white;
+  }
+
+  .barraLateralSecciones {
+    margin: 5px;
+  }
+    .seccionCategoria, .seccionMarca
+    {
+      display: flex;
+      width: 48%;
+      float: left;
+      height: 28%;
+    }
+
+    .seccionPrecio
+    {
+      display: flex;
+      width: 48%;
+      height: 28%;
+    }
+
+    .seccionPuntuacion
+    {
+      display: flex;
+      width: 48%;
+      height: 28%;
+      margin-top: 10px;
+    }
 }
 
 @media (min-width: 480px) and (max-width: 767px) {
@@ -566,7 +641,7 @@ ul.a-paginacion li a {
     display: none;
   }
 
-  .barraLateral, .resultados {
+  .resultados {
     display: none;
   }
 
@@ -590,6 +665,44 @@ ul.a-paginacion li a {
   .a-totalPaginas {
     display: none !important;
   }
+
+  .barraLateral
+  {
+    position: fixed;
+    width: 50%;
+    margin: 0;
+    height: 100%;
+    left: -100%;
+    /* top: -100%; */
+    z-index: 2030;
+    background-color: white;
+  }
+
+  .barraLateralSecciones {
+    margin: 5px;
+  }
+    .seccionCategoria, .seccionMarca
+    {
+      display: flex;
+      width: 48%;
+      float: left;
+      height: 28%;
+    }
+
+    .seccionPrecio
+    {
+      display: flex;
+      width: 48%;
+      height: 28%;
+    }
+
+    .seccionPuntuacion
+    {
+      display: flex;
+      width: 48%;
+      height: 28%;
+      margin-top: 10px;
+    }
 }
 
 @media (min-width: 768px) and (max-width: 999px) {

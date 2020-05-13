@@ -28,7 +28,7 @@ body {
 
 .general {
   margin: 0 auto;
-  /* max-width: 1200px; */
+  margin-top: -50px;
 }
 
 #headerPrincipal {
@@ -44,6 +44,8 @@ body {
   border-top: 1px solid lightgray;
   border-bottom: 1px solid lightgray;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.05);
+
+  margin-top: 48px;
 }
 
 #headerInferiorIzquierdo {
