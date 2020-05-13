@@ -58,8 +58,9 @@ body {
   align-items: center;
   background-color: transparent;
   color: grey;
-  border-radius: 5px;
+  border-radius: 2px;
   border: 1px solid lightgrey;
+  font-size: 20px;
 }
 
 #cantidadResultados {
@@ -81,7 +82,8 @@ body {
 #opcionesOrdenar {
   margin: 0px 10px 0px 5px;
   border: 1px solid rgb(31, 70, 141);
-  border-radius: 5px;
+  border-radius: 2px;
+  border: 1px solid lightgrey;
   font-size: medium;
 }
 
@@ -116,6 +118,8 @@ body {
   background-color: white;
   vertical-align: top;
   margin-left: 0px;
+  border-radius: 2px;
+  border: 1px solid lightgrey;
 }
 
 .clasificacion {
@@ -356,6 +360,7 @@ body {
   margin: 0px;
   padding: 0px;
   border: 1px solid lightgray;
+  border-radius: 2px;
   cursor: pointer;
 }
 
@@ -370,6 +375,7 @@ body {
   border-bottom: 1px solid lightgray;
   border-left: transparent;
   border-right: transparent;
+  border-radius: 2px;
 }
 
 #btnAgregar {
@@ -378,7 +384,7 @@ body {
   width: 45%;
   color: white;
   font-weight: bold;
-  text-align: left;
+  text-align: center;
   padding: 5px;
   border-radius: 2px;
   border: 1px solid #20468d;
@@ -417,12 +423,14 @@ ul.a-paginacion li.a-selected a {
   background-color: #fff;
   background-image: none;
   color: #c45500;
-  border-color: #e77600;
+  border-radius: 2px;
+  border: 1px solid #e77600;
 }
 
 ul.a-paginacion li.a-disabled {
   color: #555;
   border: 1px solid transparent;
+  border-radius: 2px;
 }
 
 ul.a-paginacion li a,
@@ -444,13 +452,13 @@ ul.a-paginacion li {
 }
 
 ul.a-paginacion li a {
-  border-radius: 3px;
+  border-radius: 2px;
   box-shadow: 0 1px 0 rgba(255, 255, 255, 0.6) inset;
   background: #eff1f3;
   background: -webkit-linear-gradient(top, #f7f8fa, #e7e9ec);
   background: linear-gradient(to bottom, #f7f8fa, #e7e9ec);
-  border: 1px solid #6c6e73;
-  border-color: #adb1b8 #a2a6ac #8d9096;
+  border: 1px solid lightgray;
+  
 }
 
 /*****************************************************/
