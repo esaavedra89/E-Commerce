@@ -30,7 +30,7 @@ body {
 }
 
 #headerPrincipal {
-  height: 120px;
+  height: 100px;
   width: 100%;
   margin: 0 auto;
 }
@@ -39,7 +39,7 @@ body {
 
 /***************** Header inferior *******************/
 #headerInferior {
-  height: 40%;
+  height: 50%;
   border-top: 1px solid lightgray;
   border-bottom: 1px solid lightgray;
 }
