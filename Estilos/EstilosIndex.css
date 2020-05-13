@@ -42,6 +42,8 @@ body {
 /***************** Header inferior *******************/
 #headerInferior {
   height: 50%;
+  /* margin-top: 48px;
+  height: 50px; */
   border-top: 1px solid lightgray;
   border-bottom: 1px solid lightgray;
 
@@ -168,18 +170,6 @@ body {
   border-left: 1px solid lightgrey;
   box-shadow: 0px 0px 10px rgba(0,0,0,0.05);
 }
-
-/* .contenedorSeccionArticulos
-{
-    background-color: khaki;
-    width: 100%;
-    height: auto;
-    margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap;
-    padding: 5px;
-    overflow: visible;
-} */
 
 .seccionArticulos {
   width: 100%;

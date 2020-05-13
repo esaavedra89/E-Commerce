@@ -11,6 +11,13 @@
     box-sizing: border-box;
     background-color: lightgray;
     
+    /* 
+    height: 50px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030; */
   }
   
   #tablaHeaderSuperior {

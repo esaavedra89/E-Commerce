@@ -23,7 +23,7 @@ body {
   padding: 0px;
   display: inline-block;
   border: 1px solid lightgray;
-  box-shadow: 0px 0px 10px rgba(0,0,0,0.05);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.05);
 }
 
 .general {
@@ -43,7 +43,7 @@ body {
   height: 50%;
   border-top: 1px solid lightgray;
   border-bottom: 1px solid lightgray;
-  box-shadow: 0px 0px 10px rgba(0,0,0,0.05);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.05);
 }
 
 #headerInferiorIzquierdo {
@@ -66,7 +66,7 @@ body {
 }
 
 .labelEnlazable {
-  color: blue;
+  color: #20468d;
   text-decoration: underline;
 }
 
@@ -74,16 +74,18 @@ body {
 
 /***************** Barra lateral derecha *******************/
 .barraLateral {
-  /* border: 3px solid green; */
   float: right;
   width: 30%;
-  height: 500px;
+  /* height: 500px; */
+
+  border-left: 1px solid lightgrey;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.05);
 }
 
 #formularioPago {
   background-color: white;
   margin: 10px;
-  padding: 5px;
+  /* padding: 5px; */
 }
 
 #tituloFormulario {
@@ -134,7 +136,7 @@ body {
 .labelsTotal {
   font-size: large;
   font-weight: bold;
-  color: #1f468e;
+  color: #20468d;
 }
 
 #botonPagar {
@@ -163,8 +165,6 @@ body {
   justify-content: space-around;
   padding: 15px;
   height: 500px;
-  border-right: 1px solid lightgrey;
-  box-shadow: 0px 0px 10px rgba(0,0,0,0.05);
 }
 
 #listaArticulos {
@@ -175,7 +175,7 @@ body {
 #tablaArticulos {
   width: 100%;
   border-bottom: 1px solid lightgrey;
-  box-shadow: 0px 0px 10px rgba(0,0,0,0.05);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.05);
 }
 
 .filasArticulos {
@@ -184,6 +184,8 @@ body {
 
 #columnaArticulosUno {
   width: 15%;
+
+  min-width: 120px;
 }
 
 #imagenArticulo {
@@ -191,14 +193,20 @@ body {
   display: block;
   margin: 0 auto;
   cursor: pointer;
+
+  object-fit: cover;
 }
 
 #columnaArticulosDos {
   width: 55%;
+
+  min-width: 250px;
 }
 
 #columnaArticulosTres {
   width: 25%;
+
+  min-width: 140px;
 }
 
 #colArtTresContenedor {
@@ -277,8 +285,8 @@ body {
 
 @media (max-width: 320px) {
   /* #contenedorPrincipal {
-      background: #f00;
-    } */
+    background: lightgoldenrodyellow;
+  } */
 
   #columnaHeaderSupTres {
     width: 50px;
@@ -296,26 +304,20 @@ body {
   #opcionesOrdenar {
     font-size: small;
   }
+
+  .barraLateral {
+    display: none;
+  }
+
+  .main {
+    width: 100%;
+  }
 }
 
 @media (min-width: 321px) and (max-width: 479px) {
-  #columnaHeaderSupTres {
-    width: 50px;
-  }
-  #headerSuperiorDerecho {
-    /* Centra los elementos dentro */
-    width: 100%;
-  }
-
-  #btnIniciarSesionText {
-    display: none;
-  }
-}
-
-@media (min-width: 480px) and (max-width: 767px) {
   /* #contenedorPrincipal {
-      background: #f00;
-    } */
+    background: lightblue;
+  } */
 
   #columnaHeaderSupTres {
     width: 50px;
@@ -328,35 +330,82 @@ body {
   #btnIniciarSesionText {
     display: none;
   }
+
+  .barraLateral {
+    display: none;
+  }
+
+  .main {
+    width: 100%;
+  }
 }
 
-@media (min-width: 768px) and (max-width: 999px) {
+@media (min-width: 480px) and (max-width: 765px) {
   /* #contenedorPrincipal {
-      background: #03f;
-    } */
+    background: #f00;
+  } */
+
+  #columnaHeaderSupTres {
+    width: 50px;
+  }
+  #headerSuperiorDerecho {
+    /* Centra los elementos dentro */
+    width: 100%;
+  }
+
+  #btnIniciarSesionText {
+    display: none;
+  }
+
+  .barraLateral {
+    display: none;
+  }
+
+  .main {
+    width: 100%;
+  }
+}
+
+@media (min-width: 766px) and (max-width: 823px) {
+  /* #contenedorPrincipal {
+    background: lightsalmon;
+  } */
+
+  .barraLateral {
+    display: none;
+  }
+
+  .main {
+    width: 100%;
+  }
+}
+
+/* @media (min-width: 824px) and (max-width: 999px) {
+  #contenedorPrincipal {
+    background: white;
+  }
 }
 
 @media (min-width: 1000px) and (max-width: 1099px) {
-  /* #contenedorPrincipal {
-        background: #ff0;
-      } */
+  #contenedorPrincipal {
+    background: #ff0;
+  }
 }
 
 @media (min-width: 1100px) and (max-width: 1199px) {
-  /* #contenedorPrincipal {
-          background: rgb(255, 0, 76);
-        } */
+  #contenedorPrincipal {
+    background: rgb(255, 0, 76);
+  }
 }
 
 @media (min-width: 1200px) and (max-width: 1313px) {
-  /* #contenedorPrincipal {
-      background-color: lightcoral;
-    } */
+  #contenedorPrincipal {
+    background-color: lightcoral;
+  }
 }
 
-/* En 1314px pasa a 3 columnas */
 @media (min-width: 1314px) and (max-width: 1400px) {
-  /* #contenedorPrincipal {
-      background-color: lightseagreen;
-    } */
-}
+  #contenedorPrincipal {
+    background-color: lightseagreen;
+  }
+} */
