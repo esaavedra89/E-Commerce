@@ -23,6 +23,8 @@ body {
   display: inline-block;
   border: 1px solid lightgray;
   width: 100%;
+
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.05);
 }
 
 .general {
@@ -42,6 +44,8 @@ body {
   height: 50%;
   border-top: 1px solid lightgray;
   border-bottom: 1px solid lightgray;
+
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.05);
 }
 
 #headerInferiorIzquierdo {
@@ -162,6 +166,7 @@ body {
   padding: 5px;
   /* background-color: yellow; */
   border-left: 1px solid lightgrey;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.05);
 }
 
 /* .contenedorSeccionArticulos
@@ -189,8 +194,9 @@ body {
   height: 430px;
   width: 260px;
   margin: 5px;
+  border-radius: 2px;
   border-bottom: 1px solid lightgrey;
-
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.05);
 }
 
 .slide-container {
@@ -320,11 +326,6 @@ body {
   color: crimson;
 }
 
-#contenedorPrecioArticulo
-{
-  
-}
-
 #precioArticulo {
   padding: 0px;
   margin: 0px;
@@ -423,9 +424,9 @@ ul.a-paginacion li.a-selected a {
   font-weight: 700;
   background-color: #fff;
   background-image: none;
-  color: #c45500;
+  color: crimson;
   border-radius: 2px;
-  border: 1px solid #e77600;
+  border: 1px solid crimson;
 }
 
 ul.a-paginacion li.a-disabled {
@@ -459,6 +460,7 @@ ul.a-paginacion li a {
   background: -webkit-linear-gradient(top, #f7f8fa, #e7e9ec);
   background: linear-gradient(to bottom, #f7f8fa, #e7e9ec);
   border: 1px solid lightgray;
+  color: #20468d;
   
 }
 
