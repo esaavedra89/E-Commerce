@@ -29,7 +29,7 @@ body {
 
 .general {
   width: 100%;
-  margin-top: 100px;
+  margin-top: 99px;
 }
 
 #headerPrincipal {
@@ -54,6 +54,7 @@ body {
   border-bottom: 1px solid lightgray;
   box-shadow: 0px 0px 10px rgba(0,0,0,0.05);
   background-color: white;
+  min-width: 320px;
 
   /* margin-top: 48px; */
 }
@@ -63,6 +64,7 @@ body {
   align-items: center;
   height: 100%;
   display: flex;
+  margin: 0px;
 }
 
 #iconoConfFiltros {
@@ -466,6 +468,30 @@ ul.a-paginacion li a {
 
 /******************************Media query**************************************/
 
+/* Smartphones (portrait and landscape) ———– */
+@media only screen and (max-device-width : 700px) 
+and (max-device-height : 390px) {
+  .barraLateral
+  {
+    background-color: white !important;
+    font-size: 12px;
+    width: 100% !important;
+  }
+
+  .barraLateralSecciones {
+    margin-left: 10px !important;
+  }
+  .seccionCategoria, .seccionMarca, .seccionPrecio,  .seccionPuntuacion
+  {
+    width: 22% !important;
+  }
+  .seccionPuntuacion
+  {
+    margin-top: 5px !important;
+    width: 22% !important;
+  }
+}
+
 @media (max-width: 320px) {
   #columnaHeaderSupTres {
     width: 50px;
@@ -488,10 +514,6 @@ ul.a-paginacion li a {
     display: none;
   }
 
-  .barraLateral {
-    display: none;
-  }
-
   .main {
     width: 100%;
     border-left: none;
@@ -511,47 +533,105 @@ ul.a-paginacion li a {
   .barraLateral
   {
     position: fixed;
-    width: 50%;
+    width: 100%;
+    margin: 0;
+    height: 100%;
+    left: -100%;
+    z-index: 1000;
+    background-color: white;
+    min-height: 500px;
+    font-size: 12px;
+  }
+
+  .barraLateralSecciones {
+    margin: 5px 5px 5px 10px;
+    float: left;
+  }
+    .seccionCategoria, .seccionMarca, .seccionPrecio, .seccionPuntuacion
+    {
+      display: flex;
+      width: 40%;
+      height: 28%;
+    }
+}
+
+@media (min-width: 321px) and (max-width: 355px) 
+{
+  #columnaHeaderSupTres {
+    width: 50px;
+  }
+  #headerSuperiorDerecho {
+    width: 100%;
+  }
+
+  #btnIniciarSesionText {
+    display: none;
+  }
+
+  .resultados {
+    display: none;
+  }
+
+  .labelsHeader,
+  #opcionesOrdenar {
+    font-size: small;
+  }
+
+  .main {
+    width: 100%;
+    border-left: none;
+  }
+
+  .seccionArticulos {
+    justify-content: center;
+  }
+
+  .li-anterior {
+    margin-left: -35px;
+    width: 100px;
+  }
+
+  .a-selected,
+  .a-normal,
+  .a-continuacion,
+  .a-totalPaginas {
+    display: none !important;
+  }
+
+  .barraLateral
+  {
+    position: fixed;
+    width: 100%;
     margin: 0;
     height: 100%;
     left: -100%;
     z-index: 2030;
     background-color: white;
+
+    min-width: 350px;
+    background-color: white;
+    min-height: 500px;
   }
 
   .barraLateralSecciones {
-    margin: 5px;
+    margin: 5px 5px 5px 10px;
   }
-    .seccionCategoria, .seccionMarca
-    {
-      display: flex;
-      width: 48%;
-      float: left;
-      height: 28%;
-    }
-
-    .seccionPrecio
-    {
-      display: flex;
-      width: 48%;
-      height: 28%;
-    }
-
-    .seccionPuntuacion
-    {
-      display: flex;
-      width: 48%;
-      height: 28%;
-      margin-top: 10px;
-    }
+  .seccionCategoria, .seccionMarca, .seccionPrecio, .seccionPuntuacion
+  {
+    display: flex;
+    /* width: 150px; */
+    float: left;
+    height: 28%;
+    min-width: 150px;
+    min-height: 70px;
+  }
 }
 
-@media (min-width: 321px) and (max-width: 479px) {
+@media (min-width: 356px) and (max-width: 479px) {
   #columnaHeaderSupTres {
     width: 50px;
   }
   #headerSuperiorDerecho {
-    /* Centra los elementos dentro */
     width: 100%;
   }
 
@@ -568,10 +648,6 @@ ul.a-paginacion li a {
     font-size: medium;
   }
 
-  .barraLateral {
-    display: none;
-  }
-
   .main {
     width: 100%;
     border-left: none;
@@ -597,51 +673,36 @@ ul.a-paginacion li a {
   {
     position: fixed;
     width: 100%;
+    /* width: 350px; */
     margin: 0;
     height: 100%;
     left: -100%;
-    /* top: -100%; */
     z-index: 2030;
     background-color: white;
+
+    min-width: 350px;
+    min-height: 500px;
   }
 
   .barraLateralSecciones {
-    margin: 5px;
+    margin: 5px 5px 5px 10px;
   }
-    .seccionCategoria, .seccionMarca
-    {
-      display: flex;
-      width: 48%;
-      float: left;
-      height: 28%;
-    }
-
-    .seccionPrecio
-    {
-      display: flex;
-      width: 48%;
-      height: 28%;
-    }
-
-    .seccionPuntuacion
-    {
-      display: flex;
-      width: 48%;
-      height: 28%;
-      margin-top: 10px;
-    }
+  .seccionCategoria, .seccionMarca, .seccionPrecio, .seccionPuntuacion
+  {
+    display: flex;
+    /* width: 150px; */
+    float: left;
+    height: 28%;
+    min-width: 150px;
+    min-height: 70px;
+  }
 }
 
 @media (min-width: 480px) and (max-width: 767px) {
-  /* #contenedorPrincipal {
-    background: #f00;
-  } */
-
   #columnaHeaderSupTres {
     width: 50px;
   }
   #headerSuperiorDerecho {
-    /* Centra los elementos dentro */
     width: 100%;
   }
 
@@ -677,49 +738,25 @@ ul.a-paginacion li a {
   .barraLateral
   {
     position: fixed;
-    /* width: 70%; */
-    width: 320px;
-    min-width: 320px;
-    margin: 0;
+    width: 340px;
+    min-width: 340px;
+    margin: 0px;
     height: 100%;
     left: -100%;
-    /* top: -100%; */
     z-index: 1000;
     background-color: white;
+    min-height: 500px;
   }
 
   .barraLateralSecciones {
-    margin: 5px;
-  }
-    .seccionCategoria, .seccionMarca
-    {
-      display: flex;
-      /* width: 48%; */
-      width: 150px;
-      float: left;
-      height: 28%;
-      min-height: 70px;
-
+    margin: 5px 5px 5px 10px;
     }
-
-    .seccionPrecio
+    .seccionCategoria, .seccionMarca, .seccionPrecio, .seccionPuntuacion
     {
       display: flex;
-      float: left;
-      /* width: 48%; */
       width: 150px;
-      height: 28%;
-      min-height: 70px;
-    }
-
-    .seccionPuntuacion
-    {
-      display: flex;
       float: left;
-      /* width: 48%; */
-      width: 150px;
       height: 28%;
-      margin-top: 10px;
       min-height: 70px;
     }
 }
