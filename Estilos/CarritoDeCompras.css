@@ -28,14 +28,19 @@ body {
 
 .general {
   margin: 0 auto;
-  margin-top: -50px;
+  margin-top: 100px;
 }
 
 #headerPrincipal {
   height: 100px;
   width: 100%;
-  /* max-width: 1200px; */
   margin: 0 auto;
+
+  position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
 }
 
 /***************** Header inferior *******************/
@@ -45,7 +50,8 @@ body {
   border-bottom: 1px solid lightgray;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.05);
 
-  margin-top: 48px;
+  background-color: white;
+  /* margin-top: 48px; */
 }
 
 #headerInferiorIzquierdo {

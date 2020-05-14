@@ -29,25 +29,33 @@ body {
 
 .general {
   width: 100%;
-  margin-top: -50px;
+  margin-top: 100px;
 }
 
 #headerPrincipal {
   height: 100px;
   width: 100%;
   margin: 0 auto;
+
+  position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
 }
 
 
 
 /***************** Header inferior *******************/
 #headerInferior {
-  height: 50%;
+  /* height: 50%; */
+  height: 50px;
   border-top: 1px solid lightgray;
   border-bottom: 1px solid lightgray;
   box-shadow: 0px 0px 10px rgba(0,0,0,0.05);
+  background-color: white;
 
-  margin-top: 48px;
+  /* margin-top: 48px; */
 }
 
 #headerInferiorIzquierdo {
@@ -588,7 +596,7 @@ ul.a-paginacion li a {
   .barraLateral
   {
     position: fixed;
-    width: 50%;
+    width: 100%;
     margin: 0;
     height: 100%;
     left: -100%;
@@ -669,12 +677,14 @@ ul.a-paginacion li a {
   .barraLateral
   {
     position: fixed;
-    width: 50%;
+    /* width: 70%; */
+    width: 320px;
+    min-width: 320px;
     margin: 0;
     height: 100%;
     left: -100%;
     /* top: -100%; */
-    z-index: 2030;
+    z-index: 1000;
     background-color: white;
   }
 
@@ -684,24 +694,33 @@ ul.a-paginacion li a {
     .seccionCategoria, .seccionMarca
     {
       display: flex;
-      width: 48%;
+      /* width: 48%; */
+      width: 150px;
       float: left;
       height: 28%;
+      min-height: 70px;
+
     }
 
     .seccionPrecio
     {
       display: flex;
-      width: 48%;
+      float: left;
+      /* width: 48%; */
+      width: 150px;
       height: 28%;
+      min-height: 70px;
     }
 
     .seccionPuntuacion
     {
       display: flex;
-      width: 48%;
+      float: left;
+      /* width: 48%; */
+      width: 150px;
       height: 28%;
       margin-top: 10px;
+      min-height: 70px;
     }
 }
 

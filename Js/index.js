@@ -97,31 +97,47 @@ $(document).ready(main);
                 var contador = 1;
                 $('#iconoConfFiltros').click(function()
                 {
-                    //alert("Hello 2");    
-                    if(contador == 1)
-                    {
-                        $('.barraLateral').animate(
-                            {
-                                left: '0'
-                            });
+                    var ancho = $('body').outerWidth();
 
-                        $('html, body').css({
-                            overflow: 'hidden',
-                            height: '100%'
-                        });
-                        contador = 0;
-                    }
-                    else
+                    if(ancho < 768)
                     {
-                        $('.barraLateral').animate(
-                            {
-                                left: '-100%'
-                            });
-                        $('html, body').css({
-                            overflow: 'auto',
-                            height: '100%'
-                        });
-                        contador = 1;
+                        //alert("Hello 2");    
+                        if(contador == 1)
+                        {
+                            $('.barraLateral').animate(
+                                {
+                                    left: '0'
+                                });
+
+                            // $('html, body').css({
+                            //     overflow: 'hidden',
+                            //     height: '100%'
+                            // });
+                            contador = 0;
+                        }
+                        else
+                        {
+                            $('.barraLateral').animate(
+                                {
+                                    left: '-100%'
+                                });
+                            // $('html, body').css({
+                            //     overflow: 'auto',
+                            //     height: '100%'
+                            // });
+                            contador = 1;
+                        }
+
+                    }else
+                    {
+                        
                     }
                 });
             }
+
+            // $(document).ready(function()
+            // {
+            //     // Para saber altura de un elemento.
+            //     // var altura = $('.barraLateral').offset().top;
+            //     // alert(altura);
+            // });
