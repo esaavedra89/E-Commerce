@@ -77,8 +77,9 @@
     width: 100%;
     border: 1px solid lightgray;
     border-radius: 2px;
-    font-family: "fontellofull";
-    font-size: large;
+    /* font-family: "fontellofull"; */
+    font-family: "Myriadpro";
+    font-size: 15px;
   }
   
   /*Para centrar los elementos internos de un componente con float, es necesario ocupar el 100% de la altura*/
