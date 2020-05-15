@@ -149,12 +149,26 @@
                                     <!-- Columna #2 -->
                                     <td id="columnaArticulosDos">
                                         <div>
-                                            <p class="txtDetallesArticulo">Martillo 40370 /018 Tramontina 40300/018 caja 12 uds</p>
+                                            <p class="txtDetallesArticulo">Martillo 40370 /018 Tramontina 40300/018 caja 12 uds. 
+                                                Martillo 40370 /018 Tramontina 40300/018 caja 12 uds. Martillo 40370 /018 Tramontina 40300/018 caja 12 uds. 
+                                                Martillo 40370 /018 Tramontina 40300/018 caja 12 uds</p>
                                             <p id="precioArticulo">15,000.00 CRC <span class="letrasPequenas" >IVA</span></p>
                                         </div> 
                                     </td>
                                     <!-- Columna #3 -->
                                     <td id="columnaArticulosTres">
+                                        <div id="colArtTresContenedor">
+                                            <div class="colArtTresizquierdo">
+                                                <button class="botonesCantidad icon-plus" id="btnAdicionar" title="Sumar"></button>
+                                                <input id="cantidadProducto" value="1" type="tel"> 
+                                                <button class="botonesCantidad icon-minus" id="btnRestar" title="Restar"></button>
+                                            </div>
+                                            <button id="btnEliminar" title="Eliminar"><span class="icon-trash-7"></span></button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr  class="filasArticulos" id="filaBotones">
+                                    <td id="columnaDobleBotones" colspan="2" style="width:100%">
                                         <div id="colArtTresContenedor">
                                             <div class="colArtTresizquierdo">
                                                 <button class="botonesCantidad icon-plus" id="btnAdicionar" title="Sumar"></button>

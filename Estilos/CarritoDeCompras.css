@@ -209,16 +209,19 @@ div#headerContenedorBtnProcesarPago div
   width: 100%;
   border-bottom: 1px solid lightgrey;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.05);
+  border-radius: 2px;
 }
 
 .filasArticulos {
   width: 100%;
+  height: 160px;
 }
 
 #columnaArticulosUno {
-  width: 15%;
+  /* width: 15%; */
+  width: 180px;
 
-  min-width: 120px;
+  min-width: 150px;
 }
 
 #imagenArticulo {
@@ -238,7 +241,6 @@ div#headerContenedorBtnProcesarPago div
 
 #columnaArticulosTres {
   width: 25%;
-
   min-width: 140px;
 }
 
@@ -287,6 +289,11 @@ div#headerContenedorBtnProcesarPago div
   border: transparent;
   font-size: 18px;
   cursor: pointer;
+}
+
+#filaBotones
+{
+  display: none;
 }
 
 .txtDetallesArticulo {
@@ -345,6 +352,57 @@ div#headerContenedorBtnProcesarPago div
   .main {
     width: 100%;
   }
+  #headerContenedorBtnProcesarPago
+  {
+    display: inline-block;
+  }
+
+  #btnProcesarPago
+  {
+    margin: 10px 0px;
+  }
+
+  div.w3-container > span
+  {
+    margin-top: 50px;
+  }
+
+  div.w3-container > #formularioPago
+  {
+    margin-top: 65px;
+  }
+
+  #columnaHeaderSupTres {
+    width: 50px;
+  }
+  
+  #columnaArticulosUno {
+    width: 10%;
+    min-width: 100px;
+  }
+  
+  table#tablaArticulos tbody #filaBotones
+  {
+    display: table-row;
+    height: 50px;
+  }
+  
+  #columnaArticulosDos {
+    min-width: 100px;
+  }
+  .txtDetallesArticulo, #precioArticulo
+  {
+    font-size: 14px;
+  }
+
+  #colArtTresContenedor
+  {
+    justify-content: left;
+  }
+
+  #columnaArticulosTres {
+    display: none;
+  }
 }
 
 @media (min-width: 321px) and (max-width: 479px) {
@@ -371,17 +429,143 @@ div#headerContenedorBtnProcesarPago div
   .main {
     width: 100%;
   }
+
+  #headerSuperiorDerecho {
+    /* Centra los elementos dentro */
+    width: 100%;
+  }
+
+  #btnIniciarSesionText {
+    display: none;
+  }
+
+  #headerContenedorBtnProcesarPago
+  {
+    display: inline-block;
+  }
+
+  #btnProcesarPago
+  {
+    margin: 10px 0px;
+  }
+
+  div.w3-container > span
+  {
+    margin-top: 50px;
+  }
+
+  div.w3-container > #formularioPago
+  {
+    margin-top: 65px;
+  }
+
+  #columnaHeaderSupTres {
+    width: 50px;
+  }
+  
+  #columnaArticulosUno {
+    width: 10%;
+    min-width: 100px;
+  }
+  
+  table#tablaArticulos tbody #filaBotones
+  {
+    display: table-row;
+    height: 50px;
+  }
+  
+  #columnaArticulosDos {
+    min-width: 100px;
+  }
+  .txtDetallesArticulo, #precioArticulo
+  {
+    font-size: 14px;
+  }
+
+  #colArtTresContenedor
+  {
+    justify-content: left;
+  }
+
+  #columnaArticulosTres {
+    display: none;
+  }
 }
 
-@media (min-width: 480px) and (max-width: 765px) {
+@media (min-width: 480px) and (max-width: 730px) {
   /* #contenedorPrincipal {
     background: #f00;
+  } */
+
+  .barraLateral {
+    display: none;
+  }
+  .main {
+    width: 100%;
+  }
+
+  #headerSuperiorDerecho {
+    /* Centra los elementos dentro */
+    width: 100%;
+  }
+
+  #btnIniciarSesionText {
+    display: none;
+  }
+
+  #headerContenedorBtnProcesarPago
+  {
+    display: inline-block;
+  }
+
+  #btnProcesarPago
+  {
+    margin: 10px 0px;
+  }
+
+  div.w3-container > span
+  {
+    margin-top: 50px;
+  }
+
+  div.w3-container > #formularioPago
+  {
+    margin-top: 65px;
+  }
+
+  #columnaHeaderSupTres {
+    width: 50px;
+  }
+  
+  #columnaArticulosUno {
+    width: 10%;
+    min-width: 100px;
+  }
+
+  table#tablaArticulos tbody #filaBotones
+  {
+    display: table-row;
+    height: 50px;
+  }
+
+  #colArtTresContenedor
+  {
+    justify-content: left;
+  }
+
+  #columnaArticulosTres {
+    display: none;
+  }
+}
+
+@media (min-width: 731px) and (max-width: 765px) {
+  /* #contenedorPrincipal {
+    background: rgb(7, 98, 134);
   } */
 
   #headerContenedorBtnProcesarPago
   {
     display: inline-block;
-    background-color: lightgrey;
   }
 
   #btnProcesarPago
@@ -418,30 +602,131 @@ div#headerContenedorBtnProcesarPago div
   .main {
     width: 100%;
   }
+
+  #columnaArticulosTres {
+    display: none;
+  }
+  
+  #columnaArticulosUno {
+    width: 15%;
+  }
+  table#tablaArticulos tbody #filaBotones
+  {
+    display: table-row;
+    height: 50px;
+  }
+
+  #colArtTresContenedor
+  {
+    justify-content: left;
+  }
 }
 
-@media (min-width: 766px) and (max-width: 823px) {
+@media (min-width: 766px) and (max-width: 840px) {
   /* #contenedorPrincipal {
     background: lightsalmon;
   } */
 
   .barraLateral {
     display: none;
-    /* bottom: 0; */
   }
 
   .main {
     width: 100%;
   }
-}
 
-/* @media (min-width: 824px) and (max-width: 999px) {
-  #contenedorPrincipal {
-    background: white;
+  #headerContenedorBtnProcesarPago
+  {
+    display: inline-block;
+  }
+
+  #btnProcesarPago
+  {
+    margin: 10px 0px;
+  }
+
+  div.w3-container > span
+  {
+    margin-top: 50px;
+  }
+
+  div.w3-container > #formularioPago
+  {
+    margin-top: 65px;
+  }
+
+  #columnaHeaderSupTres {
+    width: 50px;
+  }
+
+  #columnaArticulosTres {
+    display: none;
+  }
+  
+  #columnaArticulosUno {
+    width: 15%;
+  }
+  table#tablaArticulos tbody #filaBotones
+  {
+    display: table-row;
+    height: 50px;
+  }
+
+  #colArtTresContenedor
+  {
+    justify-content: left;
   }
 }
 
-@media (min-width: 1000px) and (max-width: 1099px) {
+@media (min-width: 841px) and (max-width: 942px) {
+  /* #contenedorPrincipal {
+    background: lightgoldenrodyellow;
+  } */
+
+  #columnaArticulosUno {
+    width: 15%;
+  }
+  #columnaArticulosTres {
+    display: none;
+  }
+
+  table#tablaArticulos tbody #filaBotones
+  {
+    display: table-row;
+    height: 50px;
+  }
+
+  #colArtTresContenedor
+  {
+    justify-content: left;
+  }
+}
+
+@media (min-width: 943px) and (max-width: 999px) {
+  /* #contenedorPrincipal {
+    background: limegreen;
+  } */
+
+  #columnaArticulosTres {
+    display: none;
+  }
+  
+  #columnaArticulosUno {
+    width: 15%;
+  }
+  table#tablaArticulos tbody #filaBotones
+  {
+    display: table-row;
+    height: 50px;
+  }
+
+  #colArtTresContenedor
+  {
+    justify-content: left;
+  }
+}
+
+/* @media (min-width: 1000px) and (max-width: 1099px) {
   #contenedorPrincipal {
     background: #ff0;
   }
@@ -462,5 +747,6 @@ div#headerContenedorBtnProcesarPago div
 @media (min-width: 1314px) and (max-width: 1400px) {
   #contenedorPrincipal {
     background-color: lightseagreen;
-  }
-} */
+  } 
+}
+*/
