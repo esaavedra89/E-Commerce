@@ -9,6 +9,7 @@
         <link href="../Estilos/CarritoDeCompras.css" rel="stylesheet" type="text/css">
         <!-- <link href="Recursos/font/fontellosecond.ttf" rel="stylesheet" type="text/css"> -->
         <link href="../Recursos/Fuentes/Fontello/css/fontellofull.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
     </head>
 
@@ -30,7 +31,8 @@
                             <!-- Columna #2 -->
                             <td id="columnaHeaderSupDos">
                                 <div class="contenedorBarraBuscar">
-                                    <input id="barraBuscar" placeholder=" &#xf50d;" type="search" title="Buscar artículos">
+                                    <!-- <input id="barraBuscar" placeholder=" &#xf50d;" type="search" title="Buscar artículos"> -->
+                                    <input id="barraBuscar" placeholder=" Buscar" type="search" title="Buscar artículos">
                                 </div>
                             </td>
                             <!-- Columna #3 -->
@@ -50,18 +52,92 @@
                         <!-- icon-sliders -->
                         <label class="labelsHeader">Carrito de compras</label>
                     </div>
-                    
                     <div id="headerInferiorDerecho">
                         <label class="labelsHeader" ><a class="labelEnlazable" href="#">Regresar a la tienda</a></label>
-                        
                     </div>
-                    
                 </div>
             </header>
+
 
             <div class="general">
                 <!-- Sección principal -->
                 <div class="main">
+
+                    <!-- Sección de cuenta para pantallas pequeñas -->
+                    <div id="headerContenedorBtnProcesarPago">
+                        <div>
+                            <label class="labelsTotal">Total (<span>1</span> <span>producto</span>): 
+                                <span id="montoTotal" title="Monto total de la compra"> 45,000.00</span> 
+                                <span id="moneda">CRC</span> 
+                                <span class="letrasPequenas">IVA</span>
+                            </label>
+                        </div>
+                        
+                        <button id="btnProcesarPago" onclick="document.getElementById('id01').style.display='block'">Procesar pago</button>
+                    </div>
+                    <div class="w3-container contenedorModalPagar">
+                        <div id="id01" class="w3-modal">
+                            <div class="w3-modal-content">
+                                <div class="w3-container">
+                                    <span onclick="document.getElementById('id01').style.display='none'" 
+                                        class="w3-button w3-display-topright">&times;</span>
+                                    <form id="formularioPago">
+                                        <label id="tituloFormulario">Resumen</label>
+                                        <div id="formularioSuperior">
+                                            <label class="formularioSubtitulos">Modo de entrega</label>
+                                            <select id="modoEntrega">
+                                                <option value="volvo">Express</option>
+                                                <option value="saab">Encomienda</option>
+                                            </select>
+                                            <label class="formularioSubtitulos">Dirección</label>
+                                            <input class="entradaTexto" type="text" id="direccion" 
+                                                title="Dirreción de entrega">
+                                            <label class="formularioSubtitulos">Observaciones</label>
+                                            <input class="entradaTexto" type="text" 
+                                                id="observaciones" title="Observaciones">
+                                        </div>
+
+                                        <div id="formularioInferior">
+                                            <table id="tabla">
+                                                <tbody>
+                                                    <tr class="filasFormulario">
+                                                        <td class="columnaUno"> <label>Costo del envío</label> </td>
+                                                        <td class="columnaDos"> <label class="labelColumnaDos" 
+                                                            title="Costo del envío">0.00 CRC</label>
+                                                            </td>
+                                                    </tr>
+                                                    <tr class="filasFormulario">
+                                                        <td class="columnaUno"> <label>Subtotal</label></td>
+                                                        <td class="columnaDos"> <label 
+                                                            title="Subtotal de la compra">39,823.01 CRC</label></td>
+                                                        </tr>
+                                                        <tr class="filasFormulario">
+                                                            <td class="columnaUno"> <label>Impuesto</label></td>
+                                                            <td class="columnaDos"><label 
+                                                                title="Impuesto de la compra"> 5,176.99 CRC</label></td>
+                                                        </tr>
+                                                        <tr class="filasFormulario">
+                                                            <td class="columnaUno"> <label class="labelsTotal">Total</label>								</td>
+                                                            <td class="columnaDos"> 
+                                                                <label class="labelsTotal">
+                                                                    <span id="montoTotal" 
+                                                                    title="Monto total de la compra"> 45,000.00</span> 
+                                                                    <span id="moneda">CRC</span> 
+                                                                    <span class="letrasPequenas">IVA</span>
+                                                                </label>
+                                                            </td>
+                                                            </tr>
+                                            </tbody>
+                                        </table>
+                                        <button id="botonPagar" title="Pagar">
+                                            <span class="icon-money"></span>  Pagar</button>
+                                                    </div>
+                                                    
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <div id="listaArticulos">
                         <table id="tablaArticulos">
                             <tbody>
@@ -96,6 +172,7 @@
 
                 <!-- Sección lateral -->
                 <div class="barraLateral">
+                    
                     <form id="formularioPago">
                         <label id="tituloFormulario">Resumen</label>
                         <div id="formularioSuperior">
