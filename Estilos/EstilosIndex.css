@@ -301,6 +301,7 @@ body {
   /* min-height: 58px; */
 
   overflow:hidden;
+  text-overflow: ellipsis;
   /* background-color: lightgreen; */
 }
 
@@ -510,7 +511,6 @@ and (max-device-height : 390px) {
     width: 50px;
   }
   #headerSuperiorDerecho {
-    /* Centra los elementos dentro */
     width: 100%;
   }
 
