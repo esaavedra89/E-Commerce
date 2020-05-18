@@ -73,24 +73,6 @@ $(document).ready(main);
 
             var contador = 1;
 
-            // function main(){
-                
-            //         //alert("Hello");
-            //         var barraLateral = document.getElementsByClassName("barraLateral");
-
-            //         if(contador == 1)
-            //         {
-            //             barraLateral[0].style.left = '0';
-                        
-            //             contador = 0;
-            //         }
-            //         else
-            //         {
-            //             barraLateral[0].style.left = '-100%';
-            //             contador = 1;
-            //         }
-            // };
-
             function main()
             {
                 
@@ -98,6 +80,7 @@ $(document).ready(main);
                 $('#iconoConfFiltros').click(function()
                 {
                     var ancho = $('body').outerWidth();
+                    var barraLateral = document.getElementsByClassName("barraLateral");
 
                     if(ancho < 768)
                     {
@@ -130,7 +113,20 @@ $(document).ready(main);
 
                     }else
                     {
-                        
+                        if(contador == 1)
+                        {
+                            // Escondemos el menú lateral.
+                            $( ".barraLateral" ).css("display", "none");
+                            $( ".main" ).css("width", "100%");
+                            contador = 0;
+                        }
+                        else
+                        {
+                            // Mostramos el menú lateral.
+                            $( ".barraLateral" ).css("display", "block");
+                            $( ".main" ).css("width", "85%");
+                            contador = 1;
+                        }
                     }
                 });
             }
