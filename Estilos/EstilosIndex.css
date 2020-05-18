@@ -290,8 +290,6 @@ body {
 .detallesArticuloSuperior {
   height: 75%;
   padding: 10px 0px;
-
-  /* background-color: lightblue; */
 }
 
 .txtDetallesArticulo {
@@ -338,8 +336,6 @@ body {
   align-items: center;
   justify-content: start;
   height: 30%;
-  
-  /* background-color: rgb(255, 224, 224); */
 }
 
 #precioArticulo {
@@ -349,10 +345,6 @@ body {
   font-weight: bold;
   text-transform: uppercase;
   vertical-align: center;
-
-  /* background-color: red; */
-  
-  
 }
 
 .letrasPequenas {
@@ -397,6 +389,8 @@ body {
   border-left: transparent;
   border-right: transparent;
   border-radius: 2px;
+  /*Eliminar sombra en input de iOS*/
+  -webkit-appearance: textarea;
 }
 
 #btnAgregar {
@@ -628,7 +622,6 @@ and (max-device-height : 390px) {
     background-color: white;
 
     min-width: 350px;
-    background-color: white;
     min-height: 500px;
   }
 

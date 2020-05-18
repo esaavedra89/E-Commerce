@@ -75,11 +75,14 @@
   #barraBuscar {
     height: 40px;
     width: 100%;
-    border: 1px solid lightgray;
-    border-radius: 2px;
-    /* font-family: "fontellofull"; */
     font-family: "Myriadpro";
     font-size: 15px;
+    border: 1px solid lightgray;
+    border-radius: 2px;
+    /*Para evitar bordes redondeados en iOS*/
+    -webkit-border-radius: 2px; 
+    /*Eliminar sombra en input de iOS*/
+    -webkit-appearance: textarea;
   }
   
   /*Para centrar los elementos internos de un componente con float, es necesario ocupar el 100% de la altura*/
@@ -94,10 +97,32 @@
   }
   
   #iconoCarritoCompras {
-    margin: 5px;
+    margin: 5px 5px 6px 5px;
+    vertical-align: middle;
+  }
+
+  #iconoCarritoCompras a
+  {
     vertical-align: middle;
     font-size: 22px;
     color: #3f3f3f;
+    text-decoration: none;
+      position: relative;
+  }
+
+  #cart_menu_num {
+    position: absolute;
+    top: 0;
+    left: 55%;
+    /* background: red; */
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding: 2px;
   }
   
   #btnIniciarSesion {

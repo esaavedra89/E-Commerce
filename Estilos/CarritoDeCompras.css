@@ -235,7 +235,6 @@ div#headerContenedorBtnProcesarPago div
 
 #columnaArticulosDos {
   width: 55%;
-
   min-width: 250px;
 }
 
@@ -246,9 +245,8 @@ div#headerContenedorBtnProcesarPago div
 
 #colArtTresContenedor {
   display: flex;
-  justify-content: center;
+  float: right;
   margin: 0 auto;
-  justify-content: space-around;
   height: 40px;
 }
 
@@ -398,6 +396,7 @@ div#headerContenedorBtnProcesarPago div
   #colArtTresContenedor
   {
     justify-content: left;
+    float: left;
   }
 
   #columnaArticulosTres {
@@ -485,6 +484,7 @@ div#headerContenedorBtnProcesarPago div
   #colArtTresContenedor
   {
     justify-content: left;
+    float: left;
   }
 
   #columnaArticulosTres {
@@ -551,6 +551,7 @@ div#headerContenedorBtnProcesarPago div
   #colArtTresContenedor
   {
     justify-content: left;
+    float: left;
   }
 
   #columnaArticulosTres {
@@ -619,6 +620,7 @@ div#headerContenedorBtnProcesarPago div
   #colArtTresContenedor
   {
     justify-content: left;
+    float: left;
   }
 }
 
@@ -675,6 +677,7 @@ div#headerContenedorBtnProcesarPago div
   #colArtTresContenedor
   {
     justify-content: left;
+    float: left;
   }
 }
 
@@ -699,6 +702,7 @@ div#headerContenedorBtnProcesarPago div
   #colArtTresContenedor
   {
     justify-content: left;
+    float: left;
   }
 }
 
@@ -723,6 +727,7 @@ div#headerContenedorBtnProcesarPago div
   #colArtTresContenedor
   {
     justify-content: left;
+    float: left;
   }
 }
 
