@@ -400,7 +400,7 @@ body {
   color: white;
   font-weight: bold;
   text-align: center;
-  padding: 5px;
+  padding: 5px 5px 5px 2px;
   border-radius: 2px;
   border: 1px solid #20468d;
   cursor: pointer;
