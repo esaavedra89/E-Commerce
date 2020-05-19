@@ -79,10 +79,13 @@ $(document).ready(main);
                 var contador = 1;
                 $('#iconoConfFiltros').click(function()
                 {
-                    var ancho = $('body').outerWidth();
+                    
                     var barraLateral = document.getElementsByClassName("barraLateral");
-
-                    if(ancho < 768)
+                    // var display = barraLateral.style.display;
+                    var ancho = $('body').outerWidth();
+                    var w = window.outerWidth;
+                    // alert("dddd");
+                    if(ancho <= 768)
                     {
                         //alert("Hello 2");    
                         if(contador == 1)
@@ -111,19 +114,41 @@ $(document).ready(main);
                             contador = 1;
                         }
 
-                    }else
+                    }
+                    else if(ancho > 768 && ancho < 999)
                     {
                         if(contador == 1)
                         {
                             // Escondemos el menú lateral.
                             $( ".barraLateral" ).css("display", "none");
+                            $( ".barraLateral" ).css("width", "0%");
                             $( ".main" ).css("width", "100%");
                             contador = 0;
                         }
                         else
                         {
                             // Mostramos el menú lateral.
-                            $( ".barraLateral" ).css("display", "block");
+                            $( ".barraLateral" ).css("display", "inline-block");
+                            $( ".barraLateral" ).css("width", "20%");
+                            $( ".main" ).css("width", "80%");
+                            contador = 1;
+                        }
+                    }
+                    else
+                    {
+                        if(contador == 1)
+                        {
+                            // Escondemos el menú lateral.
+                            $( ".barraLateral" ).css("display", "none");
+                            $( ".barraLateral" ).css("width", "0%");
+                            $( ".main" ).css("width", "100%");
+                            contador = 0;
+                        }
+                        else
+                        {
+                            // Mostramos el menú lateral.
+                            $( ".barraLateral" ).css("display", "inline-block");
+                            $( ".barraLateral" ).css("width", "15%");
                             $( ".main" ).css("width", "85%");
                             contador = 1;
                         }
@@ -131,9 +156,46 @@ $(document).ready(main);
                 });
             }
 
-            // $(document).ready(function()
-            // {
-            //     // Para saber altura de un elemento.
-            //     // var altura = $('.barraLateral').offset().top;
-            //     // alert(altura);
-            // });
+            function OnResize()
+            {
+                var w = window.outerWidth;
+                //var h = window.outerHeight;
+                var barraLateral = $('.barraLateral').css('display');
+                
+                if(w < 768)
+                {
+                    // Mostramos el menú lateral.
+                    $( ".main" ).css("width", "100%");
+                    
+                }
+                else if(w > 768 && w < 999)
+                    {
+                        if(barraLateral === "block")
+                        {
+                            // Mostramos el menú lateral.
+                            $( ".barraLateral" ).css("width", "20%");
+                            $( ".main" ).css("width", "80%");
+                        }
+                        else
+                        {
+                            // Mostramos el menú lateral.
+                            $( ".barraLateral" ).css("width", "0%");
+                            $( ".main" ).css("width", "100%");
+                        }  
+                    }
+                    else if(w > 999)
+                    {
+                        if(barraLateral === "block")
+                        {
+                            // Mostramos el menú lateral.
+                            $( ".barraLateral" ).css("width", "15%");
+                            $( ".main" ).css("width", "85%");
+                        }
+                        else
+                        {
+                            // Mostramos el menú lateral.
+                            $( ".barraLateral" ).css("width", "0%");
+                            $( ".main" ).css("width", "100%");
+                        }  
+                    }
+            }
