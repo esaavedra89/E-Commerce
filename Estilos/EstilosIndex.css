@@ -119,6 +119,11 @@ body {
   
 }
 
+.barraLateralSeccionesHide
+{
+  display: none;
+}
+
 .lblBarraLateral {
   margin: 5px 5px 5px 0px;
   font-weight: bold;
@@ -549,10 +554,22 @@ and (max-device-height : 390px) {
   {
     background-color: white !important;
     font-size: 12px;
-    width: 100% !important;
+    width: 200px !important;
+
+    min-width: 200px;
+    overflow-x: hidden;
+    overflow-y: scroll;
   }
 
-  .barraLateralSecciones {
+  
+
+  .barraLateralSeccionesHide
+  {
+    display: block;
+    height: 150px!important;
+  }
+
+  /* .barraLateralSecciones {
     margin-left: 10px !important;
   }
   .seccionCategoria, .seccionMarca, .seccionPrecio,  .seccionPuntuacion
@@ -563,7 +580,7 @@ and (max-device-height : 390px) {
   {
     margin-top: 5px !important;
     width: 22% !important;
-  }
+  } */
 }
 
 @media (max-width: 320px) {
@@ -606,17 +623,29 @@ and (max-device-height : 390px) {
   .barraLateral
   {
     position: fixed;
-    width: 100%;
+    width: 200px;
     margin: 0;
     height: 100%;
     left: -100%;
     z-index: 1000;
     background-color: white;
-    min-height: 500px;
+    
     font-size: 12px;
+
+    min-width: 200px;
+    overflow-x: hidden;
+    overflow-y: scroll;
   }
 
-  .barraLateralSecciones {
+  .barraLateralSeccionesHide
+  {
+    display: block;
+    height: 150px!important;
+  }
+
+  
+
+  /* .barraLateralSecciones {
     margin: 5px 5px 5px 10px;
     float: left;
   }
@@ -625,7 +654,7 @@ and (max-device-height : 390px) {
       display: flex;
       width: 40%;
       height: 28%;
-    }
+    } */
 }
 
 @media (min-width: 321px) and (max-width: 355px) 
@@ -674,28 +703,35 @@ and (max-device-height : 390px) {
   .barraLateral
   {
     position: fixed;
-    width: 100%;
+    width: 200px;
     margin: 0;
     height: 100%;
     left: -100%;
     z-index: 2030;
     background-color: white;
 
-    min-width: 350px;
-    min-height: 500px;
+    min-width: 200px;
+
+    overflow-x: hidden;
+    overflow-y: scroll;
   }
 
-  .barraLateralSecciones {
+  /* .barraLateralSecciones {
     margin: 5px 5px 5px 10px;
   }
   .seccionCategoria, .seccionMarca, .seccionPrecio, .seccionPuntuacion
   {
     display: flex;
-    /* width: 150px; */
     float: left;
     height: 28%;
     min-width: 150px;
     min-height: 70px;
+  } */
+
+  .barraLateralSeccionesHide
+  {
+    display: block;
+    height: 150px!important;
   }
 }
 
@@ -744,29 +780,32 @@ and (max-device-height : 390px) {
   .barraLateral
   {
     position: fixed;
-    width: 100%;
+    width: 200px;
     /* width: 350px; */
     margin: 0;
     height: 100%;
     left: -100%;
     z-index: 2030;
     background-color: white;
-
-    min-width: 350px;
-    min-height: 500px;
+    min-width: 200px;
   }
 
-  .barraLateralSecciones {
+  /* .barraLateralSecciones {
     margin: 5px 5px 5px 10px;
   }
   .seccionCategoria, .seccionMarca, .seccionPrecio, .seccionPuntuacion
   {
     display: flex;
-    /* width: 150px; */
     float: left;
     height: 28%;
     min-width: 150px;
     min-height: 70px;
+  } */
+
+  .barraLateralSeccionesHide
+  {
+    display: block;
+    height: 150px!important;
   }
 }
 
@@ -810,27 +849,24 @@ and (max-device-height : 390px) {
   .barraLateral
   {
     position: fixed;
-    width: 340px;
-    min-width: 340px;
+    width: 180px;
     margin: 0px;
     height: 100%;
     left: -100%;
     z-index: 1000;
+    min-width: 180px;
+
     background-color: white;
-    min-height: 500px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    
   }
 
-  .barraLateralSecciones {
-    margin: 5px 5px 5px 10px;
-    }
-    .seccionCategoria, .seccionMarca, .seccionPrecio, .seccionPuntuacion
-    {
-      display: flex;
-      width: 150px;
-      float: left;
-      height: 28%;
-      min-height: 70px;
-    }
+  .barraLateralSeccionesHide
+  {
+    display: block;
+    height: 150px!important;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 820px) {

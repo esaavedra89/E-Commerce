@@ -92,7 +92,7 @@ $(document).ready(main);
                         {
                             $('.barraLateral').animate(
                                 {
-                                    left: '0'
+                                    left: '-100%'
                                 });
 
                             // $('html, body').css({
@@ -103,10 +103,12 @@ $(document).ready(main);
                         }
                         else
                         {
-                            $('.barraLateral').animate(
-                                {
-                                    left: '-100%'
-                                });
+                            
+
+                                $('.barraLateral').animate(
+                                    {
+                                        left: '0'
+                                    });
                             // $('html, body').css({
                             //     overflow: 'auto',
                             //     height: '100%'
