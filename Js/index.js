@@ -75,56 +75,42 @@ $(document).ready(main);
 
             function main()
             {
-                
-                var contador = 1;
+                var contador = 0;
                 $('#iconoConfFiltros').click(function()
                 {
-                    
                     var barraLateral = document.getElementsByClassName("barraLateral");
-                    // var display = barraLateral.style.display;
                     var ancho = $('body').outerWidth();
                     var w = window.outerWidth;
-                    // alert("dddd");
-                    if(ancho <= 768)
+                    if(ancho < 768)
                     {
                         //alert("Hello 2");    
-                        if(contador == 1)
+                        if(contador == 0)
                         {
                             $('.barraLateral').animate(
                                 {
-                                    left: '-100%'
+                                    left: '-100%',
+                                    width: '0px'
                                 });
-
-                            // $('html, body').css({
-                            //     overflow: 'hidden',
-                            //     height: '100%'
-                            // });
-                            contador = 0;
+                            contador = 1;
                         }
                         else
                         {
-                            
-
-                                $('.barraLateral').animate(
+                            $('.barraLateral').animate(
                                     {
-                                        left: '0'
+                                        left: '0',
+                                        width: '250px'
                                     });
-                            // $('html, body').css({
-                            //     overflow: 'auto',
-                            //     height: '100%'
-                            // });
-                            contador = 1;
+                            contador = 0;
                         }
-
                     }
-                    else if(ancho > 768 && ancho < 999)
+                    else if(ancho >= 768 && ancho < 999)
                     {
                         if(contador == 1)
                         {
                             // Escondemos el menú lateral.
                             $( ".barraLateral" ).css("display", "none");
-                            $( ".barraLateral" ).css("width", "0%");
-                            $( ".main" ).css("width", "100%");
+                            $( ".barraLateral" ).css("width", "0px");
+                            $( ".mainn" ).css("border-left", "none");
                             contador = 0;
                         }
                         else
@@ -132,7 +118,7 @@ $(document).ready(main);
                             // Mostramos el menú lateral.
                             $( ".barraLateral" ).css("display", "inline-block");
                             $( ".barraLateral" ).css("width", "20%");
-                            $( ".main" ).css("width", "80%");
+                            $( ".mainn" ).css("border-left", "1px solid lightgrey");
                             contador = 1;
                         }
                     }
@@ -142,8 +128,8 @@ $(document).ready(main);
                         {
                             // Escondemos el menú lateral.
                             $( ".barraLateral" ).css("display", "none");
-                            $( ".barraLateral" ).css("width", "0%");
-                            $( ".main" ).css("width", "100%");
+                            $( ".barraLateral" ).css("width", "0px");
+                            $( ".mainn" ).css("border-left", "none");
                             contador = 0;
                         }
                         else
@@ -151,53 +137,53 @@ $(document).ready(main);
                             // Mostramos el menú lateral.
                             $( ".barraLateral" ).css("display", "inline-block");
                             $( ".barraLateral" ).css("width", "15%");
-                            $( ".main" ).css("width", "85%");
+                            $( ".mainn" ).css("border-left", "1px solid lightgrey");
                             contador = 1;
                         }
                     }
                 });
             }
 
-            function OnResize()
-            {
-                var w = window.outerWidth;
-                //var h = window.outerHeight;
-                var barraLateral = $('.barraLateral').css('display');
+            // function OnResize()
+            // {
+            //     var w = window.outerWidth;
+            //     //var h = window.outerHeight;
+            //     var barraLateral = $('.barraLateral').css('display');
                 
-                if(w < 768)
-                {
-                    // Mostramos el menú lateral.
-                    $( ".main" ).css("width", "100%");
+            //     if(w < 768)
+            //     {
+            //         // Mostramos el menú lateral.
+            //         $( ".main" ).css("width", "100%");
                     
-                }
-                else if(w > 768 && w < 999)
-                    {
-                        if(barraLateral === "block")
-                        {
-                            // Mostramos el menú lateral.
-                            $( ".barraLateral" ).css("width", "20%");
-                            $( ".main" ).css("width", "80%");
-                        }
-                        else
-                        {
-                            // Mostramos el menú lateral.
-                            $( ".barraLateral" ).css("width", "0%");
-                            $( ".main" ).css("width", "100%");
-                        }  
-                    }
-                    else if(w > 999)
-                    {
-                        if(barraLateral === "block")
-                        {
-                            // Mostramos el menú lateral.
-                            $( ".barraLateral" ).css("width", "15%");
-                            $( ".main" ).css("width", "85%");
-                        }
-                        else
-                        {
-                            // Mostramos el menú lateral.
-                            $( ".barraLateral" ).css("width", "0%");
-                            $( ".main" ).css("width", "100%");
-                        }  
-                    }
-            }
+            //     }
+            //     else if(w > 768 && w < 999)
+            //         {
+            //             if(barraLateral === "block")
+            //             {
+            //                 // Mostramos el menú lateral.
+            //                 $( ".barraLateral" ).css("width", "20%");
+            //                 $( ".main" ).css("width", "80%");
+            //             }
+            //             else
+            //             {
+            //                 // Mostramos el menú lateral.
+            //                 $( ".barraLateral" ).css("width", "0%");
+            //                 $( ".main" ).css("width", "100%");
+            //             }  
+            //         }
+            //         else if(w > 999)
+            //         {
+            //             if(barraLateral === "block")
+            //             {
+            //                 // Mostramos el menú lateral.
+            //                 $( ".barraLateral" ).css("width", "15%");
+            //                 $( ".main" ).css("width", "85%");
+            //             }
+            //             else
+            //             {
+            //                 // Mostramos el menú lateral.
+            //                 $( ".barraLateral" ).css("width", "0%");
+            //                 $( ".main" ).css("width", "100%");
+            //             }  
+            //         }
+            // }

@@ -116,7 +116,6 @@ body {
   flex-direction: column;
   margin: 10px;
   align-content: center;
-  
 }
 
 .barraLateralSeccionesHide
@@ -195,10 +194,6 @@ body {
 }
 
 #tablaArticulos {
-  /* height: 430px; */
-  /* height: 410px;
-  width: 260px; */
-  /* width: 19%; */
   width: 19%;
   height: auto;
   margin: 5px;
@@ -365,7 +360,6 @@ body {
   overflow:hidden;
   text-overflow: hidden;
 }
-
 
 #detallesArticuloValoracion {
   display: flex;
@@ -560,8 +554,6 @@ and (max-device-height : 390px) {
     overflow-x: hidden;
     overflow-y: scroll;
   }
-
-  
 
   .barraLateralSeccionesHide
   {
