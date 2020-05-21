@@ -185,6 +185,12 @@ div#headerContenedorBtnProcesarPago div
   font-weight: normal;
 }
 
+#spinner
+{
+  visibility: hidden;
+  /* visibility: hidden; */
+}
+
 /************************************/
 
 /***************** Main *******************/

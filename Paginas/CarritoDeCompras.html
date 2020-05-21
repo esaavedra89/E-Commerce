@@ -10,7 +10,7 @@
         <!-- <link href="Recursos/font/fontellosecond.ttf" rel="stylesheet" type="text/css"> -->
         <link href="../Recursos/Fuentes/Fontello/css/fontellofull.css" rel="stylesheet" type="text/css">
         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
 
     <body>
@@ -232,14 +232,13 @@
                                     </tr>
                                 </tbody>
                             </table>
-
-                            <button id="botonPagar" title="Pagar"><span class="icon-money"></span>  Pagar</button>
+                            <button id="botonPagar" title="Pagar" onclick="Pagar()"><span class="icon-money"></span>  Pagar  <span class="fa fa-refresh fa-spin" id="spinner"></span></button>
                         </div>
-                        
                     </form>
                 </div>
             </div>
         </div>
+        <script src="Js/jquery-3.2.1.min.js"></script>
+        <script src="../Js/CarritoDeCompras.js"></script>
     </body>
-
 </html>

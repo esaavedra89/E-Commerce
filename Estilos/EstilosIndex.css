@@ -14,6 +14,7 @@ body {
   margin: 0 auto;
   font-size: 15px;
   line-height: 19px;
+  background-color: white;
 }
 
 #contenedorPrincipal {
@@ -23,7 +24,7 @@ body {
   display: inline-block;
   border: 1px solid lightgray;
   width: 100%;
-
+  background-color: white;
   box-shadow: 0px 0px 10px rgba(0,0,0,0.05);
 }
 
@@ -42,6 +43,9 @@ body {
     right: 0;
     left: 0;
     z-index: 1030;
+
+    border-left: 1px solid lightgray;
+  border-right: 1px solid lightgray;
 }
 
 /***************** Header inferior *******************/
@@ -53,7 +57,7 @@ body {
   box-shadow: 0px 0px 10px rgba(0,0,0,0.05);
   background-color: white;
   min-width: 320px;
-
+  
   /* margin-top: 48px; */
 }
 
@@ -109,6 +113,7 @@ body {
   float: left;
   width: 15%;
   min-width: 130px;
+  background-color: white;
 }
 
 .barraLateralSecciones {
@@ -181,6 +186,7 @@ body {
   /* background-color: yellow; */
   border-left: 1px solid lightgrey;
   box-shadow: 0px 0px 10px rgba(0,0,0,0.05);
+  background-color: white;
 }
 
 .seccionArticulos {
@@ -207,6 +213,7 @@ body {
   
   max-height: 430px;
   max-width: 300px;
+  background-color: white;
 
   /* background-color: lightblue; */
 }
@@ -390,8 +397,6 @@ body {
   
   display: flex;
   align-items: center;
-  /* justify-content: start; */
-  /* height: 30%; */
   height: 40%;
 }
 
@@ -410,6 +415,9 @@ body {
 .letrasPequenas {
   font-size: 10px;
   font-weight: normal;
+
+  /*Momentaneo*/
+  margin-top: 4px;
 }
 
 .detallesArticuloInferior {
@@ -553,6 +561,7 @@ and (max-device-height : 390px) {
     min-width: 200px;
     overflow-x: hidden;
     overflow-y: scroll;
+    border-right: 1px solid lightgray;
   }
 
   .barraLateralSeccionesHide
@@ -560,19 +569,6 @@ and (max-device-height : 390px) {
     display: block;
     height: 150px!important;
   }
-
-  /* .barraLateralSecciones {
-    margin-left: 10px !important;
-  }
-  .seccionCategoria, .seccionMarca, .seccionPrecio,  .seccionPuntuacion
-  {
-    width: 22% !important;
-  }
-  .seccionPuntuacion
-  {
-    margin-top: 5px !important;
-    width: 22% !important;
-  } */
 }
 
 @media (max-width: 320px) {
@@ -627,6 +623,7 @@ and (max-device-height : 390px) {
     min-width: 200px;
     overflow-x: hidden;
     overflow-y: scroll;
+    border-right: 1px solid lightgray;
   }
 
   .barraLateralSeccionesHide
@@ -634,19 +631,7 @@ and (max-device-height : 390px) {
     display: block;
     height: 150px!important;
   }
-
   
-
-  /* .barraLateralSecciones {
-    margin: 5px 5px 5px 10px;
-    float: left;
-  }
-    .seccionCategoria, .seccionMarca, .seccionPrecio, .seccionPuntuacion
-    {
-      display: flex;
-      width: 40%;
-      height: 28%;
-    } */
 }
 
 @media (min-width: 321px) and (max-width: 355px) 
@@ -706,19 +691,8 @@ and (max-device-height : 390px) {
 
     overflow-x: hidden;
     overflow-y: scroll;
+    border-right: 1px solid lightgray;
   }
-
-  /* .barraLateralSecciones {
-    margin: 5px 5px 5px 10px;
-  }
-  .seccionCategoria, .seccionMarca, .seccionPrecio, .seccionPuntuacion
-  {
-    display: flex;
-    float: left;
-    height: 28%;
-    min-width: 150px;
-    min-height: 70px;
-  } */
 
   .barraLateralSeccionesHide
   {
@@ -780,20 +754,8 @@ and (max-device-height : 390px) {
     z-index: 2030;
     background-color: white;
     min-width: 200px;
+    border-right: 1px solid lightgray;
   }
-
-  /* .barraLateralSecciones {
-    margin: 5px 5px 5px 10px;
-  }
-  .seccionCategoria, .seccionMarca, .seccionPrecio, .seccionPuntuacion
-  {
-    display: flex;
-    float: left;
-    height: 28%;
-    min-width: 150px;
-    min-height: 70px;
-  } */
-
   .barraLateralSeccionesHide
   {
     display: block;
@@ -841,7 +803,7 @@ and (max-device-height : 390px) {
   .barraLateral
   {
     position: fixed;
-    width: 180px;
+    width: 200px;
     margin: 0px;
     height: 100%;
     left: -100%;
@@ -851,6 +813,7 @@ and (max-device-height : 390px) {
     background-color: white;
     overflow-x: hidden;
     overflow-y: scroll;
+    border-right: 1px solid lightgray;
     
   }
 
@@ -1075,31 +1038,21 @@ and (max-device-height : 390px) {
 }
 
 @media (min-width: 1362px) and (max-width: 1408px) {
-  /* #contenedorPrincipal {
+  /* .seccionArticulos  {
     background-color: lightyellow;
   } */
-
-  .articulo {
-
-    /* height: 440px; */
-    height: 420px;
-    width: 270px;
-  }
 }
 
 @media (min-width: 1409px) and (max-width: 1455px) {
-  /* #contenedorPrincipal {
-    background-color: lightseagreen;
-  } */
-
-  .articulo {
-
-    /* height: 450px; */
-    height: 430px;
-    width: 280px;
+  /* .seccionArticulos {
+    background-color: lightseagreen!important;
   }
-}
 
+  #tablaArticulos
+  {
+    background-color: tomato;
+  } */
+}
 
 @media (min-width: 1456px) and (max-width: 1505px) {
   /* #contenedorPrincipal {

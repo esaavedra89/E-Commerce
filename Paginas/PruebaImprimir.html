@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>Prueba Imprimir</title>
+    </head>
+
+    <body>
+        <div style="width: 300px;">
+            <p>On android devices (I have tested Nexus 5, Nexus 10, Galaxy S4 and Galaxy Tab 3) the window.print() command in javascript doesn't do anything, as far as I can tell it doesn't even register an error.</p>
+            <p>I know for a fact that most if not all of these browsers can print because you can use mobile chromes menu to choose "print".  My questions is, why doesn't window.print() trigger the behavior you would expect (opening the clients print menu).
+            And is there an android alternative to window.print()?</p>
+        </div>
+
+        <div id="gcpPrint"></div>
+        <button onclick="Imprimir()" style="padding: 2px 20px 2px 20px; margin: 0px 10px 0px 10px; background-color: black; color: white; font-weight: bold;">Imprimir normal</button>
+
+        <script src="https://www.google.com/cloudprint/client/cpgadget.js">
+        </script>
+
+        <script>
+            var gadget = new cloudprint.Gadget();
+            gadget.setPrintButton(cloudprint.Gadget.createDefaultPrintButton("gcpPrint"));
+            gadget.setPrintDocument("text/html", "Print", document.documentElement.innerHTML);
+        </script>
+
+        <script>
+            function Imprimir()
+            {
+                window.print();
+            }
+        </script>
+    </body>
+</html>

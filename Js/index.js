@@ -98,7 +98,7 @@ $(document).ready(main);
                             $('.barraLateral').animate(
                                     {
                                         left: '0',
-                                        width: '250px'
+                                        width: '200px'
                                     });
                             contador = 0;
                         }
