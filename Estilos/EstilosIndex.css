@@ -201,7 +201,7 @@ body {
 
 #tablaArticulos {
   width: 19%;
-  height: 410px;
+  height: 390px;
   margin: 5px;
   padding: 0px 5px;
   border-radius: 2px;
@@ -417,7 +417,7 @@ body {
   font-weight: normal;
 
   /*Momentaneo*/
-  margin-top: 4px;
+  margin-top: 3px;
 }
 
 .detallesArticuloInferior {
@@ -597,8 +597,8 @@ and (max-device-height : 390px) {
     border-left: none;
   }
 
-  .seccionArticulos {
-    justify-content: center;
+  #tablaArticulos {
+    width: 65%;
   }
 
   .a-selected,
@@ -665,6 +665,10 @@ and (max-device-height : 390px) {
     justify-content: center;
   }
 
+  #tablaArticulos {
+    width: 60%;
+  }
+
   .li-anterior {
     margin-left: -35px;
     width: 100px;
@@ -729,6 +733,10 @@ and (max-device-height : 390px) {
 
   .seccionArticulos {
     justify-content: center;
+  }
+
+  #tablaArticulos {
+    width: 60%;
   }
 
   .li-anterior {
