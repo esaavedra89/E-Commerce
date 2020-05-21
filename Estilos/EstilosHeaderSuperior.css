@@ -7,17 +7,9 @@
 
 /***************** Header superior *******************/
 #headerSuperior {
-    /* height: 50%; */
     box-sizing: border-box;
     background-color: lightgray;
-    
-    
     height: 50px;
-    /* position: fixed;
-    top: 0;
-    right: 0;
-    left: 0;
-    z-index: 1030; */
   }
   
   #tablaHeaderSuperior {
@@ -26,10 +18,7 @@
   }
   
   #columnaHeaderSupUno {
-    /* width: 100px; */
     width: 90px;
-
-    /* background-color: lawngreen; */
   }
   
   #columnaHeaderSupTres {
@@ -37,14 +26,11 @@
   }
   
   .contenedorLogo {
-    /* Centra los elementos dentro */
     align-items: center;
     width: 90px;
     height: 100%;
     display: inline-flex;
     vertical-align: middle;
-    
-    /* background-color: lightcoral; */
     }
   
   #logo {
@@ -52,13 +38,9 @@
     max-height: 40px;
     min-width: 90px;
     width: 80%;
-    /* margin: 0 auto 0 7px; */
     vertical-align: middle;
     border-radius: 2px;
-
     object-fit: contain;
-
-    /* background-color: lawngreen; */
   }
   
   .contenedorBarraBuscar {
@@ -80,7 +62,7 @@
     border: 1px solid lightgray;
     border-radius: 2px;
     /*Para evitar bordes redondeados en iOS*/
-    -webkit-border-radius: 2px; 
+    -webkit-border-radius: 0px; 
     /*Eliminar sombra en input de iOS*/
     -webkit-appearance: textarea;
   }
@@ -114,7 +96,6 @@
     position: absolute;
     top: 0;
     left: 55%;
-    /* background: red; */
     width: 15px;
     height: 15px;
     border-radius: 50%;
@@ -122,7 +103,10 @@
     justify-content: center;
     align-items: center;
     color: white;
-    padding: 2px;
+    padding: 10px;
+    background-color: red;
+    margin-top: -5px;
+    font-size: 21px;
   }
   
   #btnIniciarSesion {
