@@ -201,7 +201,7 @@ body {
 
 #tablaArticulos {
   width: 19%;
-  height: auto;
+  height: 410px;
   margin: 5px;
   padding: 0px 5px;
   border-radius: 2px;
@@ -215,7 +215,7 @@ body {
   max-width: 300px;
   background-color: white;
 
-  /* background-color: lightblue; */
+  background-color: lightblue;
 }
 
 #tablaArticulos:hover
@@ -421,7 +421,7 @@ body {
 }
 
 .detallesArticuloInferior {
-  height: 20%;
+  
   display: flex;
   
 }
