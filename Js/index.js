@@ -1,10 +1,19 @@
 
 $(document).ready(main);
 
-//var slideIndex = 0;
-            var slideIndex = 1;
-            //showSlides();
+// Eventos.
+document.getElementById('btnAdicionar').addEventListener('click', sumar);
+document.getElementById('btnRestar').addEventListener('click', restar);
 
+// Varaibles.
+var slideIndex = 1;
+var contador = 1;
+var a = 1;
+
+// Captar.
+var cantidadArticulo = document.getElementById("inpCantidad"); // obtenemos el elemento
+cantidadArticulo.value = 1;
+// Metodos.
             function showSlides() {
                 var i;
                 var slides = document.getElementsByClassName("mySlides");
@@ -71,7 +80,7 @@ $(document).ready(main);
                 }
             }
 
-            var contador = 1;
+            
 
             function main()
             {
@@ -144,46 +153,20 @@ $(document).ready(main);
                 });
             }
 
-            // function OnResize()
-            // {
-            //     var w = window.outerWidth;
-            //     //var h = window.outerHeight;
-            //     var barraLateral = $('.barraLateral').css('display');
-                
-            //     if(w < 768)
-            //     {
-            //         // Mostramos el menú lateral.
-            //         $( ".main" ).css("width", "100%");
-                    
-            //     }
-            //     else if(w > 768 && w < 999)
-            //         {
-            //             if(barraLateral === "block")
-            //             {
-            //                 // Mostramos el menú lateral.
-            //                 $( ".barraLateral" ).css("width", "20%");
-            //                 $( ".main" ).css("width", "80%");
-            //             }
-            //             else
-            //             {
-            //                 // Mostramos el menú lateral.
-            //                 $( ".barraLateral" ).css("width", "0%");
-            //                 $( ".main" ).css("width", "100%");
-            //             }  
-            //         }
-            //         else if(w > 999)
-            //         {
-            //             if(barraLateral === "block")
-            //             {
-            //                 // Mostramos el menú lateral.
-            //                 $( ".barraLateral" ).css("width", "15%");
-            //                 $( ".main" ).css("width", "85%");
-            //             }
-            //             else
-            //             {
-            //                 // Mostramos el menú lateral.
-            //                 $( ".barraLateral" ).css("width", "0%");
-            //                 $( ".main" ).css("width", "100%");
-            //             }  
-            //         }
-            // }
+// Suma artículos.
+function sumar () {
+    a = a + 1;
+    cantidadArticulo.value = a;
+}
+
+// Resta artículos.
+function restar () {
+  
+ if (cantidadArticulo.value == 0)
+ { 
+     return; // validamos que el valor no sea menor a 0
+ }
+ 
+ a = a - 1;
+ cantidadArticulo.value = a;
+}      

@@ -348,7 +348,7 @@ body {
   font-size: 18px;
   text-transform: uppercase;
   height: 56px;
-
+  cursor: pointer;
   overflow:hidden;
   text-overflow: hidden;
 }
