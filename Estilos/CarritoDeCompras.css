@@ -66,6 +66,11 @@ body {
   display: flex;
 }
 
+#headerInferiorIzquierdo .labelsHeader
+{
+  font-weight: bold;
+}
+
 #headerInferiorDerecho {
   align-items: center;
   display: flex;
