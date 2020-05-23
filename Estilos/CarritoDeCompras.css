@@ -259,6 +259,7 @@ div#headerContenedorBtnProcesarPago div
 .colArtTresizquierdo {
   align-content: center;
   display: flex;
+  height: 100%;
 }
 
 .botonesCantidad {

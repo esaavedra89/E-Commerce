@@ -240,9 +240,6 @@ body {
 
 
 
-
-
-
 /* .articulo {
   height: 410px;
   width: 260px;
@@ -351,6 +348,7 @@ body {
   cursor: pointer;
   overflow:hidden;
   text-overflow: hidden;
+
 }
 
 #detallesArticuloValoracion {
@@ -415,6 +413,7 @@ body {
   width: 55%;
   display: flex;
   align-content: center;
+  height: 100%;
 }
 
 .btnCantidad {
