@@ -7,3 +7,7 @@ function Pagar()
     setTimeout(function(){ alert("Hello"); }, 3000);
 }
 
+function goBack() {
+    window.history.back();
+  }
+
