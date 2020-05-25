@@ -169,4 +169,4 @@ function restar () {
  
  a = a - 1;
  cantidadArticulo.value = a;
-}      
+}
