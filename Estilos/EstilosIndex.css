@@ -234,21 +234,6 @@ body {
   height: 13%;
 }
 
-
-
-
-
-
-
-/* .articulo {
-  height: 410px;
-  width: 260px;
-  margin: 5px;
-  border-radius: 2px;
-  border-bottom: 1px solid lightgrey;
-  box-shadow: 0px 0px 10px rgba(0,0,0,0.05);
-} */
-
 .slide-container {
   position: relative;
   margin: auto;
@@ -533,6 +518,33 @@ ul.a-paginacion li a {
 
 /******************************Media query**************************************/
 
+@media only screen and (max-device-width : 550px)
+and (max-device-height : 340px) {
+  .barraLateral
+  {
+    background-color: white !important;
+    font-size: 12px;
+    width: 200px !important;
+
+    min-width: 200px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    border-right: 1px solid lightgray;
+  }
+
+  .barraLateralSeccionesHide
+  {
+    display: block;
+    height: 300px!important;
+  }
+
+  .w3-modal-content
+  {
+    margin-top: 100px;
+    margin-left: 100px!important;
+    margin-right: 100px!important;
+  }
+}
 /* Smartphones (portrait and landscape) ———– */
 @media only screen and (max-device-width : 700px)
 and (max-device-height : 390px) {
@@ -749,6 +761,9 @@ and (max-device-height : 390px) {
 }
 
 @media (min-width: 480px) and (max-width: 767px) {
+
+
+
   #columnaHeaderSupTres {
     width: 50px;
   }
@@ -768,8 +783,8 @@ and (max-device-height : 390px) {
   #tablaArticulos {
     height: 400px;
     max-height: 440px;
-    max-width: 400px;
-    width: 50%;
+    max-width: 300px;
+    width: 60%;
   }
 
   .li-anterior {
@@ -823,25 +838,10 @@ and (max-device-height : 390px) {
 }
 
 @media (min-width: 821px) and (max-width: 945px) {
-  /* #contenedorPrincipal {
-    background: rgb(138, 156, 223);
-  } */
-
-  /* .main {
-    width: 80%;
-  } */
-
+  
   .barraLateral {
     width: 20%;
   }
-
-  /* #lblExistencias, #existenciaArticulo, #txtEstrellasArticulo{
-    font-size: 17px;
-  }
-
-  #precioArticulo{
-    font-size: 22px;
-  } */
 
   #tablaArticulos {
     max-width: 400px;
@@ -850,210 +850,11 @@ and (max-device-height : 390px) {
 }
 
 @media (min-width: 946px) and (max-width: 999px) {
-  /* #contenedorPrincipal {
-    background: rgb(176, 179, 190);
-  } */
-
-  /* .main {
-    width: 80%;
-  } */
-
   .barraLateral {
     width: 20%;
   }
-
-  /* #detallesArticuloValoracion {
-    margin: 0px;
-  }
-
-  .txtDetallesArticulo
-  {
-    font-size: 15px;
-  }
-
-  #lblExistencias, #existenciaArticulo, #txtEstrellasArticulo{
-    font-size: 13px;
-  }
-
-  #precioArticulo{
-    font-size: 18px;
-  } */
-}
-
-@media (min-width: 1000px) and (max-width: 1031px) {
-  /* #contenedorPrincipal {
-      background: rgb(0, 255, 34);
-    } */
-
-  /* #detallesArticuloValoracion {
-    margin: 0px;
-  } */
-}
-
-@media (min-width: 1032px) and (max-width: 1141px) {
-  /* #contenedorPrincipal {
-      background: #ff0;
-    } */
-}
-
-@media (min-width: 1142px) and (max-width: 1199px) {
-  /* #contenedorPrincipal {
-        background: rgb(255, 0, 76);
-      } */
-
-  /* #lblExistencias, #existenciaArticulo, #txtEstrellasArticulo{
-    font-size: 17px;
-  }
-
-  #precioArticulo{
-    font-size: 22px;
-  } */
-}
-
-@media (min-width: 1200px) and (max-width: 1267px) {
-  /* #contenedorPrincipal {
-    background-color: limegreen;
-  } */
-
-  /* #detallesArticuloValoracion {
-    margin: 0px;
-  }
-
-  .txtDetallesArticulo
-  {
-    font-size: 15px;
-  }
-
-  #lblExistencias, #existenciaArticulo, #txtEstrellasArticulo{
-    font-size: 13px;
-  }
-
-  #precioArticulo{
-    font-size: 18px;
-  } */
-}
-
-@media (min-width: 1268px) and (max-width: 1315px) {
-  /* #contenedorPrincipal {
-    background-color: lightcoral;
-  } */
-
-  /* #detallesArticuloValoracion {
-    margin: 0px;
-  }
-
-  .txtDetallesArticulo
-  {
-    font-size: 16px;
-  }
-
-  #lblExistencias, #existenciaArticulo, #txtEstrellasArticulo{
-    font-size: 14px;
-  }
-
-  #precioArticulo{
-    font-size: 19px;
-  } */
-}
-
-@media (min-width: 1316px) and (max-width: 1361px) {
-  /* #contenedorPrincipal {
-    background-color: lightseagreen;
-  } */
-
-  /* #detallesArticuloValoracion {
-    margin: 0px;
-  } */
-}
-
-@media (min-width: 1362px) and (max-width: 1408px) {
-  /* .seccionArticulos  {
-    background-color: lightyellow;
-  } */
-}
-
-@media (min-width: 1409px) and (max-width: 1455px) {
-  /* /* .seccionArticulos {
-    background-color: lightseagreen!important;
-  } */
-
-  /* #tablaArticulos
-  {
-    background-color: tomato;
-  }  */
-}
-
-@media (min-width: 1456px) and (max-width: 1505px) {
-  /* #contenedorPrincipal {
-    background-color: lightskyblue;
-  } */
-}
-
-@media (min-width: 1506px) and (max-width: 1574px) {
-  /* #contenedorPrincipal {
-    background-color: lightslategrey;
-  } */
-
-  /* #lblExistencias, #existenciaArticulo, #txtEstrellasArticulo{
-    font-size: 17px;
-  }
-
-  #precioArticulo{
-    font-size: 22px;
-  } */
-}
-
-@media (min-width: 1575px) and (max-width: 1631px) {
-  /* #contenedorPrincipal {
-    background-color: lightsalmon;
-  } */
-
-  /* #detallesArticuloValoracion {
-    margin: 0px;
-  } */
 }
 
 
-@media (min-width: 1632px) and (max-width: 1690px) {
-  /* #contenedorPrincipal {
-    background-color: lightgreen;
-  } */
-  /* #detallesArticuloValoracion {
-    margin: 0px;
-  } */
-}
 
-@media (min-width: 1901px) and (max-width: 2000px) {
-  /* #contenedorPrincipal {
-    background-color: lightyellow;
-  } */
 
-  
-
-    /* height: 460px;
-    width: 290px; */
-
-    /* height: 450px;
-    width: 280px; */
-
-    /* height: 440px;
-    width: 270px; */
-
-    /* height: 430px;
-    width: 260px; */
-
-    /* height: 420px;
-    width: 250px;  */
-
-    /* height: 410px;
-    width: 230px;  */
-  
-
-  /* #lblExistencias, #existenciaArticulo, #txtEstrellasArticulo{
-    font-size: 17px;
-  }
-
-  #precioArticulo{
-    font-size: 22px;
-  } */
-}
