@@ -62,7 +62,7 @@
     border: 1px solid lightgray;
     border-radius: 2px;
     /*Para evitar bordes redondeados en iOS*/
-    -webkit-border-radius: 0px; 
+    -webkit-border-radius: 2px; 
     /*Eliminar sombra en input de iOS*/
     -webkit-appearance: textarea;
   }
@@ -103,10 +103,10 @@
     justify-content: center;
     align-items: center;
     color: white;
-    padding: 12px 10px 8px 10px;
     background-color: red;
     margin-top: -5px;
     font-size: 21px;
+    padding: 12px 10px 8px 10px;
   }
   
   #btnIniciarSesion {

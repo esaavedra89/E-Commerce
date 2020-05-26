@@ -134,13 +134,13 @@ body {
 }
 
 .lblCkechbox {
-  vertical-align: middle;
+  vertical-align: top;
 }
 
 .cbox {
   padding: 0px;
   background-color: white;
-  vertical-align: top;
+  vertical-align: center;
   margin-left: 0px;
   border-radius: 2px;
   border: 1px solid lightgrey;
@@ -173,6 +173,11 @@ body {
   color: orange;
   font-size: small;
   font-weight: bolder;
+}
+
+#rangoPrecios
+{
+  width: 95%;
 }
 
 /************************************/

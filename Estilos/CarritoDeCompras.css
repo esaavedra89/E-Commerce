@@ -78,6 +78,11 @@ body {
   height: 100%;
 }
 
+#headerInferiorDerecho > .labelsHeader
+{
+  cursor: pointer;
+}
+
 .labelsHeader {
   margin: 0 10px;
   font-size: medium;
