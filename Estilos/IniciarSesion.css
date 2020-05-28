@@ -1,0 +1,82 @@
+@font-face {
+    font-family: "Myriadpro";
+    src: url("../Recursos/Fuentes/Myriadpro/myriadpro.ttf");
+  }
+
+* {
+    box-sizing: border-box;
+    font-family: "Myriadpro";
+    font-size: 15px;
+  }
+
+  body
+  {
+      justify-content: center;
+      align-content: center;
+      display: flex;
+  }
+
+  .ContenedorIniciarSesion
+  {
+      width: 320px;
+      align-self: center;
+      vertical-align: middle;
+      margin-top: 50px;
+      margin-bottom: 150px;
+      padding: 20px;
+      border: 1px solid lightgray;
+      background-color: white;
+      box-shadow: 0px 0px 10px rgba(0,0,0,0.05);
+  }
+
+  .contenedorLogo
+  {
+      display: flex;
+      justify-content: center;
+  }
+
+  #logo
+  {
+      height: 100px;
+  }
+
+  .contenedorFormulario
+  {
+      display: flex;
+      
+      justify-content: center;
+  }
+
+  #usuario, #contrasenna
+  {
+      width: 100%;
+      height: 40px;
+      margin: 20px 0px 0px 0px;
+      font-family: "Myriadpro";
+      font-size: 15px;
+      border: 1px solid lightgray;
+      border-radius: 2px;
+
+      -webkit-border-radius: 2px;
+  }
+
+  #btnIngresar
+  {
+    display: block;
+    width: 100%;
+    height: 40px;
+    margin: 20px 0px 0px 0px;
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    font-weight: bold;
+    border: 1px solid #20468d;
+    background-color: #20468d;
+    color: white;
+  }
+
+  .login_footer {
+    width: 100%;
+    text-align: center;
+    color: #20468d;
+    margin-top: 20px;
+}

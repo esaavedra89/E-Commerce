@@ -1,0 +1,736 @@
+@font-face {
+  font-family: "Myriadpro";
+  src: url("../Recursos/Fuentes/Myriadpro/myriadpro.ttf");
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Myriadpro";
+}
+
+.body-CarritoDeCompras {
+  margin: 0px;
+  padding: 0px;
+  /* max-width: 1200px; */
+  margin: 0 auto;
+  font-size: 15px;
+  line-height: 19px;
+  height: 100%;
+}
+
+#contenedorPrincipal-CarritoDeCompras {
+  margin: 0 auto;
+  margin: 0px;
+  padding: 0px;
+  display: inline-block;
+  border: 1px solid lightgray;
+  height: 100%;
+  width: 100%;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.05);
+
+  /* background-color: khaki; */
+}
+
+.general-CarritoDeCompras {
+  margin: 0 auto;
+  margin-top: 99px;
+}
+
+#headerPrincipal {
+  height: 100px;
+  width: 100%;
+  margin: 0 auto;
+
+  position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+
+    border-left: 1px solid lightgray;
+    border-right: 1px solid lightgray;
+}
+
+/***************** Header inferior *******************/
+#headerInferior-CarritoDeCompras {
+  height: 50%;
+  border-top: 1px solid lightgray;
+  border-bottom: 1px solid lightgray;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.05);
+
+  background-color: white;
+  /* margin-top: 48px; */
+}
+
+#headerInferiorIzquierdo-CarritoDeCompras {
+  float: left;
+  align-items: center;
+  height: 100%;
+  display: flex;
+}
+
+#headerInferiorIzquierdo-CarritoDeCompras .labelsHeader-CarritoDeCompras
+{
+  font-weight: bold;
+}
+
+#headerInferiorDerecho-CarritoDeCompras {
+  align-items: center;
+  display: flex;
+  float: right;
+  height: 100%;
+}
+
+#headerInferiorDerecho-CarritoDeCompras > .labelsHeader-CarritoDeCompras
+{
+  cursor: pointer;
+}
+
+.labelsHeader-CarritoDeCompras {
+  margin: 0 10px;
+  font-size: medium;
+}
+
+.labelEnlazable {
+  color: #20468d;
+  text-decoration: underline;
+}
+
+/************************************/
+
+/*****************Total para versiones moviles*******************/
+#headerContenedorBtnProcesarPago
+{
+  display: none;
+  width: 100%;
+  justify-content: center;
+}
+
+div#headerContenedorBtnProcesarPago div
+{
+  align-items: center;
+  display: flex;
+  float: left;
+  height: 30%;
+  margin: 0px;
+}
+
+
+/************************************/
+
+/***************** Barra lateral derecha *******************/
+.barraLateral-CarritoDeCompras {
+  float: right;
+  width: 30%;
+  /* height: 500px; */
+
+  border-left: 1px solid lightgrey;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.05);
+}
+
+#formularioPago {
+  background-color: white;
+  margin: 10px;
+  /* padding: 5px; */
+}
+
+#tituloFormulario {
+  font-size: 26px;
+  font-weight: bold;
+  margin: 10px 0px;
+}
+
+#formularioSuperior {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.formularioSubtitulos {
+  font-size: medium;
+  margin: 5px 0;
+}
+
+#modoEntrega {
+  background-color: white;
+  font-size: 15px;
+  height: 35px;
+  border-radius: 2px;
+  border: 1px solid lightgray;
+}
+
+.entradaTexto {
+  background-color: white;
+  font-size: 15px;
+  height: 35px;
+  border-radius: 2px;
+  border: 1px solid lightgray;
+}
+
+#tabla-Formulario {
+  width: 100%;
+}
+
+.filasFormulario {
+  height: 35px;
+}
+
+.columnaDos {
+  text-align: right; /* Alinea los elementos adentro hacia la derecha. */
+}
+
+.labelsTotal {
+  font-size: large;
+  font-weight: bold;
+  color: #20468d;
+}
+
+/*****************Eliminar al integrar en un solo CSS**********************/
+.btn-Azul
+  {
+    background-color: #20468d;
+    color: white;
+    text-align: center;
+    border-radius: 2px;
+    border: 1px solid #20468d;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: normal;
+  }
+
+  /***************************************/
+
+#botonPagar, #btnProcesarPago {
+  width: 100%;
+  height: 40px;
+  margin: 20px 0px;
+}
+
+#spinner
+{
+  visibility: hidden;
+  /* visibility: hidden; */
+}
+
+/************************************/
+
+/***************** Main *******************/
+.main-CarritoDeCompras {
+  /* border: 3px solid red; */
+  float: left;
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 15px;
+  height: 500px;
+}
+
+#listaArticulos-CarritoDeCompras {
+  height: 100%;
+  width: 100%;
+}
+
+#tablaArticulos-CarritoDeCompras {
+  width: 100%;
+  border-bottom: 1px solid lightgrey;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.05);
+  border-radius: 2px;
+}
+
+.filasArticulos-CarritoDeCompras {
+  width: 100%;
+  height: 160px;
+}
+
+#columnaArticulosUno-CarritoDeCompras {
+  /* width: 15%; */
+  width: 180px;
+
+  min-width: 150px;
+}
+
+#imagenArticulo {
+  width: 90%;
+  display: block;
+  margin: 0 auto;
+  cursor: pointer;
+
+  object-fit: cover;
+}
+
+#columnaArticulosDos-CarritoDeCompras {
+  width: 55%;
+  min-width: 250px;
+}
+
+#columnaArticulosTres-CarritoDeCompras {
+  width: 25%;
+  min-width: 140px;
+}
+
+#colArtTresContenedor-CarritoDeCompras {
+  display: flex;
+  float: right;
+  margin: 0 auto;
+  height: 40px;
+}
+
+.colArtTresizquierdo-CarritoDeCompras {
+  align-content: center;
+  display: flex;
+  height: 100%;
+}
+
+.botonesCantidad-CarritoDeCompras {
+  background-color: white;
+  height: 100%;
+  width: 40px;
+  color: #20468d;
+  margin: 0px;
+  padding: 0px;
+  border: 1px solid lightgray;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+#cantidadProducto-CarritoDeCompras {
+  width: 50px;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  text-align: center;
+  background-color: white;
+  border: 1px solid lightgray;
+  border-top: 1px solid lightgray;
+  border-bottom: 1px solid lightgray;
+  border-left: transparent;
+  border-right: transparent;
+  border-radius: 2px;
+}
+
+#btnEliminar-CarritoDeCompras {
+  background-color: transparent;
+  border: transparent;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+#filaBotones-CarritoDeCompras
+{
+  display: none;
+}
+
+.txtDetallesArticulo-CarritoDeCompras {
+  padding: 0px;
+  margin: 0px;
+  font-size: 16px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+#precioArticulo-CarritoDeCompras {
+  padding: 0px;
+  margin: 0px;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.letrasPequenas-CarritoDeCompras {
+  font-size: 10px;
+  font-weight: normal;
+  cursor: pointer;
+}
+
+/************************************/
+
+/******************************Media query**************************************/
+
+@media (max-width: 320px) {
+  /* #contenedorPrincipal-CarritoDeCompras {
+    background: lightgoldenrodyellow;
+  } */
+
+  #columnaHeaderSupTres {
+    width: 50px;
+  }
+  #headerSuperiorDerecho {
+    /* Centra los elementos dentro */
+    width: 100%;
+  }
+
+  #btnIniciarSesionText {
+    display: none;
+  }
+
+  .labelsHeader-CarritoDeCompras,
+  #opcionesOrdenar {
+    font-size: small;
+  }
+
+  .barraLateral-CarritoDeCompras {
+    display: none;
+  }
+
+  .main-CarritoDeCompras {
+    width: 100%;
+  }
+  #headerContenedorBtnProcesarPago
+  {
+    display: inline-block;
+  }
+
+  #btnProcesarPago
+  {
+    margin: 10px 0px;
+  }
+
+  div.w3-container-Pagar > span
+  {
+    margin-top: 50px;
+  }
+
+  div.w3-container-Pagar > #formularioPago
+  {
+    margin-top: 65px;
+  }
+
+  #columnaHeaderSupTres {
+    width: 50px;
+  }
+  
+  #columnaArticulosUno-CarritoDeCompras {
+    width: 10%;
+    min-width: 100px;
+  }
+  
+  table#tablaArticulos-CarritoDeCompras tbody #filaBotones-CarritoDeCompras
+  {
+    display: table-row;
+    height: 50px;
+  }
+  
+  #columnaArticulosDos-CarritoDeCompras {
+    min-width: 100px;
+  }
+  .txtDetallesArticulo-CarritoDeCompras, #precioArticulo-CarritoDeCompras
+  {
+    font-size: 14px;
+  }
+
+  #colArtTresContenedor-CarritoDeCompras
+  {
+    justify-content: left;
+    float: left;
+  }
+
+  #columnaArticulosTres-CarritoDeCompras {
+    display: none;
+  }
+}
+
+@media (min-width: 321px) and (max-width: 479px) {
+  /* #contenedorPrincipal-CarritoDeCompras {
+    background: lightblue;
+  } */
+
+  #columnaHeaderSupTres {
+    width: 50px;
+  }
+  #headerSuperiorDerecho {
+    /* Centra los elementos dentro */
+    width: 100%;
+  }
+
+  #btnIniciarSesionText {
+    display: none;
+  }
+
+  .barraLateral-CarritoDeCompras {
+    display: none;
+  }
+
+  .main-CarritoDeCompras {
+    width: 100%;
+  }
+
+  #headerSuperiorDerecho {
+    /* Centra los elementos dentro */
+    width: 100%;
+  }
+
+  #btnIniciarSesionText {
+    display: none;
+  }
+
+  #headerContenedorBtnProcesarPago
+  {
+    display: inline-block;
+  }
+
+  #btnProcesarPago
+  {
+    margin: 10px 0px;
+  }
+
+  div.w3-container-Pagar > span
+  {
+    margin-top: 50px;
+  }
+
+  div.w3-container-Pagar > #formularioPago
+  {
+    margin-top: 65px;
+  }
+
+  #columnaHeaderSupTres {
+    width: 50px;
+  }
+  
+  #columnaArticulosUno-CarritoDeCompras {
+    width: 10%;
+    min-width: 100px;
+  }
+  
+  table#tablaArticulos-CarritoDeCompras tbody #filaBotones-CarritoDeCompras
+  {
+    display: table-row;
+    height: 50px;
+  }
+  
+  #columnaArticulosDos-CarritoDeCompras {
+    min-width: 100px;
+  }
+  .txtDetallesArticulo-CarritoDeCompras, #precioArticulo-CarritoDeCompras
+  {
+    font-size: 14px;
+  }
+
+  #colArtTresContenedor-CarritoDeCompras
+  {
+    justify-content: left;
+    float: left;
+  }
+
+  #columnaArticulosTres-CarritoDeCompras {
+    display: none;
+  }
+}
+
+@media (min-width: 480px) and (max-width: 730px) {
+  /* #contenedorPrincipal-CarritoDeCompras {
+    background: #f00;
+  } */
+
+  .barraLateral-CarritoDeCompras {
+    display: none;
+  }
+  .main-CarritoDeCompras {
+    width: 100%;
+  }
+
+  #headerSuperiorDerecho {
+    /* Centra los elementos dentro */
+    width: 100%;
+  }
+
+  #btnIniciarSesionText {
+    display: none;
+  }
+
+  #headerContenedorBtnProcesarPago
+  {
+    display: inline-block;
+  }
+
+  #btnProcesarPago
+  {
+    margin: 10px 0px;
+  }
+
+  div.w3-container-Pagar > span
+  {
+    margin-top: 50px;
+  }
+
+  div.w3-container-Pagar > #formularioPago
+  {
+    margin-top: 65px;
+  }
+
+  #columnaHeaderSupTres {
+    width: 50px;
+  }
+  
+  #columnaArticulosUno-CarritoDeCompras {
+    width: 10%;
+    min-width: 100px;
+  }
+
+  table#tablaArticulos-CarritoDeCompras tbody #filaBotones-CarritoDeCompras
+  {
+    display: table-row;
+    height: 50px;
+  }
+
+  #colArtTresContenedor-CarritoDeCompras
+  {
+    justify-content: left;
+    float: left;
+  }
+
+  #columnaArticulosTres-CarritoDeCompras {
+    display: none;
+  }
+}
+
+@media (min-width: 731px) and (max-width: 765px) {
+  /* #contenedorPrincipal-CarritoDeCompras {
+    background: rgb(7, 98, 134);
+  } */
+  .barraLateral-CarritoDeCompras {
+    display: none;
+  }
+
+  .main-CarritoDeCompras {
+    width: 100%;
+  }
+
+  #headerSuperiorDerecho {
+    /* Centra los elementos dentro */
+    width: 100%;
+  }
+
+  #btnIniciarSesionText {
+    display: none;
+  }
+
+  #headerContenedorBtnProcesarPago
+  {
+    display: inline-block;
+  }
+
+  #btnProcesarPago
+  {
+    margin: 10px 0px;
+  }
+
+  div.w3-container-Pagar > span
+  {
+    margin-top: 50px;
+  }
+
+  div.w3-container-Pagar > #formularioPago
+  {
+    margin-top: 65px;
+  }
+
+  #columnaHeaderSupTres {
+    width: 50px;
+  }
+  
+  #columnaArticulosUno-CarritoDeCompras {
+    width: 15%;
+  }
+  
+  table#tablaArticulos-CarritoDeCompras tbody #filaBotones-CarritoDeCompras
+  {
+    display: table-row;
+    height: 50px;
+  }
+
+  #colArtTresContenedor-CarritoDeCompras
+  {
+    justify-content: left;
+    float: left;
+  }
+  
+  #columnaArticulosTres-CarritoDeCompras {
+    display: none;
+  }
+}
+
+@media (min-width: 766px) and (max-width: 840px) {
+  /* #contenedorPrincipal-CarritoDeCompras {
+    background: lightsalmon;
+  } */
+
+  .barraLateral-CarritoDeCompras {
+    display: none;
+  }
+
+  .main-CarritoDeCompras {
+    width: 100%;
+  }
+
+  #headerContenedorBtnProcesarPago
+  {
+    display: inline-block;
+  }
+
+  #btnProcesarPago
+  {
+    margin: 10px 0px;
+  }
+
+  div.w3-container-Pagar > span
+  {
+    margin-top: 50px;
+  }
+
+  div.w3-container-Pagar > #formularioPago
+  {
+    margin-top: 65px;
+  }
+
+  #columnaHeaderSupTres {
+    width: 50px;
+  }
+
+  #columnaArticulosTres-CarritoDeCompras {
+    display: none;
+  }
+  
+  #columnaArticulosUno-CarritoDeCompras {
+    width: 15%;
+  }
+  table#tablaArticulos-CarritoDeCompras tbody #filaBotones-CarritoDeCompras
+  {
+    display: table-row;
+    height: 50px;
+  }
+
+  #colArtTresContenedor-CarritoDeCompras
+  {
+    justify-content: left;
+    float: left;
+  }
+}
+
+@media (min-width: 841px) and (max-width: 999px) {
+  /* #contenedorPrincipal-CarritoDeCompras {
+    background: limegreen;
+  } */
+
+  #columnaArticulosTres-CarritoDeCompras {
+    display: none;
+  }
+  
+  #columnaArticulosUno-CarritoDeCompras {
+    width: 15%;
+  }
+  table#tablaArticulos-CarritoDeCompras tbody #filaBotones-CarritoDeCompras
+  {
+    display: table-row;
+    height: 50px;
+  }
+
+  #colArtTresContenedor-CarritoDeCompras
+  {
+    justify-content: left;
+    float: left;
+  }
+}
