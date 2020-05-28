@@ -4,97 +4,14 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
         <title>Articulos</title>
-        <link href="Estilos/EstilosHeaderSuperior.css" rel="stylesheet" type="text/css">
-        <link href="Estilos/EstilosIndex.css" rel="stylesheet" type="text/css">
+        <!-- <link href="Estilos/EstilosHeaderSuperior.css" rel="stylesheet" type="text/css">
+        <link href="Estilos/EstilosIndex.css" rel="stylesheet" type="text/css"> -->
+        <link href="Estilos/DefaultTema.css" rel="stylesheet" type="text/css">
         <link href="Recursos/Fuentes/Fontello/css/fontellofull.css" rel="stylesheet" type="text/css">
         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-        <style>
-
-            #id01
-            {
-                display: none;
-            }
-
-            .ContenedorIniciarSesion
-              {
-                  margin: 20px 10px;
-              }
-            
-              .contenedorLogoIniciarSesion
-              {
-                  display: flex;
-                  justify-content: center;
-              }
-
-              #logoIniciarSesion
-              {
-                  width: 100px;
-                  max-height: 150px;
-              }
-            
-              .contenedorFormulario
-              {
-                  display: flex;
-                  justify-content: center;
-              }
-            
-              #usuario, #contrasenna
-              {
-                  width: 100%;
-                  height: 40px;
-                  margin: 20px 0px 0px 0px;
-                  font-family: "Myriadpro";
-                  font-size: 15px;
-                  border: 1px solid lightgray;
-                  border-radius: 2px;
-            
-                  -webkit-border-radius: 2px;
-              }
-            
-              #btnIngresar
-              {
-                display: block;
-                width: 100%;
-                height: 40px;
-                margin: 20px 0px 0px 0px;
-                border-radius: 2px;
-                -webkit-border-radius: 2px;
-                font-weight: bold;
-                border: 1px solid #20468d;
-                background-color: #20468d;
-                color: white;
-                cursor: pointer;
-              }
-            
-            .login_footer {
-                width: 100%;
-                text-align: center;
-                color: #20468d;
-                margin-top: 20px;
-            }
-            
-            .w3-modal-content
-            {
-                margin-top: 100px;
-                width: 320px;
-            }
-
-            .w3-modal
-            {
-                margin-top: 20px;
-            }
-            
-            .w3-button
-            {
-                margin-top: 80px;
-                background-color: transparent;
-                color: white;
-                font-size: larger;
-            }
-            </style>
     </head>
 
-    <body>
+    <body class="body-Index">
 
         <div id="contenedorPrincipal">
             <!-- Sección Header -->
@@ -160,15 +77,15 @@
 
                 <!-- Modal Inicio de sesión -->
                 
-                    <div id="id01" class="w3-modal">
-                    <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-display-topright">&times;</span>
-                      <div class="w3-modal-content">
-                        <div class="w3-container">
+                    <div id="id01" class="w3-modal w3-modal-InicioSesion">
+                    <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-button-InicioSesion w3-display-topright">&times;</span>
+                      <div class="w3-modal-content w3-modal-content-InicioSesion">
+                        <div class="w3-container w3-container-InicioSesion">
                           <div class="ContenedorIniciarSesion">
                               <div class="contenedorLogoIniciarSesion">
                                   <img id="logoIniciarSesion" src="Imagenes/americaFerretera.png" alt="Logo empresa" title="Logo">
                               </div>
-                              <div class="contenedorFormulario">
+                              <div class="contenedorFormulario-InicioSesion">
                                   <form class="formularioInicioSesion">
                                       <input id="usuario" placeholder=" Usuario o correo electrónico" title="Digite usuario o correo electrónico">
                                       <input id="contrasenna" placeholder=" Contraseña" title="Digite contraseña">
