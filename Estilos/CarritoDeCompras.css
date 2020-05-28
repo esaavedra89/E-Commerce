@@ -185,17 +185,25 @@ div#headerContenedorBtnProcesarPago div
   color: #20468d;
 }
 
+/*****************Eliminar al integrar en un solo CSS**********************/
+.btn-Azul
+  {
+    background-color: #20468d;
+    color: white;
+    text-align: center;
+    border-radius: 2px;
+    border: 1px solid #20468d;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: normal;
+  }
+
+  /***************************************/
+
 #botonPagar, #btnProcesarPago {
-  background-color: #20468d;
-  color: white;
   width: 100%;
   height: 40px;
   margin: 20px 0px;
-  border-radius: 2px;
-  border: 1px solid #20468d;
-  cursor: pointer;
-  font-size: 15px;
-  font-weight: normal;
 }
 
 #spinner
@@ -309,7 +317,7 @@ div#headerContenedorBtnProcesarPago div
   cursor: pointer;
 }
 
-#filaBotones
+#filaBotones-CarritoDeCompras
 {
   display: none;
 }
@@ -399,7 +407,7 @@ div#headerContenedorBtnProcesarPago div
     min-width: 100px;
   }
   
-  table#tablaArticulos-CarritoDeCompras tbody #filaBotones
+  table#tablaArticulos-CarritoDeCompras tbody #filaBotones-CarritoDeCompras
   {
     display: table-row;
     height: 50px;
@@ -487,7 +495,7 @@ div#headerContenedorBtnProcesarPago div
     min-width: 100px;
   }
   
-  table#tablaArticulos-CarritoDeCompras tbody #filaBotones
+  table#tablaArticulos-CarritoDeCompras tbody #filaBotones-CarritoDeCompras
   {
     display: table-row;
     height: 50px;
@@ -562,7 +570,7 @@ div#headerContenedorBtnProcesarPago div
     min-width: 100px;
   }
 
-  table#tablaArticulos-CarritoDeCompras tbody #filaBotones
+  table#tablaArticulos-CarritoDeCompras tbody #filaBotones-CarritoDeCompras
   {
     display: table-row;
     height: 50px;
@@ -583,6 +591,22 @@ div#headerContenedorBtnProcesarPago div
   /* #contenedorPrincipal-CarritoDeCompras {
     background: rgb(7, 98, 134);
   } */
+  .barraLateral-CarritoDeCompras {
+    display: none;
+  }
+
+  .main-CarritoDeCompras {
+    width: 100%;
+  }
+
+  #headerSuperiorDerecho {
+    /* Centra los elementos dentro */
+    width: 100%;
+  }
+
+  #btnIniciarSesionText {
+    display: none;
+  }
 
   #headerContenedorBtnProcesarPago
   {
@@ -607,31 +631,12 @@ div#headerContenedorBtnProcesarPago div
   #columnaHeaderSupTres {
     width: 50px;
   }
-  #headerSuperiorDerecho {
-    /* Centra los elementos dentro */
-    width: 100%;
-  }
-
-  #btnIniciarSesionText {
-    display: none;
-  }
-
-  .barraLateral-CarritoDeCompras {
-    display: none;
-  }
-
-  .main-CarritoDeCompras {
-    width: 100%;
-  }
-
-  #columnaArticulosTres-CarritoDeCompras {
-    display: none;
-  }
   
   #columnaArticulosUno-CarritoDeCompras {
     width: 15%;
   }
-  table#tablaArticulos-CarritoDeCompras tbody #filaBotones
+  
+  table#tablaArticulos-CarritoDeCompras tbody #filaBotones-CarritoDeCompras
   {
     display: table-row;
     height: 50px;
@@ -641,6 +646,10 @@ div#headerContenedorBtnProcesarPago div
   {
     justify-content: left;
     float: left;
+  }
+  
+  #columnaArticulosTres-CarritoDeCompras {
+    display: none;
   }
 }
 
@@ -688,7 +697,7 @@ div#headerContenedorBtnProcesarPago div
   #columnaArticulosUno-CarritoDeCompras {
     width: 15%;
   }
-  table#tablaArticulos-CarritoDeCompras tbody #filaBotones
+  table#tablaArticulos-CarritoDeCompras tbody #filaBotones-CarritoDeCompras
   {
     display: table-row;
     height: 50px;
@@ -701,32 +710,7 @@ div#headerContenedorBtnProcesarPago div
   }
 }
 
-@media (min-width: 841px) and (max-width: 942px) {
-  /* #contenedorPrincipal-CarritoDeCompras {
-    background: lightgoldenrodyellow;
-  } */
-
-  #columnaArticulosUno-CarritoDeCompras {
-    width: 15%;
-  }
-  #columnaArticulosTres-CarritoDeCompras {
-    display: none;
-  }
-
-  table#tablaArticulos-CarritoDeCompras tbody #filaBotones
-  {
-    display: table-row;
-    height: 50px;
-  }
-
-  #colArtTresContenedor-CarritoDeCompras
-  {
-    justify-content: left;
-    float: left;
-  }
-}
-
-@media (min-width: 943px) and (max-width: 999px) {
+@media (min-width: 841px) and (max-width: 999px) {
   /* #contenedorPrincipal-CarritoDeCompras {
     background: limegreen;
   } */
@@ -738,7 +722,7 @@ div#headerContenedorBtnProcesarPago div
   #columnaArticulosUno-CarritoDeCompras {
     width: 15%;
   }
-  table#tablaArticulos-CarritoDeCompras tbody #filaBotones
+  table#tablaArticulos-CarritoDeCompras tbody #filaBotones-CarritoDeCompras
   {
     display: table-row;
     height: 50px;

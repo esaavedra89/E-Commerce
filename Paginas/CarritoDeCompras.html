@@ -5,9 +5,9 @@
         <meta charset="UTF-8">
         <title>Carrito de compras</title>
         <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-        <link href="../Estilos/EstilosHeaderSuperior.css" rel="stylesheet" type="text/css">
-        <link href="../Estilos/CarritoDeCompras.css" rel="stylesheet" type="text/css">
-        <!-- <link href="Recursos/font/fontellosecond.ttf" rel="stylesheet" type="text/css"> -->
+        <!-- <link href="../Estilos/EstilosHeaderSuperior.css" rel="stylesheet" type="text/css">
+        <link href="../Estilos/CarritoDeCompras.css" rel="stylesheet" type="text/css"> -->
+        <link href="../Estilos/DefaultTema.css" rel="stylesheet" type="text/css">
         <link href="../Recursos/Fuentes/Fontello/css/fontellofull.css" rel="stylesheet" type="text/css">
         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -32,7 +32,7 @@
                             <td id="columnaHeaderSupDos">
                                 <div class="contenedorBarraBuscar">
                                     <!-- <input id="barraBuscar" placeholder=" &#xf50d;" type="search" title="Buscar artículos"> -->
-                                    <input id="barraBuscar" placeholder=" Buscar" type="search" title="Buscar artículos">
+                                    <input class="borderEstandar" id="barraBuscar" placeholder=" Buscar" type="search" title="Buscar artículos">
                                 </div>
                             </td>
                             <!-- Columna #3 -->
@@ -77,7 +77,7 @@
                             </label>
                         </div>
                         
-                        <button id="btnProcesarPago" onclick="document.getElementById('id01').style.display='block'">Procesar pago</button>
+                        <button class="btn-Azul" id="btnProcesarPago" onclick="document.getElementById('id01').style.display='block'">Procesar pago</button>
                     </div>
 
                     <!-- w3-container -->
@@ -135,7 +135,7 @@
                                                         </tr>
                                             </tbody>
                                         </table>
-                                        <button id="botonPagar" title="Pagar">
+                                        <button class="btn-Azul" id="botonPagar" title="Pagar">
                                             <span class="icon-money"></span>  Pagar</button>
                                                     </div>
                                                     
@@ -174,7 +174,7 @@
                                         </div>
                                     </td>
                                 </tr>
-                                <tr  class="filasArticulos-CarritoDeCompras" id="filaBotones">
+                                <tr  class="filasArticulos-CarritoDeCompras" id="filaBotones-CarritoDeCompras">
                                     <td id="columnaDobleBotones" colspan="2" style="width:100%">
                                         <div id="colArtTresContenedor-CarritoDeCompras">
                                             <div class="colArtTresizquierdo-CarritoDeCompras">
@@ -235,7 +235,7 @@
                                     </tr>
                                 </tbody>
                             </table>
-                            <button id="botonPagar" title="Pagar" onclick="Pagar()"><span class="icon-money"></span>  Pagar  <span class="fa fa-refresh fa-spin" id="spinner"></span></button>
+                            <button class="btn-Azul" id="botonPagar" title="Pagar" onclick="Pagar()"><span class="icon-money"></span>  Pagar  <span class="fa fa-refresh fa-spin" id="spinner"></span></button>
                         </div>
                     </form>
                 </div>
