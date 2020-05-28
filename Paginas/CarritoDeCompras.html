@@ -43,7 +43,7 @@
                                             <span id="cart_menu_num" data-action="cart-can" class="badge rounded-circle">3</span>
                                         </a>
                                     </label>
-                                    <button id="btnIniciarSesion" title="Iniciar sesión"><span class="icon-user-1" id="iconoUsuario"></span>
+                                    <button id="btnIniciarSesion" title="Iniciar sesión" onclick="document.getElementById('id01').style.display='block'"><span class="icon-user-1" id="iconoUsuario"></span>
                                         <span id="btnIniciarSesionText">Iniciar Sesión</span></button>
                                 </div>
                             </td>
@@ -62,8 +62,33 @@
                 </div>
             </header>
 
-
             <div class="general-CarritoDeCompras">
+
+                <!-- Modal Inicio de sesión -->
+                
+                <div id="id01" class="w3-modal w3-modal-InicioSesion">
+                    <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-button-InicioSesion w3-display-topright">&times;</span>
+                      <div class="w3-modal-content w3-modal-content-InicioSesion">
+                        <div class="w3-container w3-container-InicioSesion">
+                          <div class="ContenedorIniciarSesion">
+                              <div class="contenedorLogoIniciarSesion">
+                                  <img id="logoIniciarSesion" src="../Recursos/Imagenes/americaFerretera.png" alt="Logo empresa" title="Logo">
+                              </div>
+                              <div class="contenedorFormulario-InicioSesion">
+                                  <form class="formularioInicioSesion">
+                                      <input id="usuario" placeholder=" Usuario o correo electrónico" title="Digite usuario o correo electrónico">
+                                      <input id="contrasenna" placeholder=" Contraseña" title="Digite contraseña">
+                                      <button id="btnIngresar" title="Inicie sesión">Ingresar</button>
+                                  </form>
+                              </div>
+                              <div class="login_footer">
+                                  <a id="lbtRecuperarContrasenna" class="login_link" href="#">¿Has olvidado tu contraseña?</a>
+                              </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
                 <!-- Sección principal -->
                 <div class="main-CarritoDeCompras">
 
@@ -239,6 +264,7 @@
                         </div>
                     </form>
                 </div>
+
             </div>
         </div>
         <script src="../Recursos/Js/jquery-3.2.1.min.js"></script>
