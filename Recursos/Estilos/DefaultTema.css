@@ -25,11 +25,11 @@
 
   .borderEstandar
   {
-    border-radius: 2px;
     border: 1px solid lightgrey;
 
     /*Para evitar bordes redondeados en iOS*/
     -webkit-border-radius: 2px; 
+    border-radius: 2px;
   }
 
   .letrasPequenas {
@@ -98,7 +98,7 @@
 
 
   /***************** Header superior *******************/
-#headerSuperior {
+  #headerSuperior {
     box-sizing: border-box;
     background-color: lightgray;
     height: 50px;
@@ -133,6 +133,7 @@
     vertical-align: middle;
     border-radius: 2px;
     object-fit: contain;
+    cursor: pointer;
   }
   
   .contenedorBarraBuscar {
@@ -153,7 +154,7 @@
     font-size: 15px;
     
     /*Eliminar sombra en input de iOS*/
-    -webkit-appearance: textarea;
+    -webkit-appearance: none;
   }
   
   /*Para centrar los elementos internos de un componente con float, es necesario ocupar el 100% de la altura*/
@@ -942,7 +943,7 @@
   }
   
   
-    /***************************************/
+  /***************************************/
   
   #botonPagar, #btnProcesarPago {
     width: 100%;
