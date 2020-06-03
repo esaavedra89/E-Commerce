@@ -631,9 +631,10 @@ p#precioArticulo > .letrasPequenas {
   color: #20468d;
   margin: 0px;
   padding: 0px;
-  border: 1px solid lightgray;
   border-radius: 2px;
   cursor: pointer;
+  border: 1px solid lightgray;
+  -webkit-border: 1px solid lightgray;
 }
 
 .cantidadProducto {
@@ -643,11 +644,14 @@ p#precioArticulo > .letrasPequenas {
   margin: 0px;
   padding: 0px;
   text-align: center;
-  border-top: 1px solid lightgray;
-  border-bottom: 1px solid lightgray;
   border-left: transparent;
   border-right: transparent;
   border-radius: 2px;
+  
+  border-top: 1px solid lightgray;
+  -webkit-border-top: 1px solid lightgray;
+  border-bottom: 1px solid lightgray;
+  -webkit-border-top: 1px solid lightgray;
   /*Eliminar sombra en input de iOS*/
   -webkit-appearance: textarea;
 }
