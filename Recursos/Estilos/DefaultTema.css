@@ -53,7 +53,7 @@ span.w3-button,
 
 /*#endregion */
 
-/************************************************************************************************************/
+/****************************************************Index********************************************************/
 
 /*#region General*/
 .body-Index {
@@ -708,6 +708,11 @@ ul.a-paginacion li {
   margin-right: 4px;
 }
 
+.a-normal
+{
+  background-color: white;
+}
+
 ul.a-paginacion li {
   display: block;
   float: left;
@@ -719,10 +724,13 @@ ul.a-paginacion li {
 ul.a-paginacion li a {
   border-radius: 2px;
   box-shadow: 0 1px 0 rgba(255, 255, 255, 0.6) inset;
-  background: #eff1f3;
+  /* background: #eff1f3;
   background: -webkit-linear-gradient(top, #f7f8fa, #e7e9ec);
-  background: linear-gradient(to bottom, #f7f8fa, #e7e9ec);
+  background: linear-gradient(to bottom, #f7f8fa, #e7e9ec); */
   border: 1px solid lightgray;
+  background: white;
+  background: -webkit-linear-gradient(white);
+  background: linear-gradient(white);
   color: #20468d;
 }
 
