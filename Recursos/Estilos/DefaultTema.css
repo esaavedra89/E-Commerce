@@ -54,6 +54,8 @@ span.w3-button,
 /*#endregion */
 
 /************************************************************************************************************/
+
+/*#region General*/
 .body-Index {
   margin: 0px;
   padding: 0px;
@@ -93,7 +95,7 @@ span.w3-button,
   border-left: 1px solid lightgray;
   border-right: 1px solid lightgray;
 }
-/***************************************************/
+/*#endregion General*/
 
 /*#region HeaderSuperior*/
 
@@ -340,7 +342,6 @@ span.w3-button,
 
 /*#region ModalInicioSesión*/
 
-/***************************Modal inicio Sesión*******************************/
 .w3-modal-InicioSesion {
   display: none;
 }
@@ -478,7 +479,6 @@ span.w3-button-InicioSesion {
 
 .Slides {
   display: none;
-  /* background-color: crimson; */
   width: 100%;
   height: 100%;
   align-content: center;
@@ -570,8 +570,6 @@ span.w3-button-InicioSesion {
   width: 100%;
   justify-content: space-between;
   margin: 2px 0px;
-
-  /* background-color: linen; */
 }
 
 #txtEstrellasArticulo {
@@ -591,10 +589,7 @@ span.w3-button-InicioSesion {
 
 #contenedorPrecioArticulo {
   display: flex;
-  /* align-items: center; */
   vertical-align: middle;
-  /* height: 40%; */
-  
 }
 
 #precioArticulo {
@@ -740,7 +735,6 @@ ul.a-paginacion li a {
 .body-CarritoDeCompras {
   margin: 0px;
   padding: 0px;
-  /* max-width: 1200px; */
   margin: 0 auto;
   font-size: 15px;
   line-height: 19px;
@@ -756,8 +750,6 @@ ul.a-paginacion li a {
   height: 100%;
   width: 100%;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.05);
-
-  /* background-color: khaki; */
 }
 
 .general-CarritoDeCompras {
@@ -790,7 +782,6 @@ ul.a-paginacion li a {
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.05);
 
   background-color: white;
-  /* margin-top: 48px; */
 }
 
 #headerInferiorIzquierdo-CarritoDeCompras {
@@ -857,16 +848,11 @@ div.w3-container-Pagar > #formularioPago {
 .barraLateral-CarritoDeCompras {
   float: right;
   width: 30%;
-  /* height: 500px; */
-
-  /* border-left: 1px solid lightgrey; */
-  /* box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.05); */
 }
 
 #formularioPago {
   background-color: white;
   margin: 10px;
-  /* padding: 5px; */
 }
 
 #tituloFormulario {
@@ -920,10 +906,6 @@ div.w3-container-Pagar > #formularioPago {
   color: #20468d;
 }
 
-/*#endregion BarraLateralDerecha*/
-
-/***************************************/
-
 #botonPagar,
 #btnProcesarPago {
   width: 100%;
@@ -933,15 +915,13 @@ div.w3-container-Pagar > #formularioPago {
 
 #spinner {
   visibility: hidden;
-  /* visibility: hidden; */
 }
 
-/************************************/
+/*#endregion BarraLateralDerecha*/
 
 /*#region Main*/
 
 .main-CarritoDeCompras {
-  /* border: 3px solid red; */
   float: left;
   width: 70%;
   margin: 0 auto;
@@ -963,6 +943,10 @@ div.w3-container-Pagar > #formularioPago {
   border-bottom: 1px solid lightgrey;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.05);
   border-radius: 2px;
+}
+
+table#tablaArticulos-CarritoDeCompras:hover {
+  box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.07);
 }
 
 .filasArticulos-CarritoDeCompras {
