@@ -591,8 +591,10 @@ span.w3-button-InicioSesion {
 
 #contenedorPrecioArticulo {
   display: flex;
-  align-items: center;
-  height: 40%;
+  /* align-items: center; */
+  vertical-align: middle;
+  /* height: 40%; */
+  
 }
 
 #precioArticulo {
@@ -601,14 +603,17 @@ span.w3-button-InicioSesion {
   font-size: 20px;
   font-weight: bold;
   text-transform: uppercase;
-  vertical-align: center;
+  vertical-align: middle;
 
-  display: flex;
   height: 100%;
+  align-self: center;
+  cursor: pointer;
 }
 
 p#precioArticulo > .letrasPequenas {
-  margin-top: 4px;
+  font-size: 10px;
+  font-weight: normal;
+  cursor: pointer;
 }
 
 .detallesArticuloInferior {
