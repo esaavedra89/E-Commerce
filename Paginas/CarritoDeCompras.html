@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
     <head>
-
         <meta charset="UTF-8">
         <title>Carrito de compras</title>
         <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
@@ -12,7 +11,7 @@
     </head>
 
     <body class="body-CarritoDeCompras">
-        
+        <!-- Contenedor principal -->
         <div id="contenedorPrincipal-CarritoDeCompras">
             <!-- Sección Header -->
             <header id="headerPrincipal">
@@ -20,7 +19,7 @@
                 <div id="headerSuperior">
                     <table id="tablaHeaderSuperior">
                         <tr class="filasHeaderSuperior">
-                            <!-- Columna #1 -->
+                            <!-- Columna #1 Logo-->
                             <td id="columnaHeaderSupUno">
                                 <div class="contenedorLogo">
                                     <a href="../index.html">
@@ -28,14 +27,13 @@
                                     </a>
                                 </div>
                             </td>
-                            <!-- Columna #2 -->
+                            <!-- Columna #2 Barra de busqueda-->
                             <td id="columnaHeaderSupDos">
                                 <div class="contenedorBarraBuscar">
-                                    <!-- <input id="barraBuscar" placeholder=" &#xf50d;" type="search" title="Buscar artículos"> -->
                                     <input class="borderEstandar" id="barraBuscar" placeholder=" Buscar" type="search" title="Buscar artículos">
                                 </div>
                             </td>
-                            <!-- Columna #3 -->
+                            <!-- Columna #3 Carrito de compras y botón de inicio-->
                             <td id="columnaHeaderSupTres">
                                 <div id="headerSuperiorDerecho">
                                     <label id="iconoCarritoCompras" >
@@ -50,12 +48,14 @@
                         </tr>
                     </table>
                 </div>
+
                 <!-- Header inferior -->
                 <div id="headerInferior-CarritoDeCompras">
                     <div id="headerInferiorIzquierdo-CarritoDeCompras">
-                        <!-- icon-sliders -->
+                        <!-- Titulo de la página -->
                         <label class="labelsHeader-CarritoDeCompras">Carrito de compras</label>
                     </div>
+                    <!-- Regresar -->
                     <div id="headerInferiorDerecho-CarritoDeCompras">
                         <label class="labelsHeader-CarritoDeCompras" ><a class="labelEnlazable" onclick="goBack()">Regresar a la tienda</a></label>
                     </div>
@@ -63,31 +63,29 @@
             </header>
 
             <div class="general-CarritoDeCompras">
-
                 <!-- Modal Inicio de sesión -->
-                
                 <div id="id02" class="w3-modal w3-modal-InicioSesion">
                     <span onclick="document.getElementById('id02').style.display='none'" id="btnCerrarModal" class="w3-button w3-button-InicioSesion w3-display-topright">&times;</span>
-                      <div class="w3-modal-content w3-modal-content-InicioSesion">
+                    <div class="w3-modal-content w3-modal-content-InicioSesion">
                         <div class="w3-container w3-container-InicioSesion">
-                          <div class="ContenedorIniciarSesion">
-                              <div class="contenedorLogoIniciarSesion">
-                                  <img id="logoIniciarSesion" src="../Recursos/Imagenes/americaFerretera.png" alt="Logo empresa" title="Logo">
-                              </div>
-                              <div class="contenedorFormulario-InicioSesion">
-                                  <form class="formularioInicioSesion">
-                                      <input id="usuario" placeholder=" Usuario o correo electrónico" title="Digite usuario o correo electrónico">
-                                      <input id="contrasenna" placeholder=" Contraseña" title="Digite contraseña">
-                                      <button id="btnIngresar" title="Inicie sesión">Ingresar</button>
-                                  </form>
-                              </div>
-                              <div class="login_footer">
-                                  <a id="lbtRecuperarContrasenna" class="login_link" href="#">¿Has olvidado tu contraseña?</a>
-                              </div>
-                          </div>
+                            <div class="ContenedorIniciarSesion">
+                                <div class="contenedorLogoIniciarSesion">
+                                    <img id="logoIniciarSesion" src="../Recursos/Imagenes/americaFerretera.png" alt="Logo empresa" title="Logo">
+                                </div>
+                                <div class="contenedorFormulario-InicioSesion">
+                                    <form class="formularioInicioSesion">
+                                        <input id="usuario" placeholder=" Usuario o correo electrónico" title="Digite usuario o correo electrónico">
+                                        <input id="contrasenna" placeholder=" Contraseña" title="Digite contraseña">
+                                        <button id="btnIngresar" title="Inicie sesión">Ingresar</button>
+                                    </form>
+                                </div>
+                                <div class="login_footer">
+                                    <a id="lbtRecuperarContrasenna" class="login_link" href="#">¿Has olvidado tu contraseña?</a>
+                                </div>
+                            </div>
                         </div>
-                      </div>
                     </div>
+                </div>
 
                 <!-- Sección principal -->
                 <div class="main-CarritoDeCompras">
@@ -105,13 +103,14 @@
                         <button class="btn-Azul" id="btnProcesarPago" onclick="document.getElementById('id01').style.display='block'">Procesar pago</button>
                     </div>
 
-                    <!-- w3-container -->
+                    <!-- Modal pagar -->
                     <div class=" contenedorModalPagar">
                         <div id="id01" class="w3-modal w3-modal-Pagar">
                             <div class="w3-modal-content w3-modal-content-Pagar">
                                 <div class="w3-container w3-container-Pagar">
-                                    <span onclick="document.getElementById('id01').style.display='none'" 
-                                        class="w3-button w3-button-Pagar w3-display-topright">&times;</span>
+                                    <!-- Boton cerrar modal -->
+                                    <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-button-Pagar w3-display-topright">&times;</span>
+                                    <!-- Formulario -->
                                     <form id="formularioPago">
                                         <label id="tituloFormulario">Resumen</label>
                                         <div id="formularioSuperior">
@@ -122,58 +121,63 @@
                                             </select>
                                             <label class="formularioSubtitulos">Dirección</label>
                                             <input class="entradaTexto" type="text" id="direccion" 
-                                                title="Dirreción de entrega">
+                                                        title="Dirreción de entrega">
                                             <label class="formularioSubtitulos">Observaciones</label>
-                                            <input class="entradaTexto" type="text" 
-                                                id="observaciones" title="Observaciones">
+                                            <input class="entradaTexto" type="text" id="observaciones" title="Observaciones">
                                         </div>
 
                                         <div id="formularioInferior">
                                             <table id="tabla-Formulario">
                                                 <tbody>
+                                                    <!-- Fila #1 -->
                                                     <tr class="filasFormulario">
                                                         <td class="columnaUno"> <label>Costo del envío</label> </td>
                                                         <td class="columnaDos"> <label class="labelColumnaDos" 
                                                             title="Costo del envío">0.00 CRC</label>
-                                                            </td>
+                                                        </td>
                                                     </tr>
+                                                    <!-- Fila #2 -->
                                                     <tr class="filasFormulario">
                                                         <td class="columnaUno"> <label>Subtotal</label></td>
                                                         <td class="columnaDos"> <label 
                                                             title="Subtotal de la compra">39,823.01 CRC</label></td>
-                                                        </tr>
-                                                        <tr class="filasFormulario">
-                                                            <td class="columnaUno"> <label>Impuesto</label></td>
-                                                            <td class="columnaDos"><label 
+                                                    </tr>
+                                                    <!-- Fila #3 -->
+                                                    <tr class="filasFormulario">
+                                                        <td class="columnaUno"> <label>Impuesto</label></td>
+                                                        <td class="columnaDos"><label 
                                                                 title="Impuesto de la compra"> 5,176.99 CRC</label></td>
-                                                        </tr>
-                                                        <tr class="filasFormulario">
-                                                            <td class="columnaUno"> <label class="labelsTotal">Total</label>								</td>
-                                                            <td class="columnaDos"> 
-                                                                <label class="labelsTotal">
-                                                                    <span id="montoTotal" 
+                                                    </tr>
+                                                    <!-- Fila #4 -->
+                                                    <tr class="filasFormulario">
+                                                        <td class="columnaUno"> <label class="labelsTotal">Total</label>								</td>
+                                                        <td class="columnaDos"> 
+                                                            <label class="labelsTotal">
+                                                                <span id="montoTotal" 
                                                                     title="Monto total de la compra"> 45,000.00</span> 
-                                                                    <span id="moneda">CRC</span> 
-                                                                    <span class="letrasPequenas-CarritoDeCompras">IVA</span>
-                                                                </label>
-                                                            </td>
-                                                        </tr>
-                                            </tbody>
-                                        </table>
-                                        <button class="btn-Azul" id="botonPagar" title="Pagar">
-                                            <span class="icon-money"></span>  Pagar</button>
-                                                    </div>
-                                                    
+                                                                <span id="moneda">CRC</span> 
+                                                                <span class="letrasPequenas-CarritoDeCompras">IVA</span>
+                                                            </label>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <!-- Botón de pagar -->
+                                            <button class="btn-Azul" id="botonPagar" title="Pagar">
+                                                <span class="icon-money"></span>  Pagar
+                                            </button>
+                                        </div>
                                     </form>
                                 </div>
                             </div>
                         </div>
                     </div>
                     
+                    <!-- Lista de artículos -->
                     <div id="listaArticulos-CarritoDeCompras">
-
                         <table id="tablaArticulos-CarritoDeCompras">
                             <tbody>
+                                <!-- Fila #1 -->
                                 <tr class="filasArticulos-CarritoDeCompras">
                                     <!-- Columna #1 -->
                                     <td id="columnaArticulosUno-CarritoDeCompras">
@@ -200,6 +204,7 @@
                                         </div>
                                     </td>
                                 </tr>
+                                <!-- Fila #2 -->
                                 <tr  class="filasArticulos-CarritoDeCompras" id="filaBotones-CarritoDeCompras">
                                     <td id="columnaDobleBotones" colspan="2" style="width:100%">
                                         <div id="colArtTresContenedor-CarritoDeCompras">
@@ -391,7 +396,7 @@
 
                 <!-- Sección lateral -->
                 <div class="barraLateral-CarritoDeCompras">
-                    
+                    <!-- Formulario de pago -->
                     <form id="formularioPago">
                         <label id="tituloFormulario">Resumen</label>
                         <div id="formularioSuperior">
@@ -409,18 +414,22 @@
                         <div id="formularioInferior">
                             <table id="tabla-Formulario">
                                 <tbody>
+                                    <!-- Fila #1 -->
                                     <tr class="filasFormulario">
                                         <td class="columnaUno"> <label>Costo del envío</label> </td>
                                         <td class="columnaDos"> <label class="labelColumnaDos" title="Costo del envío">0.00 CRC</label></td>
                                     </tr>
+                                    <!-- Fila #2 -->
                                     <tr class="filasFormulario">
                                         <td class="columnaUno"> <label>Subtotal</label></td>
                                         <td class="columnaDos"> <label title="Subtotal de la compra">39,823.01 CRC</label></td>
                                     </tr>
+                                    <!-- Fila #3 -->
                                     <tr class="filasFormulario">
                                         <td class="columnaUno"> <label>Impuesto</label></td>
                                         <td class="columnaDos"><label title="Impuesto de la compra"> 5,176.99 CRC</label></td>
                                     </tr>
+                                    <!-- Fila #4 -->
                                     <tr class="filasFormulario">
                                         <td class="columnaUno"> <label class="labelsTotal">Total</label> </td>
                                         <td class="columnaDos"> 
@@ -433,6 +442,7 @@
                                     </tr>
                                 </tbody>
                             </table>
+                            <!-- Botón pagar -->
                             <button class="btn-Azul" id="botonPagar" title="Pagar" onclick="Pagar()"><span class="icon-money"></span>  Pagar  <span class="fa fa-refresh fa-spin" id="spinner"></span></button>
                         </div>
                     </form>
@@ -440,6 +450,7 @@
 
             </div>
         </div>
+
         <script src="../Recursos/Js/jquery-3.2.1.min.js"></script>
         <script src="../Recursos/Js/CarritoDeCompras.js"></script>
     </body>

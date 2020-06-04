@@ -284,6 +284,11 @@ span.w3-button,
   align-content: center;
 }
 
+/* .seccionPuntuacion
+{
+
+} */
+
 .barraLateralSeccionesHide {
   display: none;
 }
@@ -1085,7 +1090,7 @@ table#tablaArticulos-CarritoDeCompras:hover {
 
   .barraLateralSeccionesHide {
     display: block;
-    height: 300px !important;
+    height: 500px !important;
   }
 
   .w3-modal-content-InicioSesion {
@@ -1303,7 +1308,7 @@ table#tablaArticulos-CarritoDeCompras:hover {
 
   .barraLateralSeccionesHide {
     display: block;
-    height: 300px !important;
+    height: 500px !important;
   }
   /****************************************/
 
@@ -1443,7 +1448,7 @@ table#tablaArticulos-CarritoDeCompras:hover {
   }
   .barraLateralSeccionesHide {
     display: block;
-    height: 300px !important;
+    height: 500px !important;
   }
 
   /****************************************/
@@ -1579,7 +1584,7 @@ table#tablaArticulos-CarritoDeCompras:hover {
 
   .barraLateralSeccionesHide {
     display: block;
-    height: 300px !important;
+    height: 500px !important;
   }
 
   /*****************************************/
@@ -1873,5 +1878,3 @@ table#tablaArticulos-CarritoDeCompras:hover {
 
   /**********************************************/
 }
-
-/*#endregion MediaQuery*/

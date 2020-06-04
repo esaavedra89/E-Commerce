@@ -18,7 +18,7 @@
                 <div id="headerSuperior">
                     <table id="tablaHeaderSuperior">
                         <tr class="filasHeaderSuperior">
-                            <!-- Columna #1 -->
+                            <!-- Columna #1 Logo-->
                             <td id="columnaHeaderSupUno">
                                 <div class="contenedorLogo">
                                     <a href="index.html">
@@ -26,23 +26,19 @@
                                       </a>
                                 </div>
                             </td>
-                            <!-- Columna #2 -->
+                            <!-- Columna #2 Barra de busqueda-->
                             <td id="columnaHeaderSupDos">
                                 <div class="contenedorBarraBuscar">
                                     <input class="borderEstandar" id="barraBuscar" placeholder=" Buscar" type="search" title="Buscar artículos">
                                 </div>
                             </td>
-                            <!-- Columna #3 -->
+                            <!-- Columna #3 Carrito de compras y botón de inicio-->
                             <td id="columnaHeaderSupTres">
                                 <div id="headerSuperiorDerecho">
-
                                     <label id="iconoCarritoCompras" >
-                                        <!-- <a href="https://ayuda.neotecnologias.com/neobusiness/E-Commerce/paginas/CarritoDeCompras.html" class=" icon-basket"><span id="cart_menu_num" data-action="cart-can" class="badge rounded-circle">5</span>
-                                        </a> -->
                                         <a href="Paginas/CarritoDeCompras.html" class=" icon-basket" title="Carrito de compras"><span id="cart_menu_num" data-action="cart-can" class="badge rounded-circle">5</span>
                                         </a>
                                     </label>
-
                                     <button id="btnIniciarSesion" title="Iniciar sesión" onclick="document.getElementById('id01').style.display='block'"><span class="icon-user-1" id="iconoUsuario"></span>
                                         <span id="btnIniciarSesionText">Iniciar Sesión</span></button>
                                 </div>
@@ -53,12 +49,11 @@
                 <!-- Header inferior -->
                 <div id="headerInferior">
                     <div id="headerInferiorIzquierdo">
-                        <!-- icon-sliders -->
-                        <!-- <button id="iconoConfFiltros" title="Filtros" class="icon-sliders" onclick="main()"></button> -->
+                        <!-- Botón Filtro -->
                         <button id="iconoConfFiltros" title="Filtros" class="icon-sliders borderEstandar"></button>
                         <label class="labelsHeader resultados"><span id="cantidadResultados">1,000</span>resultados</label>
                     </div>
-                    
+                    <!-- Ordenar por -->
                     <div id="headerInferiorDerecho">
                         <label class="labelsHeader">Ordenar por:</label>
                         <select id="opcionesOrdenar" class="borderEstandar">
@@ -72,11 +67,10 @@
                 </div>
             </div>
 
+            <!-- Sección general, ocupa barra lateral y la sección artículos -->
             <div class="general">
-
-                <!-- Modal Inicio de sesión -->
-                
-                    <div id="id01" class="w3-modal w3-modal-InicioSesion">
+                <!-- Modal Inicio de sesión - Ocultado por defecto -->
+                <div id="id01" class="w3-modal w3-modal-InicioSesion">
                     <span onclick="document.getElementById('id01').style.display='none'" id="btnCerrarModal" class="w3-button w3-button-InicioSesion w3-display-topright">&times;</span>
                       <div class="w3-modal-content w3-modal-content-InicioSesion">
                         <div class="w3-container w3-container-InicioSesion">
@@ -96,12 +90,12 @@
                               </div>
                           </div>
                         </div>
-                      </div>
                     </div>
-                  
+                </div>
 
-                <!-- Sección barra lateral -->
+                <!-- Sección barra lateral - Se oculta presionando el botón -->
                 <div class="barraLateral">
+
                     <div class="barraLateralSecciones seccionCategoria">
                         <label class="lblBarraLateral">Categoría</label>
                         <label class="lblCkechbox"><input type="checkbox" class="cbox" title="Filtrar por categoría"> Adhesivos</label>
@@ -186,20 +180,18 @@
                     </div>
 
                     <div class="barraLateralSeccionesHide">
-                        
-                        
                     </div>
+
                 </div>
             
                 <!-- Sección principal -->
                 <div class="mainn">
-                    <!-- <div class="contenedorSeccionArticulos"> -->
+                    <!-- Sección de artículos -->
                     <div class="seccionArticulos">
-
                         <table id="tablaArticulos">
                             <tbody>
                                 <tr class="filasArticulosUno">
-                                    <!-- Fila #1 -->
+                                    <!-- Fila #1  Imagenes del artículo-->
                                     <td id="columnaArticulosUno">
                                         <!-- Slider -->
                                         <div class="slide-container" title="Imagen del artículo">
@@ -221,7 +213,7 @@
                                     </td>
                                 </tr>
 
-                                <!-- Fila #2 -->
+                                <!-- Fila #2 Detalles del artículo-->
                                 <tr  class="filasArticulosDos" id="filaBotones">
                                     <td id="columnaDobleBotones" colspan="2" style="width:100%">
                                         <div class="detallesArticuloSuperior">
@@ -250,8 +242,7 @@
                                     </td>
                                 </tr>
 
-
-                                <!-- Fila #3 -->
+                                <!-- Fila #3 Botones del artículo-->
                                 <tr  class="filasArticulosTres" id="filaBotones">
                                     <td id="columnaDobleBotones" colspan="2" style="width:100%">
                                         <div class="detallesArticuloInferior">
@@ -865,6 +856,7 @@
 
                     </div>
             
+                    <!-- Paginación en el fondo -->
                     <div class="paginacion">
                         <div class="a-texto-centrado">
                             <ul class="a-paginacion">
