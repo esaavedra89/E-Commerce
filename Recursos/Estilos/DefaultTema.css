@@ -53,50 +53,6 @@ span.w3-button,
 
 /*#endregion */
 
-/****************************************************Index********************************************************/
-
-/*#region General*/
-.body-Index {
-  margin: 0px;
-  padding: 0px;
-  margin: 0 auto;
-  font-size: 15px;
-  line-height: 19px;
-  background-color: white;
-}
-
-#contenedorPrincipal {
-  margin: 0 auto;
-  margin: 0px;
-  padding: 0px;
-  display: inline-block;
-  border: 1px solid lightgray;
-  width: 100%;
-  background-color: white;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.05);
-}
-
-.general {
-  width: 100%;
-  margin-top: 99px;
-}
-
-#headerPrincipal {
-  height: 100px;
-  width: 100%;
-  margin: 0 auto;
-
-  position: fixed;
-  top: 0;
-  right: 0;
-  left: 0;
-  z-index: 1030;
-
-  border-left: 1px solid lightgray;
-  border-right: 1px solid lightgray;
-}
-/*#endregion General*/
-
 /*#region HeaderSuperior*/
 
 #headerSuperior {
@@ -212,6 +168,50 @@ span.w3-button,
 }
 
 /*#endregion */
+
+/****************************************************Index********************************************************/
+
+/*#region General*/
+.body-Index {
+  margin: 0px;
+  padding: 0px;
+  margin: 0 auto;
+  font-size: 15px;
+  line-height: 19px;
+  background-color: white;
+}
+
+#contenedorPrincipal {
+  margin: 0 auto;
+  margin: 0px;
+  padding: 0px;
+  display: inline-block;
+  border: 1px solid lightgray;
+  width: 100%;
+  background-color: white;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.05);
+}
+
+.general {
+  width: 100%;
+  margin-top: 99px;
+}
+
+#headerPrincipal {
+  height: 100px;
+  width: 100%;
+  margin: 0 auto;
+
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+
+  border-left: 1px solid lightgray;
+  border-right: 1px solid lightgray;
+}
+/*#endregion General*/
 
 /*#region HeaderInferior*/
 
@@ -351,6 +351,10 @@ span.w3-button,
   display: none;
 }
 
+div.w3-modal {
+  z-index: 50000;
+}
+
 .ContenedorIniciarSesion {
   margin: 20px 10px;
 }
@@ -405,19 +409,15 @@ span.w3-button,
 }
 
 div.w3-modal-content-InicioSesion {
-  margin-top: 100px;
+  margin-top: 50px;
   width: 320px;
 }
 
-.w3-modal-InicioSesion {
-  margin-top: 20px;
-}
-
 span.w3-button-InicioSesion {
-  margin-top: 80px;
   background-color: transparent;
   color: white;
-  font-size: larger;
+  font-size: 45px!important;
+  font-weight: bold;
 }
 
 /*#endregion */
@@ -1878,3 +1878,5 @@ table#tablaArticulos-CarritoDeCompras:hover {
 
   /**********************************************/
 }
+
+/*#endregion */
