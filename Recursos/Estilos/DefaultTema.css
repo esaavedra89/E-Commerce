@@ -33,6 +33,7 @@
   /*Para evitar bordes redondeados en iOS*/
   -webkit-border-radius: 2px;
   border-radius: 2px;
+  
 }
 
 .letrasPequenas {
@@ -385,6 +386,8 @@ div.w3-modal {
   border-radius: 2px;
 
   -webkit-border-radius: 2px;
+  /*Eliminar sombra en input de iOS*/
+  -webkit-appearance: none;
 }
 
 #btnIngresar {
@@ -657,8 +660,9 @@ p#precioArticulo > .letrasPequenas {
   -webkit-border-top: 1px solid lightgray;
   border-bottom: 1px solid lightgray;
   -webkit-border-top: 1px solid lightgray;
+
   /*Eliminar sombra en input de iOS*/
-  -webkit-appearance: textarea;
+  -webkit-appearance: none;
 }
 
 #btnAgregar {
@@ -1035,6 +1039,9 @@ table#tablaArticulos-CarritoDeCompras:hover {
   border-left: transparent;
   border-right: transparent;
   border-radius: 2px;
+
+  /*Eliminar sombra en input de iOS*/
+  -webkit-appearance: none;
 }
 
 #btnEliminar-CarritoDeCompras {
